@@ -24,4 +24,4 @@ Set up a compatible Minecraft 1.21.1 NeoForge instance with the required mods, t
 
 ## 来源与声明 / Attribution
 
-本项目基于 [Enigmatica 6: Expert](https://github.com/MuteTiefling/Enigmatica6Expert)，原整合包面向 Minecraft 1.16.5。本项目为非官方移植，与 Enigmatica 团队无隶属或背书关系。原整合包内容、第三方模组代码和资源仍归各自权利人所有，并受其各自条款约束。
+本项目基于 [Enigmatica 6: Expert](https://github.com/MuteTiefling/Enigmatica6Expert)，原整合包面向 Minecraft 1.16.5。本项目为非官方移植，与 Enigmatica 团队无隶属或背书关系，仅是获得了移植授权。原整合包内容、第三方模组代码和资源仍归各自权利人所有，并受其各自条款约束。
