@@ -1,0 +1,1143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "building"
+	group: ""
+	id: "0000000000000096"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "058D3BEB64C74E27"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "6BCFA4922355B43F"
+					item: {
+						count: 1
+						id: "create:builders_tea"
+					}
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "3C390EFCC5489351"
+					item: {
+						count: 1
+						id: "minecraft:stonecutter"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "4A2592C4467CEAF6"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "3834BBF4818E4ABE"
+			rewards: [{
+				count: 2
+				id: "0E23B1EC7F8A65EE"
+				item: {
+					count: 1
+					id: "create:builders_tea"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "4AF3B5D3B12BB9E7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "69264C279D819443"
+			rewards: [{
+				id: "22CC2896509891A2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "420B50F1422D8783"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "294FF399D036000C"
+			rewards: [{
+				id: "4EBBC5E559BB1D57"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "23D124F0ABC86469"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "2BFA6B1DF968DB60"
+			rewards: [{
+				id: "760F5F32E39E413F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "65B891EE0CA7DE2D"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "6AAB0C70527EB1C8"
+			rewards: [{
+				id: "190BC73D15872F2A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "08066709F5454C29"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "1A8ADC65B09E9539"
+			rewards: [{
+				id: "6DA561C702F1DEA5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "02D341840CE54A92"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "5CC123276DD545C8"
+			rewards: [{
+				id: "0DA8D314B0CFE8BA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4F7B105264339E9A"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "63FE93055CE4162C"
+			rewards: [{
+				id: "4C3D1850DE4CBA18"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4EA5682D198BA2E6"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "32824050418C71EB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "3006D73518186276"
+				type: "command"
+			}]
+			tasks: [{
+				id: "39FE46B7D0588AC6"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "66099AFAA1A6043F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				id: "73CEB3BC6963B644"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7E626988261D7522"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "42FB32CC99E66E3F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "7E2D7FEE20672C9D"
+				type: "command"
+			}]
+			tasks: [{
+				count: 16L
+				id: "1EFA47BC6E4EC782"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "0798D5139479A837"
+			rewards: [
+				{
+					id: "7A45DC96F03CA232"
+					item: {
+						components: {
+							"ftbquests:missing_item": "framedblocks:framed_hammer"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "1C5FD3A8CD3424C0"
+					item: {
+						components: {
+							"ftbquests:missing_item": "framedblocks:framed_wrench"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "6D98E195282468AF"
+				item: { components: { "ftbquests:missing_item": "framedblocks:framed_cube" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "473BE440ECB1CEDF"
+			rewards: [
+				{
+					id: "799AB9D93C124D6F"
+					item: {
+						components: {
+							"ftbquests:missing_item": "storagedrawers:emerald_storage_upgrade"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "006783158FEE960D"
+					item: {
+						components: {
+							"ftbquests:missing_item": "storagedrawers:void_upgrade"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "130291F7FD5C22C4"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "1EAFB4FB2CF09F26"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				id: "0365D0D7A7E40B1D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "5B597B1689F6662F"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "68E143E444AF44C2"
+			rewards: [{
+				count: 2
+				id: "3C8E7414A7A4C3C0"
+				item: {
+					components: {
+						"ftbquests:missing_item": "engineersdecor:sign_hotwire"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				count: 12L
+				id: "3962CC2A503F48BE"
+				item: { components: { "ftbquests:missing_item": "engineersdecor:metal_bar" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "201E7950E17180BD"
+			rewards: [
+				{
+					id: "6C4A232FCA2807FA"
+					item: {
+						components: {
+							"ftbquests:missing_item": "dustrial_decor:cardboard_helmet"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "60773CCBDE6A5D12"
+					item: {
+						components: {
+							"ftbquests:missing_item": "dustrial_decor:cardboard"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 16
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "7B4010001841119D"
+					item: { components: { "ftbquests:missing_item": "dustrial_decor:sheet_metal" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "233869B1D7E3ACFB"
+					item: { components: { "ftbquests:missing_item": "dustrial_decor:cardboard" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "03D0B336BB7CEFE1"
+			rewards: [
+				{
+					id: "53FB7E9EE2F64323"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:beer"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "314E867E74A0A658"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:wine"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "5C9415F6EFAA203C"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:whiskey"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "293E3264D9BC1836"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:mead"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "454E1AEBCCD2B768"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:vodka"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "3AE7ECDC030B78F6"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:sake"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "020E1FF6FF8532FA"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:cider"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "022D696626C1C290"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:cauim"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "421FEBBA8B18E8BF"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:tiswin"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "36159E7E842C9962"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			id: "1DEA7DBF6D1A1C6A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "548107ED51B7B447"
+				type: "command"
+			}]
+			tasks: [{
+				id: "5588202A7A626718"
+				item: { components: { "ftbquests:missing_item": "itemfilters:mod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:missing_item": "emendatusenigmatica:enigmatic_hammer"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "5411C8D2344CC2F1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "215C050F84460976"
+				item: {
+					count: 1
+					id: "minecraft:scaffolding"
+				}
+				random_bonus: 16
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "48834CDA218F71E0"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "085A8424875A2B23"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "31F796972A4B7369"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0F45B05043BCCBE6"
+				item: { components: { "ftbquests:missing_item": "portable_stonecutter:portable_stonecutter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "chisel:iron_chisel"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "165DFE2F0AF151E7"
+			rewards: [{
+				count: 16
+				id: "77DBBB65B8E37846"
+				item: {
+					components: {
+						"ftbquests:missing_item": "chisel:factory/dots"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 16
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A04BA9132C1CB19"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "chiselsandbits:chisel_stone"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "468BEE8C31DA8DF9"
+			rewards: [
+				{
+					id: "720F542AE5971C8B"
+					item: {
+						components: {
+							"ftbquests:missing_item": "chiselsandbits:bit_bag"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "26AE96A25BAAC750"
+					item: {
+						components: {
+							"ftbquests:missing_item": "chiselsandbits:magnifying_glass"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "4DDA396CCCA5EF72"
+					item: {
+						components: {
+							"ftbquests:missing_item": "chiselsandbits:measuring_tape"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "45C52AC34FB4858B"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "buildinggadgets:gadget_building"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "0F06CA2A45323C4C"
+			rewards: [{
+				id: "651CFE821154BBC8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5DB4EE8F264A9453"
+				item: { components: { "ftbquests:missing_item": "buildinggadgets:gadget_building" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "buildinggadgets:gadget_exchanging"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "25E1DB1C3F184D4C"
+			rewards: [{
+				id: "2A430B36A4ECDB29"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0031DADEE3BD0089"
+				item: { components: { "ftbquests:missing_item": "buildinggadgets:gadget_exchanging" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "buildinggadgets:gadget_copy_paste"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "2E5F1C7B4B293531"
+			rewards: [{
+				id: "56EDEB3CE12B8C19"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6AB9C0357788BA56"
+				item: { components: { "ftbquests:missing_item": "buildinggadgets:gadget_copy_paste" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "buildinggadgets:gadget_destruction"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "095108AB50598C04"
+			rewards: [{
+				id: "61F9F3D49C389940"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1441EAF1EDC3AFDF"
+				item: { components: { "ftbquests:missing_item": "buildinggadgets:gadget_destruction" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "constructionwand:stone_wand"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "26B88D08862EA1AE"
+			rewards: [{
+				count: 16
+				id: "214C2A82D3E5941A"
+				item: {
+					count: 1
+					id: "minecraft:scaffolding"
+				}
+				random_bonus: 16
+				type: "item"
+			}]
+			tasks: [{
+				id: "131EB02FBDE8DC98"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:missing_item": "botania:lexicon"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "3F1801BBAF8A29FD"
+			rewards: [{
+				count: 4
+				id: "67E31EF8EF9242E8"
+				item: {
+					components: {
+						"ftbquests:missing_item": "botania:livingwood_twig"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "363364A832F21FEC"
+				item: { components: { "ftbquests:missing_item": "botania:livingwood" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3F1801BBAF8A29FD"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "botania:exchange_rod"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "3A0988C3AEFBAAC5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				id: "41109E78B59EF97B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7FA93EE01B45135D"
+				item: { components: { "ftbquests:missing_item": "botania:exchange_rod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "261056A552909227"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				id: "0F739D6D5D514E05"
+				type: "command"
+			}]
+			tasks: [{
+				id: "60487B8DAAABD00A"
+				item: { components: { "ftbquests:missing_item": "botania:cobble_rod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "75361161CEA1E406"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				id: "0C25B3F19358451A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2FE7292AC2F975A8"
+				item: { components: { "ftbquests:missing_item": "botania:dirt_rod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "1E22D45F4ACB8FE2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				id: "2675982841DE964D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3F20DF25B210800F"
+				item: { components: { "ftbquests:missing_item": "botania:terraform_rod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			id: "020ECCFFA45CE43D"
+			rewards: [{
+				count: 2
+				id: "691CF672BABA1FA8"
+				item: {
+					count: 1
+					id: "astralsorcery:stardust"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "37EDC6B3AC445773"
+				item: { count: 1, id: "astralsorcery:starmetal_ore" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["020ECCFFA45CE43D"]
+			icon: {
+				id: "astralsorcery:architect_wand"
+			}
+			id: "4A2306BD24A5D6D2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "23FF3AAB4DFEE10C"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7D1392DE2FB21B89"
+				item: { count: 1, id: "astralsorcery:architect_wand" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["020ECCFFA45CE43D"]
+			icon: {
+				id: "astralsorcery:exchange_wand"
+			}
+			id: "2334B38255294FAE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "07A919265475FAEF"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0BE4A8E8DE0E013F"
+				item: { count: 1, id: "astralsorcery:exchange_wand" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			id: "1E318BCAC2C6FA09"
+			rewards: [{
+				count: 4
+				id: "618B214EB41EEE48"
+				item: {
+					count: 1
+					id: "create:builders_tea"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "14B0FAF2081449BD"
+				item: { components: { "ftbquests:missing_item": "emendatusenigmatica:brass_ingot" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1E318BCAC2C6FA09"]
+			icon: {
+				id: "create:extendo_grip"
+			}
+			id: "34F00196E2D0B4B0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "384957F4FCE7BC6A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "36A419607017EA31"
+				item: { count: 1, id: "create:extendo_grip" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1E318BCAC2C6FA09"]
+			id: "147B701C5BCF2424"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				id: "01870BF5EE173AB5"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0A989C0C09502289"
+				item: { count: 1, id: "create:wand_of_symmetry" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			id: "4407C59E32585B96"
+			rewards: [
+				{
+					count: 2
+					id: "3E564C831D52F1BD"
+					item: {
+						count: 1
+						id: "create:builders_tea"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "7FB21C0F074D7720"
+					item: {
+						count: 1
+						id: "create:empty_schematic"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1DDF6EF97DE63E61"
+					item: {
+						count: 1
+						id: "minecraft:gunpowder"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "3671CC5B42EC4DF8"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "624AAFDABA481B08"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				id: "2F982B8BD0A5B9DF"
+				type: "command"
+			}]
+			tasks: [{
+				id: "71069CB1BABDA192"
+				item: { components: { "ftbquests:missing_item": "botania:skydirt_rod" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3F1801BBAF8A29FD"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "botania:mana_gun"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "5CCA8708260D389C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				id: "461C49E6DB199C54"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "64B96C806BE2E4CB"
+					item: { components: { "ftbquests:missing_item": "botania:mana_gun" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "1F2D3C964900AA44"
+					item: { components: { "ftbquests:missing_item": "botania:lens_explosive" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "179FB20DE78B8851"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				id: "597AE01F4D6E1217"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7CEB81CF604A2837"
+				item: { components: { "ftbquests:missing_item": "botania:sextant" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3F1801BBAF8A29FD"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "botania:astrolabe"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "37F31E4C7664EF8C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				id: "70F6E60195DD9768"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1827D26DAD8075A3"
+				item: { components: { "ftbquests:missing_item": "botania:astrolabe" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			id: "48D7E182886BF82F"
+			rewards: [{
+				id: "41939B3A4FB225D7"
+				item: {
+					components: {
+						"ftbquests:missing_item": "botania:cosmetic_googly_eyes"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "2FBD22F2EC040B18"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			icon: {
+				id: "quark:trowel"
+			}
+			id: "73696B8EC7BB92C7"
+			rewards: [
+				{
+					id: "1EA35555757745CC"
+					item: {
+						count: 1
+						id: "quark:trowel"
+					}
+					type: "item"
+				}
+				{
+					id: "5C1C38E52322F619"
+					item: {
+						components: {
+							"ftbquests:missing_item": "quark:rainbow_rune"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "5B29C3C71D617D0A"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+	]
+}

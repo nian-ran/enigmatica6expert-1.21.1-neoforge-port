@@ -1,0 +1,313 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "expert__bragging_rights"
+	group: "34B7FB260B6AEB81"
+	id: "0000000000000B69"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0000000000000FEB"]
+			hide_until_deps_visible: true
+			id: "6D3FE88DB30DEE00"
+			rewards: [{
+				id: "3A52EC072B3445A2"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "446147A7DA834368"
+				item: { count: 1, id: "create:handheld_worldshaper" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "36CDE03E505E0F94"
+			rewards: [{
+				id: "693FC941F15A3ACE"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "720841254075293B"
+				item: { count: 1, id: "kubejs:excavation_mastery_token" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "477CEC2E3F4736C3"
+			rewards: [{
+				id: "551D5FD396FF093D"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BDE4D704EAF5C05"
+				item: { count: 1, id: "kubejs:alchemy_mastery_token" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7C0943FD8F8A0D69"]
+			id: "4AB9649C1D2FE587"
+			rewards: [{
+				id: "3AB2CF7F89C657B5"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "571A2D485D7D82AD"
+				item: { count: 1, id: "kubejs:automation_mastery_token" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "6218AF7644C178A7"
+			rewards: [{
+				id: "4D3A23023C449286"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2BB3E567517D599F"
+				item: { count: 1, id: "kubejs:engineering_mastery_token" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "5DA9A0C75EA47DFF"
+			rewards: [{
+				id: "2544D1CD29FA3294"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F5DB81D50286BAC"
+				item: { count: 1, id: "kubejs:botanical_mastery_token" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6218AF7644C178A7"]
+			id: "188BE70C3D176BCA"
+			rewards: [{
+				id: "1D9D78838F73FAB1"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C9CA9991302C5CA"
+				item: { count: 1, id: "kubejs:battle_mastery_token" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6218AF7644C178A7"]
+			id: "72C894BE4081603D"
+			rewards: [{
+				id: "0E6C5C79136A434B"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A6A9B10EF0B2E06"
+				item: { count: 1, id: "kubejs:dimensional_mastery_token" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "3AB61B2854483CE3"
+			rewards: [{
+				id: "20CD22DE6E8E7067"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C2A6AD9D846702E"
+				item: { count: 1, id: "kubejs:energistics_mastery_token" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6218AF7644C178A7"]
+			id: "474DFFBB63FE90BA"
+			rewards: [{
+				id: "541CF497CB5FE81E"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DE2D48092C045AA"
+				item: { count: 1, id: "kubejs:ritual_mastery_token" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "65F9021D56312C9B"
+			rewards: [{
+				id: "3D93697F45EC1124"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "15599A14E7C2F230"
+				item: { count: 1, id: "kubejs:aura_mastery_token" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A9BCC1CC2CC3E0C"]
+			id: "2A79C4CDDA045886"
+			rewards: [{
+				id: "678108C4817B164B"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BA322BD06DE3777"
+				item: { count: 1, id: "kubejs:astronomy_mastery_token" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000FEB"]
+			hide_until_deps_visible: true
+			id: "7C0943FD8F8A0D69"
+			tasks: [{
+				id: "0B1FB01E3D6A63F8"
+				item: { components: { "ftbquests:missing_item": "masterfulmachinery:enigmatic_tree_of_life_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4AB9649C1D2FE587"]
+			id: "5A9BCC1CC2CC3E0C"
+			rewards: [{
+				id: "5C862E67BDEE747A"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C3AD97B67E61659"
+				item: { count: 1, id: "kubejs:culinary_mastery_token" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+	]
+}

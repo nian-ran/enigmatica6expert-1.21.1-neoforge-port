@@ -1,0 +1,8 @@
+{
+  "block": "ars_nouveau:enchanting_apparatus",
+  "stats": {
+    "maxEterna": 15,
+    "eterna": 3.5,
+    "quanta": 8
+  }
+}

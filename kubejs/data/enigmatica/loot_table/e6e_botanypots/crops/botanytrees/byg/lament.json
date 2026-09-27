@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "name": "byg:lament_log",
+          "type": "minecraft:item"
+        }
+      ],
+      "conditions": [
+        {
+          "chance": 0.5,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "rolls": {
+        "max": 1,
+        "type": "minecraft:uniform",
+        "min": 1
+      },
+      "bonus_rolls": 0.0
+    },
+    {
+      "entries": [
+        {
+          "name": "minecraft:stick",
+          "type": "minecraft:item"
+        }
+      ],
+      "conditions": [
+        {
+          "chance": 0.1,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "rolls": {
+        "max": 2,
+        "type": "minecraft:uniform",
+        "min": 1
+      },
+      "bonus_rolls": 0.0
+    },
+    {
+      "entries": [
+        {
+          "name": "byg:lament_sapling",
+          "type": "minecraft:item"
+        }
+      ],
+      "conditions": [
+        {
+          "chance": 0.05,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "rolls": {
+        "max": 1,
+        "type": "minecraft:uniform",
+        "min": 1
+      },
+      "bonus_rolls": 0.0
+    }
+  ],
+  "type": "minecraft:block"
+}

@@ -1,0 +1,366 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gates_wip"
+	group: "34B7FB260B6AEB81"
+	id: "0000000000000B65"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0000000000000FEB"]
+			hide_until_deps_visible: true
+			id: "0000000000000B6C"
+			min_width: 300
+			shape: "rsquare"
+			tasks: [{
+				id: "7DE46EF832E29D7C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000B6C"]
+			id: "0000000000000FBD"
+			tasks: [{
+				id: "0000000000000FBE"
+				item: { count: 1, id: "create:gearbox" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000B6C"]
+			id: "0000000000000FBF"
+			tasks: [{
+				id: "0000000000000FC0"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_frame" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000FBF"]
+			id: "0000000000000FC1"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "0000000000000FC2"
+				item: { components: { "ftbquests:missing_item": "xnet:controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000B6C"]
+			id: "0000000000000FC3"
+			tasks: [{
+				id: "0000000000000FC4"
+				item: { components: { "ftbquests:missing_item": "eidolon:pewter_inlay" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000B6C"]
+			id: "0000000000000FC5"
+			tasks: [{
+				id: "0000000000000FC6"
+				item: { count: 1, id: "ars_nouveau:novice_spell_book" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000FC5"]
+			id: "0000000000000FC7"
+			tasks: [{
+				id: "0000000000000FC8"
+				item: { count: 1, id: "naturesaura:gold_leaf" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000FC7"]
+			id: "0000000000000FC9"
+			tasks: [{
+				id: "0000000000000FCA"
+				item: { components: { "ftbquests:missing_item": "botania:runic_altar" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000000FCF"
+				"0000000000000FC9"
+			]
+			id: "0000000000000FCB"
+			tasks: [{
+				id: "0000000000000FCC"
+				item: { count: 1, id: "astralsorcery:celestial_crystal" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["573D1ADF4FBE3044"]
+			id: "0000000000000FCD"
+			tasks: [{
+				id: "0000000000000FCE"
+				item: { count: 1, id: "occultism:chalk_white" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["0000000000000FCD"]
+			id: "0000000000000FCF"
+			tasks: [{
+				id: "0000000000000FD0"
+				item: { components: { "ftbquests:missing_item": "bloodmagic:soulforge" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000FBD"]
+			id: "0000000000000FD1"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "0000000000000FD2"
+				item: { components: { "ftbquests:missing_item": "prettypipes:crafting_terminal" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.375d
+			y: 1.25d
+		}
+		{
+			dependencies: ["0000000000000FD5"]
+			id: "0000000000000FD3"
+			tasks: [{
+				id: "0000000000000FD4"
+				item: { count: 1, id: "powah:dielectric_casing" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000FBD"]
+			id: "0000000000000FD5"
+			tasks: [{
+				count: 27L
+				id: "0000000000000FD6"
+				item: { count: 1, id: "immersiveengineering:cokebrick" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000FDB"]
+			id: "0000000000000FD7"
+			tasks: [{
+				id: "0000000000000FD8"
+				item: { count: 1, id: "rftoolsbase:machine_frame" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000FD3"]
+			id: "0000000000000FD9"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "0000000000000FDA"
+				item: { components: { "ftbquests:missing_item": "modularrouters:item_router" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000FBF"]
+			id: "0000000000000FDB"
+			tasks: [{
+				count: 16L
+				id: "0000000000000FDC"
+				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["0000000000000FDB"]
+			id: "0000000000000FDD"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "0000000000000FDE"
+				item: { count: 1, id: "refinedstorage:controller" }
+				type: "item"
+			}]
+			x: -0.625d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000FD5"]
+			id: "0000000000000FDF"
+			tasks: [{
+				id: "0000000000000FE0"
+				item: { count: 1, id: "industrialforegoing:machine_frame_pity" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000FC7"]
+			id: "0000000000000FE1"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "0000000000000FE2"
+				item: { count: 1, id: "minecraft:honeycomb" }
+				type: "item"
+			}]
+			x: 4.375d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000FDF"]
+			id: "0000000000000FE3"
+			tasks: [{
+				id: "0000000000000FE4"
+				item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000000FD7"
+				"0000000000000FE3"
+			]
+			id: "0000000000000FE5"
+			tasks: [{
+				id: "0EBD46ADF246F17F"
+				item: { count: 1, id: "mekanism:steel_casing" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"0000000000000FE5"
+				"0000000000000FCB"
+			]
+			id: "0000000000000FE7"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "281E59C3023B532F"
+				item: { count: 1, id: "create:handheld_worldshaper" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0000000000000FDD"]
+			id: "218FBDC6B17EDF33"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "2A11C229CEEEBE6F"
+				item: { count: 1, id: "integrateddynamics:variablestore" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.625d
+		}
+		{
+			dependencies: ["0000000000000FE5"]
+			id: "11FC40A4B8CBA98A"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "590186031154D036"
+				item: { count: 1, id: "fluxnetworks:flux_core" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0000000000000FC9"]
+			id: "6CA3B688C7701907"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "5727C862289731E8"
+				item: { components: { "ftbquests:missing_item": "pedestals:pedestal/stone333" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.375d
+			y: 6.875d
+		}
+		{
+			dependencies: ["0000000000000FBF"]
+			id: "51E57880AFDE5595"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "746F162F9FD6B5C6"
+				item: { components: { "ftbquests:missing_item": "tconstruct:smeltery_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000FC3"]
+			id: "573D1ADF4FBE3044"
+			tasks: [{
+				id: "50E8AA4A66F47704"
+				item: { components: { "ftbquests:missing_item": "bloodmagic:altar" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.6d
+		}
+		{
+			dependencies: ["0000000000000FCD"]
+			id: "2AFC23BBBA407467"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "786CC87833A2294A"
+				item: { count: 1, id: "refinedstorage:disk_drive" }
+				type: "item"
+			}]
+			x: 0.625d
+			y: 5.0d
+		}
+	]
+}

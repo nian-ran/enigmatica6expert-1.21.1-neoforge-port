@@ -1,0 +1,828 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pedestals"
+	group: "0856CF7F5CBEB20A"
+	id: "7DE17548AC012723"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1F68F65F2A0E3229"
+			min_width: 250
+			optional: true
+			rewards: [{
+				count: 2
+				id: "38DDD047E1FD3A07"
+				item: {
+					components: {
+						"ftbquests:missing_item": "pedestals:pedestal/stone333"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "023F3AF30F3B3115"
+				item: { components: { "ftbquests:missing_item": "pedestals:pedestal/stone333" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1F68F65F2A0E3229"]
+			id: "215EA91229D2CB56"
+			rewards: [
+				{
+					count: 16
+					id: "098E3EA6ABFDA468"
+					item: {
+						count: 1
+						id: "minecraft:red_dye"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "79F92867195F75CE"
+					item: {
+						count: 1
+						id: "minecraft:green_dye"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1EECE18CC58046AC"
+					item: {
+						count: 1
+						id: "minecraft:blue_dye"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0399E51C27863913"
+				item: { components: { "ftbquests:missing_item": "pedestals:itemcolorpalletdefault" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "04E9F681A7D93BC7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				id: "2D03153B0921EA16"
+				type: "command"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7BC584C4EB7CA040"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/import" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "6B60E2AD9BD1B2FD"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/export" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -0.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1D239668DA764C52"]
+			id: "3D505992F1F47451"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				id: "6C75052583A613E3"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2E490DE57B21553B"
+				item: { components: { "ftbquests:missing_item": "pedestals:bookadvanced" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "3B1E29F56796E3CB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				id: "75C154C379370AA9"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "6DB2626B9071D2F8"
+					item: { components: { "ftbquests:missing_item": "pedestals:filter/filterbase" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "1C9B32BE95682776"
+					item: { components: { "ftbquests:missing_item": "pedestals:filterswapper" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["04E9F681A7D93BC7"]
+			id: "2F0BA64F120AC01D"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				id: "285E5CC316FD0399"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "2C00694467D9F744"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/attack" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "778B44D0C706315F"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/fan" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "517ED5A445756751"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/magnet" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["04E9F681A7D93BC7"]
+			id: "5B965827DB02DAFD"
+			rewards: [{
+				id: "524510595571DB0F"
+				item: {
+					count: 1
+					id: "minecraft:enchanted_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FC88CE0C0CAF005"
+				item: { components: { "ftbquests:missing_item": "pedestals:coin/cobble" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2F0BA64F120AC01D"]
+			id: "064CDAA04220C326"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				id: "0513EB136510EFC4"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2FEB4963910F1366"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["04E9F681A7D93BC7"]
+			id: "423724779D1C1953"
+			min_width: 300
+			rewards: [
+				{
+					count: 24
+					id: "06E7A9FE610657CD"
+					item: {
+						count: 1
+						id: "farmersdelight:rich_soil_farmland"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+					id: "10C04CD16CCFB794"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "7D5E20C46615FE41"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "7A4BFA66CD8E3884"
+			rewards: [
+				{
+					id: "7B73E2B538C62D25"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+					id: "75CCFE4D8F0F7B7A"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "4AB13C88D19A545E"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.25d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A4BFA66CD8E3884"]
+			id: "78991F3E1F2CDB09"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+					id: "69463270A467BDE5"
+					type: "command"
+				}
+				{
+					id: "5D63028F49060803"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "2712FCFCE5FC2D8F"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A4BFA66CD8E3884"]
+			id: "733EA0092EE4A490"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+					id: "091142AE33565937"
+					type: "command"
+				}
+				{
+					id: "7E4890853E93CD10"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "2885D8E72156A816"
+				item: { components: { "ftbquests:missing_item": "pedestals:coin/xpenchanter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7A4BFA66CD8E3884"]
+			id: "71548F1D17633FBC"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+					id: "71930DA696A6F583"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+					id: "1D6A6F954563D7B2"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "24EDA20ED95D7ADE"
+				item: { components: { "ftbquests:missing_item": "pedestals:coin/xpanvil" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "500A2940C0C3AF6C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				id: "3BF44DDBB88BEFF0"
+				type: "command"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4FC68D9410BD5157"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/fluidimport" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "1DCE38E92AB8A491"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/fluidexport" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 0.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["500A2940C0C3AF6C"]
+			id: "5103383AF580A723"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				id: "1DE68B6E8E866DE4"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "03426DC34F589B83"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/fluidpump" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0D9AE163A1947D45"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/fluiddrain" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"7A4BFA66CD8E3884"
+				"500A2940C0C3AF6C"
+			]
+			dependency_requirement: "one_completed"
+			id: "1D4B0DDBC3A5523C"
+			rewards: [
+				{
+					count: 4
+					id: "7D69D5766C6797ED"
+					item: {
+						count: 1
+						id: "pneumaticcraft:memory_essence_bucket"
+					}
+					type: "item"
+				}
+				{
+					id: "0B8959A9559A7AFF"
+					item: {
+						count: 1
+						id: "pneumaticcraft:small_tank"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6778060035ECD402"
+				item: { components: { "ftbquests:missing_item": "pedestals:coin/fluidxpconverter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "3F9545A78B985E50"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				id: "63DF0CF17CEF0500"
+				type: "command"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "23D0BA532E6FC8AA"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/rfimport" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "633E32DD1A37DBAC"
+					item: { components: { "ftbquests:missing_item": "pedestals:coin/rfexport" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -2.25d
+			y: 4.5d
+		}
+		{
+			dependencies: ["69E5C4BFCE2AC042"]
+			dependency_requirement: "one_completed"
+			id: "6186950B1DBA6D90"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				id: "1ED931F1F141D930"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2C89A17FEE1D81F5"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["69E5C4BFCE2AC042"]
+			dependency_requirement: "one_completed"
+			id: "1D0A4C2E2E3C3949"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				id: "1B04CC06B42A1526"
+				type: "command"
+			}]
+			tasks: [{
+				id: "213EE2964AAEC897"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["69E5C4BFCE2AC042"]
+			dependency_requirement: "one_completed"
+			id: "55DA0B9C9A170193"
+			rewards: [
+				{
+					count: 32
+					id: "00EB9A9E96BE6AE7"
+					item: {
+						count: 1
+						id: "minecraft:oak_log"
+					}
+					random_bonus: 32
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+					id: "0B94C6A7C119EBF7"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "375DDC70C36E87DB"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["04E9F681A7D93BC7"]
+			dependency_requirement: "one_completed"
+			id: "039F6656F4A696D6"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				id: "0381C81A23FD888C"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2BBE9152232B22E2"
+				item: { components: { "ftbquests:missing_item": "pedestals:coin/quarry" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["04E9F681A7D93BC7"]
+			id: "1E809DFCA38FD467"
+			rewards: [
+				{
+					id: "6B5F421D7DB51A89"
+					item: {
+						count: 1
+						id: "minecraft:bee_spawn_egg"
+					}
+					type: "item"
+				}
+				{
+					id: "4C89A90467F66E70"
+					item: {
+						count: 1
+						id: "minecraft:sheep_spawn_egg"
+					}
+					type: "item"
+				}
+				{
+					id: "7EB80E7590BDF726"
+					item: {
+						count: 1
+						id: "minecraft:cow_spawn_egg"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3722F7F4F364B64B"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"04E9F681A7D93BC7"
+				"500A2940C0C3AF6C"
+			]
+			dependency_requirement: "one_completed"
+			id: "0F70C994D2D08157"
+			min_width: 350
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				id: "1108A6323A6A28A6"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "67DB4F5A0E9B46F4"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "766693A91B7DA1E7"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1F68F65F2A0E3229"]
+			id: "3ECCA6558FDB4A5E"
+			min_width: 300
+			rewards: [{
+				count: 3
+				id: "17C1C8CA8C95E178"
+				item: {
+					count: 1
+					id: "minecraft:gold_ingot"
+				}
+				only_one: true
+				random_bonus: 6
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1D29F32F0D57B96E"
+				item: { components: { "ftbquests:missing_item": "pedestals:linkingtool" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3ECCA6558FDB4A5E"]
+			id: "578398B7265DCB89"
+			rewards: [{
+				id: "6F7D317666B0957F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6731301F006613B4"
+				item: { count: 1, id: "minecraft:redstone" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3F9545A78B985E50"
+				"04E9F681A7D93BC7"
+			]
+			dependency_requirement: "one_completed"
+			id: "69E5C4BFCE2AC042"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				id: "5555385A057F11AB"
+				type: "command"
+			}]
+			tasks: [{
+				id: "11352D320468872A"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3ECCA6558FDB4A5E"]
+			id: "5519E152C45C620F"
+			rewards: [
+				{
+					count: 7
+					id: "4BB47F1EBB842C15"
+					item: {
+						components: {
+							"ftbquests:missing_item": "pedestals:coin/default"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+					id: "0D53E6296F286954"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4ABAE7252496C5BD"
+				item: { components: { "ftbquests:missing_item": "pedestals:coin/default" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "1A8004185DA47AF8"
+			rewards: [{
+				id: "53A40AFDE18FBBEB"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6CF87B9FDBF0F57E"
+				item: { components: { "ftbquests:missing_item": "pedestals:upgradetool" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "03FB33813D04031D"
+			rewards: [{
+				id: "429AB1D13E35C616"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "195F71E5D15D557A"
+				item: { components: { "ftbquests:missing_item": "pedestals:toolswapper" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3F9545A78B985E50"]
+			id: "5DDFF348CB1978A0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				id: "079B55734F05F67A"
+				type: "command"
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:missing_item": "pedestals:coin/rffuelgen"
+					}
+					id: "ftbquests:missing_item"
+				}
+				id: "13B8EBFFC9B4CFE1"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3ECCA6558FDB4A5E"]
+			id: "62A1AE30CAEF1424"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				id: "7EF6847AFBA8EF14"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6FDAD12F85326869"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["305B5A8507D4567A"]
+			id: "1D239668DA764C52"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				id: "0D33D903DE919312"
+				type: "command"
+			}]
+			tasks: [{
+				id: "56AAC5339E833399"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "196FD7272F86F936"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				id: "34316DE310845284"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7AB8C73E5215ED39"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "002E681F34281A6B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				id: "157D6C650B8AFA14"
+				type: "command"
+			}]
+			tasks: [{
+				id: "22221D08292F3871"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5519E152C45C620F"]
+			id: "305B5A8507D4567A"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				id: "0EF443D327EE222B"
+				type: "command"
+			}]
+			tasks: [{
+				icon: {
+					id: "minecraft:enchanted_book"
+				}
+				id: "6BA98FE9D6ED9FA9"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["04E9F681A7D93BC7"]
+			id: "189DF6D6ECA2E3D8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				id: "2959BEBA6F82546F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1371F2CF8EE10097"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+	]
+}

@@ -1,0 +1,677 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thermal_series"
+	group: "72A9465344128AF9"
+	id: "00000000000003A1"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "00000000000003A2"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "4623F41B74F1829E"
+				item: {
+					components: {
+						"ftbquests:missing_item": "emendatusenigmatica:iron_chunk"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 8
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "6F8140DE19FABFDA"
+				item: { components: { "ftbquests:missing_item": "thermal:wrench" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "00000000000004A3"
+			rewards: [
+				{
+					count: 8
+					id: "00000000000004EC"
+					item: {
+						count: 1
+						id: "mekanism:basic_universal_cable"
+					}
+					type: "item"
+				}
+				{
+					id: "000000000000063A"
+					item: {
+						count: 1
+						id: "powah:energy_cell_basic"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000A7E"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "00000000000004A4"
+					item: { components: { "ftbquests:missing_item": "thermal:dynamo_stirling" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "00000000000004B8"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000004A3"]
+			id: "00000000000004A5"
+			rewards: [
+				{
+					auto: "disabled"
+					count: 4
+					id: "00000000000004BA"
+					item: {
+						count: 1
+						id: "minecraft:jungle_sapling"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+					id: "00000000000004F0"
+					type: "command"
+				}
+				{
+					count: 4
+					id: "0000000000000F87"
+					item: {
+						count: 1
+						id: "minecraft:acacia_sapling"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000004A6"
+				item: { components: { "ftbquests:missing_item": "thermal:device_tree_extractor" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00000000000004BB"]
+			id: "00000000000004A7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+					id: "00000000000004EF"
+					type: "command"
+				}
+				{
+					count: 8
+					id: "0000000000000639"
+					item: {
+						count: 1
+						id: "mekanism:basic_mechanical_pipe"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "00000000000004A8"
+					item: { components: { "ftbquests:missing_item": "thermal:machine_refinery" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "00000000000004C1"
+					item: { components: { "ftbquests:missing_item": "thermal:tree_oil_bucket" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["00000000000004C2"]
+			id: "00000000000004AB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "00000000000004F2"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004AC"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_pulverizer" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00000000000004AB"]
+			id: "00000000000004AD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "00000000000004F3"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004AE"
+				item: { components: { "ftbquests:missing_item": "emendatusenigmatica:invar_dust" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000004AD"]
+			id: "00000000000004AF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "00000000000004F4"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004B0"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_smelter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["00000000000004A5"]
+			id: "00000000000004BB"
+			rewards: [
+				{
+					count: 16
+					id: "00000000000004ED"
+					item: {
+						count: 1
+						id: "minecraft:sweet_berries"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+					id: "000000000000063B"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "00000000000004BC"
+				item: { components: { "ftbquests:missing_item": "thermal:resin_bucket" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000004A7"]
+			id: "00000000000004BF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "00000000000004EE"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004C0"
+				item: { components: { "ftbquests:missing_item": "thermal:dynamo_compression" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "00000000000004C2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+					id: "00000000000004F1"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000A7F"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "00000000000004C3"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_furnace" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000004AF"]
+			id: "00000000000004C4"
+			rewards: [
+				{
+					id: "00000000000004F6"
+					item: {
+						count: 1
+						id: "immersiveengineering:mold_gear"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+					id: "000000000000068B"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "00000000000004C5"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_press" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["00000000000004AF"]
+			id: "00000000000004C6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "00000000000004F5"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004C7"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_insolator" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["00000000000004AF"]
+			id: "00000000000004C8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "000000000000064E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004C9"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_crafter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["00000000000004DD"]
+			dependency_requirement: "one_started"
+			id: "00000000000004CA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "00000000000004FD"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004DC"
+				item: { components: { "ftbquests:missing_item": "thermal:lightning_grenade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["00000000000004DD"]
+			dependency_requirement: "one_started"
+			id: "00000000000004CC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "00000000000004FE"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004DB"
+				item: { components: { "ftbquests:missing_item": "thermal:ice_grenade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["00000000000004DD"]
+			dependency_requirement: "one_started"
+			id: "00000000000004CE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "00000000000004FC"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004DA"
+				item: { components: { "ftbquests:missing_item": "thermal:earth_grenade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000004DD"]
+			id: "00000000000004D7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "00000000000004FF"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004D9"
+				item: { components: { "ftbquests:missing_item": "thermal:fire_grenade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "00000000000004DD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "00000000000004FB"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "00000000000004DE"
+					item: { count: 1, id: "minecraft:blaze_rod" }
+					type: "item"
+				}
+				{
+					id: "00000000000004DF"
+					item: { components: { "ftbquests:missing_item": "thermal:blitz_rod" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "00000000000004E0"
+					item: { components: { "ftbquests:missing_item": "thermal:blizz_rod" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "00000000000004E1"
+					item: { components: { "ftbquests:missing_item": "thermal:basalz_rod" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "00000000000004E2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "00000000000004FA"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000F56"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "00000000000004E6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "00000000000004F8"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000F8D"
+				item: { components: { "ftbquests:missing_item": "thermal:upgrade_augment_1" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "0000000000000F52"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "0000000000000F9F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000F59"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000004A5"]
+			id: "0000000000000F67"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "0000000000000F8A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000F68"
+				item: { count: 1, id: "industrialforegoing:latex_bucket" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000F67"]
+			id: "0000000000000F69"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "0000000000000F8B"
+				type: "command"
+			}]
+			tasks: [{
+				count: 8L
+				id: "0000000000000F6A"
+				item: { components: { "ftbquests:missing_item": "thermal:cured_rubber" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"00000000000004A8"
+				"00000000000004A7"
+			]
+			id: "0000000000000F6B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "124C10AC728F1A8C"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000F6C"
+				item: { count: 1, id: "pneumaticcraft:oil_bucket" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["00000000000004AF"]
+			hide_dependency_lines: false
+			id: "0000000000000F78"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "5839B6FFB471A35B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000F79"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_centrifuge" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000F69"]
+			id: "0000000000000F83"
+			rewards: [{
+				id: "0000000000000F9C"
+				item: {
+					components: {
+						"ftbquests:missing_item": "thermal:fluid_tank_augment"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000F84"
+				item: { components: { "ftbquests:missing_item": "thermal:fluid_cell" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000F69"]
+			id: "0000000000000F85"
+			rewards: [{
+				id: "0000000000000F88"
+				item: {
+					count: 1
+					id: "minecraft:enchanted_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000F86"
+				item: { components: { "ftbquests:missing_item": "thermal:energy_cell" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "0000000000000F90"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "0000000000000FA0"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000F91"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_output_augment" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "0000000000000F9D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "0000000000000FA1"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000F9E"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_speed_augment" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "3D23E5D7FA0F0A3E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "052C23B5160E5C9A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6EC90AFC954E42C8"
+				item: { components: { "ftbquests:missing_item": "thermal:device_water_gen" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "724E414250F20D9C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "5FF0D0F905311B5F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2395D1B3DDEB3FB6"
+				item: { components: { "ftbquests:missing_item": "thermal:device_rock_gen" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "505A3C679D3EDD3B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare"
+				id: "7AE5586CD4CAE2A9"
+				type: "command"
+			}]
+			tasks: [{
+				id: "66FA40C40EA10DE7"
+				item: { components: { "ftbquests:missing_item": "thermal:device_collector" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			id: "47B80FE2B94D5548"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "111267C52D39C197"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7DFFBA48694F1143"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_chiller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+	]
+}

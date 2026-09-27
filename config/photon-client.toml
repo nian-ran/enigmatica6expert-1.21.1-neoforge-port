@@ -1,0 +1,21 @@
+enable_bloom = true
+# Default: 5
+# Range: 2 ~ 10
+bloom_mip_level = 5
+# Default: 1.001
+# Range: 0.0 ~ 10.0
+bloom_threshold = 1.001
+# Default: 0.7
+# Range: 0.0 ~ 1.0
+bloom_intensity = 0.7
+enable_bloom_with_iris_shader = true
+#Allowed Values: AUTO, PREMULTIPLIED_ACCUM, AFTER_PACK, SCENE_REPLACE, DISABLED
+iris_composite_mode = "AUTO"
+iris_use_translucent_particle_program = false
+#Allowed Values: VANILLA, LATE
+fx_composite_mode = "LATE"
+enable_custom_effects = true
+enable_custom_effects_with_shader_pack = true
+# Default: 256
+# Range: 16 ~ 4096
+postfx_pool_budget_mb = 256

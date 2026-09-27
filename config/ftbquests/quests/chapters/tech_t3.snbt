@@ -1,0 +1,373 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tech_t3"
+	group: "34B7FB260B6AEB81"
+	id: "1BAD3096A2D8A7E3"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0000000000000FDF"]
+			id: "7522971912BCF482"
+			tasks: [{
+				id: "558BD74C18EFB6EA"
+				item: { count: 1, id: "industrialforegoing:machine_frame_pity" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000FD7"]
+			id: "1E4DC3A7546EC894"
+			tasks: [{
+				id: "3E03729D4E825E26"
+				item: { count: 1, id: "rftoolsbase:machine_frame" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7522971912BCF482"]
+			id: "221F90FFF031E7B4"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "6784136B840606FA"
+				item: { count: 1, id: "industrialforegoing:latex_processing_unit" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7522971912BCF482"]
+			id: "6079CBE9ECE6EB1D"
+			tasks: [{
+				id: "76E7A09884C5D8AB"
+				item: { count: 1, id: "industrialforegoing:dissolution_chamber" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["35EE2BA3A988F416"]
+			id: "206F4AA9A9278D8D"
+			tasks: [{
+				id: "1C9B934F52D9FB49"
+				item: { count: 1, id: "kubejs:pink_ender_slime_bucket" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6079CBE9ECE6EB1D"
+				"26D8327770B81C08"
+			]
+			id: "412F3A311A7CFCB3"
+			tasks: [
+				{
+					id: "0536AAB566704AC9"
+					item: { count: 1, id: "industrialforegoing:laser_drill" }
+					type: "item"
+				}
+				{
+					id: "5703696A09A152C1"
+					item: { count: 1, id: "industrialforegoing:fluid_laser_base" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["412F3A311A7CFCB3"]
+			id: "35EE2BA3A988F416"
+			tasks: [{
+				id: "046A0A8AB86FF128"
+				item: { count: 1, id: "industrialforegoing:pink_slime_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"72945D9390F479E7"
+				"242AEF5D6C2318D3"
+			]
+			id: "3B9B0EB73BF19CBD"
+			tasks: [
+				{
+					id: "65AF9984F551512B"
+					item: { count: 1, id: "mekanism:metallurgic_infuser" }
+					type: "item"
+				}
+				{
+					id: "044F4F0627E059A3"
+					item: { count: 1, id: "mekanism:alloy_infused" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E4DC3A7546EC894"]
+			id: "72945D9390F479E7"
+			tasks: [
+				{
+					id: "3C415238A247D89A"
+					item: { count: 1, id: "rftoolspower:blazing_agitator" }
+					type: "item"
+				}
+				{
+					id: "29584C030AC3CC61"
+					item: { count: 1, id: "rftoolspower:blazing_rod" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000FDB"]
+			id: "2182BC78D342D1AA"
+			shape: "diamond"
+			tasks: [{
+				id: "6B231E1F097FC1DC"
+				item: { count: 1, id: "kubejs:advanced_ram_chip" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2182BC78D342D1AA"]
+			id: "51AFB0E11AB83CFC"
+			shape: "diamond"
+			tasks: [{
+				id: "5DD654B9BD38AC93"
+				item: { count: 1, id: "kubejs:memory_basic_empty" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["51AFB0E11AB83CFC"]
+			id: "52FEE141AD87B819"
+			shape: "diamond"
+			tasks: [{
+				id: "7FDBBDEA3D78E027"
+				item: { count: 1, id: "kubejs:memory_basic_filled" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6079CBE9ECE6EB1D"]
+			id: "0F16543E9DE08714"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "6C1CEE8121C1BEA9"
+				item: { count: 1, id: "industrialforegoing:stasis_chamber" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B9B0EB73BF19CBD"]
+			id: "26D8327770B81C08"
+			tasks: [{
+				id: "469EF5B5F3B3A6C7"
+				item: { count: 1, id: "mekanismgenerators:laser_focus_matrix" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["71D581C742D17CA4"]
+			id: "7E3DDF2413EA9433"
+			tasks: [{
+				id: "45C0FD125FCC0EC5"
+				item: { count: 1, id: "mekanismgenerators:control_rod_assembly" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["71D581C742D17CA4"]
+			id: "5AB7BDCE735F200A"
+			tasks: [{
+				id: "2DC0607EC0F51335"
+				item: { count: 1, id: "mekanismgenerators:turbine_blade" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["412F3A311A7CFCB3"]
+			id: "4A453667AB7D1197"
+			tasks: [{
+				id: "6842B6803B8B613F"
+				item: { count: 1, id: "industrialforegoing:ether_gas_bucket" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4A453667AB7D1197"
+				"3B9B0EB73BF19CBD"
+			]
+			id: "71D581C742D17CA4"
+			tasks: [{
+				id: "249303BB1931E8BF"
+				item: { count: 1, id: "mekanism:elite_control_circuit" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["52FEE141AD87B819"]
+			id: "242AEF5D6C2318D3"
+			tasks: [{
+				id: "586BD5184CB0DAF7"
+				item: { count: 1, id: "mekanism:basic_control_circuit" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"206F4AA9A9278D8D"
+				"5AD982728B95438C"
+			]
+			id: "40204EBF03AD725E"
+			tasks: [{
+				id: "497E05EC7D5541E0"
+				item: { count: 1, id: "mekanism:ultimate_control_circuit" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"7E3DDF2413EA9433"
+				"5AB7BDCE735F200A"
+			]
+			id: "5AD982728B95438C"
+			tasks: [{
+				id: "06305D4712AFDD6A"
+				item: { count: 1, id: "mekanism:alloy_atomic" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5A772150FF638680"
+				"5E61BE9DA7DA1FEC"
+			]
+			id: "16DE48989A21D643"
+			tasks: [{
+				id: "56BA92C0A36137C1"
+				item: { count: 1, id: "mekanismgenerators:fusion_reactor_controller" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["40204EBF03AD725E"]
+			id: "2A9B2999EFB358D6"
+			tasks: [{
+				id: "5919D1C305DF769B"
+				item: { count: 1, id: "industrialforegoing:mycelial_reactor" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["206F4AA9A9278D8D"]
+			id: "0E7B4F927F548AF9"
+			shape: "gear"
+			tasks: [{
+				id: "4769F3CFE98A445F"
+				item: { count: 1, id: "kubejs:heavy_machinery_schematics" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["40204EBF03AD725E"]
+			id: "5A772150FF638680"
+			min_width: 400
+			shape: "gear"
+			tasks: [{
+				id: "2124E28BB47D675C"
+				item: { components: { "ftbquests:missing_item": "masterfulmachinery:stellar_neutron_activator_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["71D581C742D17CA4"]
+			id: "76EDB33FBF318FB4"
+			min_width: 400
+			shape: "gear"
+			tasks: [{
+				id: "33104A6845FE9370"
+				item: { components: { "ftbquests:missing_item": "masterfulmachinery:advanced_assembly_table_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["40204EBF03AD725E"]
+			id: "5E61BE9DA7DA1FEC"
+			min_width: 400
+			shape: "gear"
+			tasks: [{
+				id: "621697B1EC42D23F"
+				item: { components: { "ftbquests:missing_item": "masterfulmachinery:industrial_deuterium_plant_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["40204EBF03AD725E"]
+			id: "169619599EE68547"
+			tasks: [{
+				id: "0FC0D1296975D5F3"
+				item: { count: 1, id: "mekanism:pellet_antimatter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+	]
+}

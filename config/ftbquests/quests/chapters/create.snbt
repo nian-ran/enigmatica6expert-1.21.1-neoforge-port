@@ -1,0 +1,1107 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "72A9465344128AF9"
+	id: "0000000000000C3F"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0000000000000C40"
+			optional: true
+			rewards: [{
+				id: "0000000000000CB9"
+				item: {
+					count: 1
+					id: "create:wrench"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "0000000000000C41"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000C40"]
+			id: "0000000000000CBA"
+			min_width: 300
+			rewards: [{
+				id: "0000000000000D66"
+				item: {
+					count: 1
+					id: "create:goggles"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000D67"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			id: "0000000000000CBD"
+			min_width: 250
+			rewards: [
+				{
+					id: "0000000000000CC0"
+					item: {
+						count: 1
+						id: "create:super_glue"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+					id: "0000000000000D75"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000CBE"
+					item: { count: 1, id: "create:windmill_bearing" }
+					type: "item"
+				}
+				{
+					id: "0000000000000CBF"
+					item: { count: 1, id: "create:radial_chassis" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0000000000000CC1"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			id: "0000000000000CC2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000D74"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CC3"
+				item: { count: 1, id: "create:water_wheel" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0000000000000CBD"
+				"0000000000000CFC"
+			]
+			id: "0000000000000CC4"
+			rewards: [
+				{
+					id: "0000000000000CCA"
+					item: {
+						count: 1
+						id: "create:analog_lever"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0000000000000D73"
+					item: {
+						count: 1
+						id: "minecraft:magma_block"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000CC5"
+				item: { count: 1, id: "create:encased_fan" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000CBD"]
+			id: "0000000000000CC6"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+					id: "0000000000000D76"
+					type: "command"
+				}
+				{
+					id: "0000000000000D8A"
+					item: {
+						count: 1
+						id: "minecraft:blast_furnace"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000CC7"
+					item: { components: { "ftbquests:missing_item": "create:furnace_engine" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000CC8"
+					item: { count: 1, id: "create:flywheel" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000CBA"]
+			id: "0000000000000CCC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+					id: "0000000000000D79"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "0000000000000D80"
+					item: {
+						count: 1
+						id: "minecraft:kelp"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "0000000000000CCD"
+				item: { count: 1, id: "create:shaft" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000CCC"]
+			id: "0000000000000CCE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D78"
+				type: "command"
+			}]
+			tasks: [{
+				count: 4L
+				id: "0000000000000CCF"
+				item: { count: 1, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000CCC"]
+			id: "0000000000000CD0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D77"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "0000000000000CD1"
+					item: { count: 1, id: "create:wooden_bracket" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000D8B"
+					item: { count: 1, id: "create:metal_bracket" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000CD6"]
+			id: "0000000000000CD4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D83"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CD5"
+				item: { count: 1, id: "create:gearbox" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000CCC"]
+			id: "0000000000000CD6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D81"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "0000000000000CD7"
+					item: { count: 1, id: "create:large_cogwheel" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "48C68E5C0B154689"
+					item: { count: 1, id: "create:cogwheel" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000CCC"]
+			id: "0000000000000CD8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D7A"
+				type: "command"
+			}]
+			tasks: [{
+				count: 4L
+				id: "0000000000000CD9"
+				item: { count: 1, id: "create:belt_connector" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000CD8"]
+			id: "0000000000000CE0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D7B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CE1"
+				item: { count: 1, id: "create:encased_chain_drive" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000CD6"]
+			id: "0000000000000CE2"
+			rewards: [
+				{
+					id: "0000000000000D5B"
+					item: {
+						count: 1
+						id: "create:large_cogwheel"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+					id: "0000000000000D5C"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000CE3"
+				item: { count: 1, id: "create:rotation_speed_controller" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000CD8"]
+			id: "0000000000000CE5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D7C"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CE6"
+				item: { count: 1, id: "create:andesite_funnel" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000CD8"]
+			id: "0000000000000CE7"
+			rewards: [{
+				id: "0000000000000CF1"
+				item: {
+					count: 1
+					id: "create:encased_fan"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "0000000000000CE8"
+				item: { count: 1, id: "create:chute" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000CD8"]
+			id: "0000000000000CE9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D7D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CEA"
+				item: { count: 1, id: "create:andesite_tunnel" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000CE5"]
+			id: "0000000000000CED"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				id: "0000000000000D59"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CEE"
+				item: { count: 1, id: "create:brass_funnel" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0000000000000CE9"]
+			id: "0000000000000CEF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				id: "0000000000000D57"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CF0"
+				item: { count: 1, id: "create:brass_tunnel" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0000000000000CD8"]
+			id: "0000000000000CF2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D7E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CF3"
+				item: { count: 1, id: "create:depot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000CD8"]
+			id: "0000000000000CF4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				id: "0000000000000D58"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CF5"
+				item: { count: 1, id: "create:mechanical_arm" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			id: "0000000000000CFC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D72"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000CFD"
+				item: { count: 1, id: "create:millstone" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000D1A"]
+			id: "0000000000000CFE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				id: "0000000000000D54"
+				type: "command"
+			}]
+			tasks: [{
+				count: 2L
+				id: "0000000000000CFF"
+				item: { count: 1, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0000000000000D02"]
+			id: "0000000000000D00"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D6F"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000D01"
+					item: { count: 1, id: "create:deployer" }
+					type: "item"
+				}
+				{
+					id: "0000000000000D21"
+					item: { count: 1, id: "create:sand_paper" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000D04"]
+			id: "0000000000000D02"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D6D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D03"
+				item: { count: 1, id: "create:electron_tube" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000C40"]
+			id: "0000000000000D04"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "0000000000000D68"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D05"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000CFC"]
+			id: "0000000000000D06"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D71"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D07"
+				item: { count: 1, id: "create:mechanical_press" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000D06"]
+			id: "0000000000000D08"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D70"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000D09"
+					item: { count: 1, id: "create:mechanical_mixer" }
+					type: "item"
+				}
+				{
+					id: "0000000000000D0A"
+					item: { count: 1, id: "create:basin" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0000000000000D08"]
+			id: "0000000000000D0B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D5E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D0C"
+				item: { count: 1, id: "create:blaze_burner" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000D0B"]
+			id: "0000000000000D0D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				id: "0000000000000D55"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D0E"
+				item: { count: 1, id: "create:blaze_cake" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0000000000000D11"]
+			id: "0000000000000D0F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D84"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D10"
+				item: { count: 1, id: "create:mechanical_pump" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000CD6"]
+			id: "0000000000000D11"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D85"
+				type: "command"
+			}]
+			tasks: [{
+				count: 16L
+				id: "0000000000000D12"
+				item: { count: 1, id: "create:fluid_pipe" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000D0F"]
+			id: "0000000000000D13"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D86"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000D14"
+					item: { count: 1, id: "create:fluid_valve" }
+					type: "item"
+				}
+				{
+					id: "0000000000000D19"
+					item: { count: 1, id: "create:copper_valve_handle" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000D0F"]
+			id: "0000000000000D15"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				id: "0000000000000D5A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D16"
+				item: { count: 1, id: "create:smart_fluid_pipe" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000D11"]
+			id: "0000000000000D17"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D89"
+				type: "command"
+			}]
+			tasks: [{
+				count: 4L
+				id: "0000000000000D18"
+				item: { count: 1, id: "create:fluid_tank" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000D02"]
+			id: "0000000000000D1A"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D6E"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000D1B"
+					item: { count: 1, id: "create:mechanical_crafter" }
+					type: "item"
+				}
+				{
+					id: "0000000000000D1C"
+					item: { count: 1, id: "create:crafter_slot_cover" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000D00"]
+			id: "0000000000000D1F"
+			shape: "octagon"
+			tasks: [{
+				id: "0000000000000D20"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000D11"]
+			id: "0000000000000D23"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D87"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D24"
+				item: { count: 1, id: "create:spout" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000C40"]
+			icon: {
+				id: "create:minecart_contraption"
+			}
+			id: "0000000000000D2B"
+			rewards: [{
+				id: "0000000000000D65"
+				item: {
+					count: 1
+					id: "minecraft:minecart"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000D2C"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			id: "0000000000000D2D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+					id: "0000000000000D69"
+					type: "command"
+				}
+				{
+					count: 8
+					id: "0000000000000D8C"
+					item: {
+						count: 1
+						id: "create:piston_extension_pole"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000D2E"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			id: "0000000000000D2F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D6A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D30"
+				item: { count: 1, id: "create:cart_assembler" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			id: "0000000000000D31"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D6B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D32"
+				item: { count: 1, id: "create:mechanical_bearing" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0000000000000D2D"
+				"0000000000000D2F"
+				"0000000000000D31"
+				"0000000000000D45"
+			]
+			dependency_requirement: "one_completed"
+			id: "0000000000000D33"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D64"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000D34"
+					item: { count: 1, id: "create:radial_chassis" }
+					type: "item"
+				}
+				{
+					id: "0000000000000D35"
+					item: { count: 1, id: "create:linear_chassis" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			id: "0000000000000D3A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D60"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D3B"
+				item: { count: 1, id: "create:mechanical_harvester" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			id: "0000000000000D3C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D61"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D3D"
+				item: { count: 1, id: "create:mechanical_drill" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			id: "0000000000000D3E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D63"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D3F"
+				item: { count: 1, id: "create:mechanical_plough" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			id: "0000000000000D40"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D62"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D41"
+				item: { count: 1, id: "create:mechanical_saw" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000D33"]
+			id: "0000000000000D42"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D5F"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000D43"
+					item: { count: 1, id: "create:portable_fluid_interface" }
+					type: "item"
+				}
+				{
+					id: "0000000000000D44"
+					item: { count: 1, id: "create:portable_storage_interface" }
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000D2B"]
+			id: "0000000000000D45"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D6C"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D46"
+				item: { count: 1, id: "create:rope_pulley" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000CD6"]
+			id: "0000000000000D47"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				id: "0000000000000D5D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D48"
+				item: { count: 1, id: "create:adjustable_chain_gearshift" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000D11"]
+			id: "0000000000000D49"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
+				id: "0000000000000D88"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D4A"
+				item: { count: 1, id: "create:hose_pulley" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000CD6"]
+			id: "0000000000000D4B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "0000000000000D82"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D4C"
+				item: { count: 1, id: "create:gearshift" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000CD6"]
+			id: "0000000000000D4D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "6E8C331AB8382D16"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D4E"
+				item: { count: 1, id: "create:clutch" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000D0B"]
+			id: "0000000000000D52"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				id: "0000000000000D56"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000D53"
+				item: { count: 1, id: "create:builders_tea" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0000000000000C40"]
+			id: "5A581A8DF6CCC352"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				id: "454AB192859C2BA1"
+				type: "command"
+			}]
+			tasks: [{
+				id: "188710CC3F5AE8D2"
+				item: { count: 1, id: "create:schematic_and_quill" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A581A8DF6CCC352"]
+			id: "3542632905883686"
+			min_width: 300
+			rewards: [{
+				id: "1CC172C5323EADC6"
+				item: {
+					count: 1
+					id: "create:empty_schematic"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2816C6E8336001CD"
+				item: { count: 1, id: "create:schematic_table" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3542632905883686"]
+			id: "6305EF196599FC7C"
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "123B498A6DDBFD23"
+				item: {
+					count: 1
+					id: "minecraft:gunpowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C7274B5040C6D7D"
+				item: { count: 1, id: "create:schematicannon" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+  "invulTime": {
+    // Maximum time in ticks the logging player is invulnerable, 20 ticks is 1sec. 
+    // Default is 50secs so 1000 ticks
+    "invulTime": 1000
+  },
+
+  "ignoreFallDamage": {
+    // Allows fall-damage to bypass the protection, 
+    // Default: true
+    "ignoreFallDamage": true
+  },
+
+  "debugOutput": {
+    // Whether to enable debug log outputs, 
+    // Default: false
+    "debugOutput": false
+  },
+
+  "dimensionprotection": {
+    // Enables the protection for dimension changes too, 
+    // Default: true
+    "dimensionprotection": true
+  },
+
+  "respawnprotection": {
+    // Enables the protection for respawning too, 
+    // Default: true
+    "respawnprotection": true
+  }
+}

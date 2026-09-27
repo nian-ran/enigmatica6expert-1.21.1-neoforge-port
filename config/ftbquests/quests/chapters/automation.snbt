@@ -1,0 +1,1948 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automation"
+	group: "0856CF7F5CBEB20A"
+	id: "00000000000002AB"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "30AA6A8DF0B65273"
+			rewards: [{
+				id: "1AF3E35B6E460EFA"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4FB3F0534FC9F890"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "3FF1B8E5563D4ECF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "5319BF6929089EA6"
+				type: "command"
+			}]
+			tasks: [{
+				id: "523B5EFA6AB455D2"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "4DD97175C1818801"
+			rewards: [{
+				count: 6
+				id: "6FE59A0E58F2E620"
+				item: {
+					count: 1
+					id: "immersiveengineering:conveyor_basic"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "366C08F8F32D7E4A"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "1657A85990D2F7FC"
+					item: { count: 1, id: "immersiveengineering:conveyor_extract" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "2441588EA9FC9FDB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "5288E3C74F547749"
+				type: "command"
+			}]
+			tasks: [{
+				id: "747E30A621DAC480"
+				item: { count: 1, id: "create:belt_connector" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"30AA6A8DF0B65273"
+				"3468E652B4FE85FA"
+			]
+			id: "15E49A6B00BE744C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				id: "0000000000000968"
+				type: "command"
+			}]
+			tasks: [{
+				id: "366C08F8F32D7E4B"
+				item: { components: { "ftbquests:missing_item": "modularrouters:item_router" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"30AA6A8DF0B65273"
+				"3468E652B4FE85FA"
+			]
+			id: "559D7D60CDDE5596"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "0000000000000A5D"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "204956F05E407E82"
+					item: { components: { "ftbquests:missing_item": "xnet:controller" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "79D951766C0A6EF5"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "4B2CE60937C00CCE"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "0EF9750F679732E6"
+			rewards: [{
+				id: "376DCADB491EFE54"
+				item: {
+					count: 1
+					id: "pneumaticcraft:dispenser_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3FE101E73831B589"
+				item: { count: 1, id: "pneumaticcraft:omnidirectional_hopper" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "2831B38150565AEF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "6328E4D871385365"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6895F42F97F55A26"
+				item: { components: { "ftbquests:missing_item": "ars_nouveau:carbuncle_charm" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "7C44D1DEA350DB7E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "317C80815FA09662"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2BDBC3D43C040EE8"
+				item: { components: { "ftbquests:missing_item": "botania:corporea_spark" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			id: "3468E652B4FE85FA"
+			rewards: [{
+				id: "0DFBD5289D4AFCA0"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "61B85B234D1E9F5E"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "3B9FA6A21DF4776A"
+			rewards: [
+				{
+					auto: "disabled"
+					id: "569C5C2E846AC3A5"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+				{
+					id: "572B5575E8BA6012"
+					item: {
+						count: 1
+						id: "minecraft:redstone_torch"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2BD50EA5A8688B73"
+					item: { components: { "ftbquests:missing_item": "rsgauges:industrial_switchlink_relay" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "4CA0D2C7367B1662"
+					item: { components: { "ftbquests:missing_item": "rsgauges:industrial_switchlink_receiver" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "642570832E7034B8"
+			rewards: [
+				{
+					id: "3B8EBF108B1FEB84"
+					item: {
+						components: {
+							"ftbquests:missing_item": "rsgauges:industrial_switchlink_receiver_analog"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "6F179D1F6787B2DB"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "heart"
+			tasks: [{
+				id: "259D5F4823B2D9D4"
+				item: { components: { "ftbquests:missing_item": "rsgauges:industrial_comparator_switch" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3B9FA6A21DF4776A"]
+			id: "37A085B3E48E7851"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "5904991DB0986B52"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4841A010573BC10A"
+				item: { components: { "ftbquests:missing_item": "rsgauges:industrial_block_detector" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B9FA6A21DF4776A"]
+			id: "3A0580E4575DC389"
+			rewards: [{
+				id: "5B82A191C238A20B"
+				item: {
+					components: {
+						"ftbquests:missing_item": "rsgauges:industrial_switchlink_receiver"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BEA4E38195AD242"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			id: "21B266F6556271EB"
+			rewards: [{
+				count: 2
+				id: "04E2CB365714CFFD"
+				item: {
+					count: 1
+					id: "modularrouters:blank_module"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "428BD8D12FB203C8"
+				item: { count: 1, id: "modularrouters:blank_module" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			id: "1956D60143703C16"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "239155FDD340ECAF"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6F60B6D7143847D6"
+				item: { count: 1, id: "modularrouters:distributor_module" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			id: "108E174F5672BF48"
+			rewards: [{
+				id: "1277D5B23BCA8923"
+				item: {
+					count: 1
+					id: "minecraft:wooden_pickaxe"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "614539807F15E23E"
+				item: { count: 1, id: "modularrouters:breaker_module" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			id: "27C9B26FB5FF10E1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "3922A588208AF529"
+				type: "command"
+			}]
+			tasks: [{
+				id: "462755624D5FE2DE"
+				item: { count: 1, id: "modularrouters:activator_module" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			id: "322583CAAD093EE4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "3C512C78B12406AA"
+				type: "command"
+			}]
+			tasks: [{
+				id: "56280F9C61952290"
+				item: { count: 1, id: "modularrouters:vacuum_module" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			id: "56234AA9ED3E8324"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "30E1EC30981D6B46"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6F58BD0AC1F29AD4"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "6FD366DECA24BCE2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "56CA8A9B268DAD53"
+				type: "command"
+			}]
+			tasks: [{
+				id: "60910BC8BC9E4763"
+				item: { count: 1, id: "create:mechanical_arm" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0EF9750F679732E6"]
+			id: "5D9993B074F13846"
+			rewards: [{
+				count: 4
+				id: "3A1FCBBA4730B4F4"
+				item: {
+					count: 1
+					id: "pneumaticcraft:pressure_tube"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4ABEFC9942D16386"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7B13649BFE29381F"
+					item: { count: 1, id: "pneumaticcraft:logistics_module" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "redstonepen:pen"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "44070C90619D14E6"
+			rewards: [{
+				count: 16
+				id: "5EEDBF4F50558BA8"
+				item: {
+					count: 1
+					id: "minecraft:redstone"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4DCA07CD21BD3977"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "24734CF49B87D810"
+			rewards: [
+				{
+					count: 4
+					id: "7AE7E2E3A4862210"
+					item: {
+						count: 1
+						id: "immersiveengineering:wirecoil_redstone"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3312A02466B4A2BA"
+					item: {
+						count: 1
+						id: "immersiveengineering:connector_redstone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5F0331EC4C91FD7C"
+					item: { count: 1, id: "immersiveengineering:wirecoil_redstone" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0F6BD9BB53137D58"
+					item: { count: 1, id: "immersiveengineering:connector_redstone" }
+					type: "item"
+				}
+				{
+					id: "43B9CFD93A321FCB"
+					item: { count: 1, id: "immersiveengineering:screwdriver" }
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "386EC1D34B3969E5"
+			rewards: [{
+				count: 4
+				id: "3CC18D8D933DF433"
+				item: {
+					count: 1
+					id: "pneumaticcraft:pressure_tube"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "28C6D6C09A1A14A2"
+				item: { count: 1, id: "pneumaticcraft:redstone_module" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "4EB7B3610D407775"
+			rewards: [{
+				count: 2
+				id: "2B4EB7EFF98BBF05"
+				item: {
+					count: 1
+					id: "rftoolsbase:machine_base"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6212C5EAC52CD7D6"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "28A8C7959A7EEBAE"
+			rewards: [{
+				id: "6F390DC46A49341F"
+				item: {
+					count: 1
+					id: "create:redstone_link"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "1C4826588F57C889"
+				item: { count: 1, id: "create:redstone_link" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["28A8C7959A7EEBAE"]
+			id: "21E4D556E8AE724E"
+			rewards: [{
+				id: "21EC369B48E4317E"
+				item: {
+					count: 1
+					id: "minecraft:lectern"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "161C3B3F56665A92"
+				item: { count: 1, id: "create:linked_controller" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "1042C49086A29CE2"
+			rewards: [{
+				id: "3AA02F6637A04AD3"
+				item: {
+					count: 1
+					id: "minecraft:comparator"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A55E19410163485"
+				item: { count: 1, id: "create:powered_latch" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3468E652B4FE85FA"
+				"30AA6A8DF0B65273"
+			]
+			id: "1C24D2BD564F9E58"
+			rewards: [{
+				id: "20DF77C0364ADE55"
+				item: {
+					count: 1
+					id: "rftoolscontrol:cpu_core_500"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3A648B70B73CF497"
+					item: { count: 1, id: "rftoolscontrol:processor" }
+					type: "item"
+				}
+				{
+					id: "53B6687A1024692F"
+					item: { count: 1, id: "rftoolscontrol:programmer" }
+					type: "item"
+				}
+				{
+					id: "6CFA2106351100B2"
+					item: { count: 1, id: "rftoolscontrol:program_card" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "556F3942AF7CFB8C"
+			rewards: [{
+				count: 4
+				id: "76756F33D7703CDC"
+				item: {
+					count: 1
+					id: "integrateddynamics:cable"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "51C8B1DAC8F7BE8C"
+				item: { count: 1, id: "integrateddynamics:cable" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["559D7D60CDDE5596"]
+			id: "34D8561D229A3122"
+			rewards: [{
+				id: "6A693F43E60B3E3B"
+				item: {
+					components: {
+						"ftbquests:missing_item": "xnet:connector_blue"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "52CC0A821DCFE9D5"
+				item: { components: { "ftbquests:missing_item": "xnet:redstone_proxy_upd" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "29803ABB5ED76295"
+			rewards: [
+				{
+					count: 60
+					id: "58A3177CC744984E"
+					item: {
+						count: 1
+						id: "minecraft:sand"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "3469D68A3DEBB2C4"
+					item: {
+						count: 1
+						id: "minecraft:red_sand"
+					}
+					type: "item"
+				}
+				{
+					id: "75F550507C0BA786"
+					item: {
+						count: 1
+						id: "minecraft:soul_sand"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3D8A78B97E92A697"
+				item: { components: { "ftbquests:missing_item": "botania:hourglass" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3195632E0EE15137"]
+			id: "36C83AD9F9CE9970"
+			rewards: [{
+				count: 2
+				id: "6C9866BF4C38B8C3"
+				item: {
+					count: 1
+					id: "integrateddynamics:variable"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E70FB12746633E9"
+				item: { count: 1, id: "integrateddynamics:part_redstone_writer" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "4345FED5C76788A6"
+			rewards: [
+				{
+					count: 4
+					id: "40445565E00E3023"
+					item: {
+						components: {
+							"ftbquests:missing_item": "resourcefulbees:rgbee_honeycomb"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2AD840AF4AC90407"
+					item: {
+						components: {
+							"ftbquests:missing_item": "resourcefulbees:wax"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5408C3E44BBB429D"
+					item: { components: { "ftbquests:missing_item": "enderstorage:ender_chest" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "424E229DB25249A8"
+					item: { components: { "ftbquests:missing_item": "enderstorage:ender_pouch" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "46589062E091762E"
+			rewards: [{
+				id: "0B54FF42FF336AE0"
+				item: {
+					count: 1
+					id: "minecraft:ender_eye"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "261512B6634D57B4"
+				item: { count: 1, id: "naturesaura:ender_crate" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "359D48635F222076"
+			rewards: [{
+				count: 2
+				id: "45E59A0B45A70321"
+				item: {
+					count: 1
+					id: "supplementaries:cog_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "59DB7B4DA871079D"
+				item: { count: 1, id: "supplementaries:cog_block" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44070C90619D14E6"]
+			id: "28F791EC21444045"
+			rewards: [{
+				count: 2
+				id: "38EDFE0071A6B262"
+				item: {
+					components: {
+						"ftbquests:missing_item": "redstonepen:relay"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B0B720B736296F8"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "39A5BD63D3070AFE"
+			rewards: [{
+				id: "39E65FC08DF8415D"
+				item: {
+					count: 1
+					id: "create:attribute_filter"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "387BB2A005140790"
+				item: { count: 1, id: "create:attribute_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "5971196375D3CDF4"
+			rewards: [{
+				id: "535E72E3B501F2AA"
+				item: {
+					count: 1
+					id: "create:chute"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0FCD37CE46EADCA8"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "6D8F2F2A24C48898"
+			rewards: [{
+				count: 6
+				id: "4F77C91667650D88"
+				item: {
+					count: 1
+					id: "industrialforegoing:conveyor"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5C650F2B0511D4B9"
+					item: { count: 1, id: "industrialforegoing:conveyor" }
+					type: "item"
+				}
+				{
+					id: "64840DBB127F1522"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			id: "7CD587747CC14268"
+			rewards: [{
+				count: 2
+				id: "3E55636E26686CC0"
+				item: {
+					count: 1
+					id: "modularrouters:blank_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3FD6609BE4F80DAD"
+				item: { count: 1, id: "modularrouters:blank_upgrade" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			id: "7CA354074FCF8447"
+			rewards: [{
+				count: 2
+				id: "35F7F3293209E5BA"
+				item: {
+					count: 1
+					id: "modularrouters:augment_core"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "175A67867F65B8C0"
+				item: { count: 1, id: "modularrouters:augment_core" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "65ADBE44B41C4A63"
+			rewards: [{
+				id: "1EB099955410CAF5"
+				item: {
+					count: 1
+					id: "industrialforegoing:world_transporter_type"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "777033A441C9C51A"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "70B28063B4F531E0"
+			rewards: [{
+				id: "00368EF72093C005"
+				item: {
+					components: {
+						"ftbquests:missing_item": "engineersdecor:factory_hopper"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "16C948B2655035E5"
+				item: { components: { "ftbquests:missing_item": "engineersdecor:factory_hopper" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "14502C1A1BCB79E2"
+			rewards: [{
+				id: "62D934EA94DB12BB"
+				item: {
+					components: {
+						"ftbquests:missing_item": "thermal:item_filter_augment"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7EA023686AFA0889"
+				item: { components: { "ftbquests:missing_item": "thermal:device_collector" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["24734CF49B87D810"]
+			id: "74AB9B268FB948B4"
+			rewards: [
+				{
+					count: 4
+					id: "633A17D5AE1F551F"
+					item: {
+						count: 1
+						id: "immersiveengineering:wire_lead"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0FD49B027DDA346E"
+					item: {
+						count: 1
+						id: "immersiveengineering:electron_tube"
+					}
+					type: "item"
+				}
+				{
+					id: "370012CA54D4BDCB"
+					item: {
+						count: 1
+						id: "immersiveengineering:circuit_board"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "06378CC534E82DD9"
+					item: { count: 1, id: "immersiveengineering:circuit_table" }
+					type: "item"
+				}
+				{
+					id: "116C2DBD2FDBE328"
+					item: { count: 1, id: "immersiveengineering:circuit_board" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2D93AB7927DF1AAE"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "1459B7AF61937097"
+					item: { count: 1, id: "immersiveengineering:electron_tube" }
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "26365967FDE026B6"
+			rewards: [{
+				id: "2E26D4A73E250301"
+				item: {
+					components: {
+						"ftbquests:missing_item": "create:adjustable_pulse_repeater"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E9609D8328D536F"
+				item: { components: { "ftbquests:missing_item": "create:adjustable_pulse_repeater" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "2013BF98F905223C"
+			rewards: [
+				{
+					id: "46DC8CD903DE448A"
+					item: {
+						count: 1
+						id: "create:pulse_repeater"
+					}
+					type: "item"
+				}
+				{
+					id: "0EA944B40AA81DC1"
+					item: {
+						components: {
+							"ftbquests:missing_item": "create:adjustable_repeater"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "39E71AF33C273C4C"
+				item: { count: 1, id: "create:powered_toggle_latch" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "65EAD75949FFD642"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "7156087E310228A4"
+				type: "command"
+			}]
+			tasks: [{
+				id: "76705057110D6381"
+				item: { components: { "ftbquests:missing_item": "engineersdecor:factory_dropper" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "0C54045202F9D1F4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "280ABEAFF8C46046"
+				type: "command"
+			}]
+			tasks: [{
+				id: "35841153FE4E2098"
+				item: { count: 1, id: "pneumaticcraft:universal_sensor" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "506D4EF3FFC8B11B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "092B56B47CD50A73"
+				type: "command"
+			}]
+			tasks: [{
+				id: "47C00029C050A20C"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "0E5467F884E6B23A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "141581BC00F3E20A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "17CBAEF23312421A"
+				item: { count: 1, id: "create:encased_fan" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["559D7D60CDDE5596"]
+			id: "0597A437596EABC1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "7E251F2D83DBC6E3"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3DFB959BAC0FAAFF"
+				item: { count: 1, id: "rftoolsbase:filter_module" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "0000000000000401"
+			rewards: [{
+				id: "0000000000000696"
+				item: {
+					components: {
+						"ftbquests:missing_item": "prettypipes:wrench"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000953"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000401"]
+			id: "0000000000000954"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				id: "0000000000000A5F"
+				type: "command"
+			}]
+			tasks: [{
+				count: 12L
+				id: "0000000000000955"
+				item: { components: { "ftbquests:missing_item": "prettypipes:pipe" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000954"]
+			id: "0000000000000958"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000978"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000959"
+					item: { components: { "ftbquests:missing_item": "prettypipes:low_filter_module" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000979"
+					item: { components: { "ftbquests:missing_item": "prettypipes:stack_size_module" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0000000000000958"]
+			dependency_requirement: "one_started"
+			id: "000000000000095A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				id: "0000000000000A61"
+				type: "command"
+			}]
+			tasks: [{
+				count: 3L
+				id: "000000000000095B"
+				item: { components: { "ftbquests:missing_item": "prettypipes:low_speed_module" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["000000000000095A"]
+			dependency_requirement: "one_started"
+			id: "0000000000000964"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				id: "000000000000096A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000965"
+				item: { components: { "ftbquests:missing_item": "prettypipes:pressurizer" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0000000000000954"]
+			id: "0000000000000956"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000A68"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 3L
+					id: "000000000000096F"
+					item: { components: { "ftbquests:missing_item": "prettypipes:low_retrieval_module" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "0000000000000971"
+					item: { components: { "ftbquests:missing_item": "prettypipes:low_extraction_module" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0000000000000956"]
+			dependency_requirement: "one_started"
+			id: "000000000000095C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				id: "0000000000000A60"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "000000000000096D"
+					item: { components: { "ftbquests:missing_item": "prettypipes:low_high_priority_module" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000096E"
+					item: { components: { "ftbquests:missing_item": "prettypipes:low_low_priority_module" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["000000000000095C"]
+			dependency_requirement: "one_started"
+			id: "0000000000000972"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "0000000000000977"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000973"
+					item: { components: { "ftbquests:missing_item": "prettypipes:round_robin_sorting_modifier" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000975"
+					item: { components: { "ftbquests:missing_item": "prettypipes:random_sorting_modifier" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0000000000000954"]
+			id: "0000000000000960"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				id: "266D8479D7BEC164"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000961"
+				item: { components: { "ftbquests:missing_item": "prettypipes:item_terminal" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0000000000000960"]
+			id: "0000000000000962"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				id: "0000000000000A62"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000963"
+				item: { components: { "ftbquests:missing_item": "prettypipes:crafting_terminal" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0000000000000962"]
+			id: "000000000000096B"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "000000000000097B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000096C"
+				item: { components: { "ftbquests:missing_item": "prettypipes:low_crafting_module" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			icon: {
+				id: "entangled:block"
+			}
+			id: "3E093BB431EE7A98"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "1CAE1F841E978999"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "3E4D5BD7F14FB003"
+					item: { count: 1, id: "entangled:block" }
+					type: "item"
+				}
+				{
+					id: "691DB7953EE82E15"
+					item: { count: 1, id: "entangled:item" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["74AB9B268FB948B4"]
+			id: "365595FB3098F534"
+			rewards: [
+				{
+					count: 2
+					id: "4BA97A28F5BCA25A"
+					item: {
+						count: 1
+						id: "immersiveengineering:connector_redstone"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "35254DCB159DC63F"
+					item: {
+						count: 1
+						id: "immersiveengineering:wirecoil_redstone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "15226021C1D06870"
+					item: { count: 1, id: "immersiveengineering:logic_unit" }
+					type: "item"
+				}
+				{
+					id: "099717FDF38223BC"
+					item: { count: 1, id: "immersiveengineering:connector_bundled" }
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["36C83AD9F9CE9970"]
+			id: "3E2016CF7DEAB4EE"
+			rewards: [{
+				id: "1C4E18FCBA752A88"
+				item: {
+					count: 1
+					id: "integrateddynamics:labeller"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6548685DA5ACC850"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "6E17A6DD5E71478B"
+					item: { count: 1, id: "integrateddynamics:variablestore" }
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3FF1B8E5563D4ECF"]
+			id: "71431A0FE1CF8670"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "08BAF3870FEFB9EC"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "08E6D0DE581F0AFC"
+					item: { count: 1, id: "mekanism:restrictive_transporter" }
+					type: "item"
+				}
+				{
+					id: "40BA31F7C22BD650"
+					item: { count: 1, id: "mekanism:diversion_transporter" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "3B3CBB15D2401A28"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0192F87D3477C49F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0385817687124825"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "776E644ED0F02AF1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "37F0D154487A4F08"
+				type: "command"
+			}]
+			tasks: [{
+				id: "295B17B130AD46DF"
+				item: { components: { "ftbquests:missing_item": "botania:open_crate" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["24734CF49B87D810"]
+			id: "19174CDDA6283934"
+			rewards: [
+				{
+					count: 2
+					id: "6C8F093A907A47AD"
+					item: {
+						count: 1
+						id: "immersiveengineering:connector_redstone"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "019D3BC4480CC945"
+					item: {
+						count: 1
+						id: "immersiveengineering:wirecoil_redstone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "313678BE1EC5ABA8"
+				item: { count: 1, id: "immersiveengineering:connector_probe" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["556F3942AF7CFB8C"]
+			id: "3195632E0EE15137"
+			rewards: [{
+				count: 2
+				id: "17AE67B6404F4B63"
+				item: {
+					count: 1
+					id: "integrateddynamics:variable"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "67ADE82CC1CDD6E0"
+				item: { count: 1, id: "integrateddynamics:part_redstone_reader" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			id: "0163571DC8F997F5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "621F32F72099BE12"
+				type: "command"
+			}]
+			tasks: [{
+				id: "143E9C1A894A8972"
+				item: { count: 1, id: "modularrouters:regulator_augment" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			id: "77458390B359EB6C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "04C695D215824999"
+				type: "command"
+			}]
+			tasks: [{
+				id: "76BE11C2D660721D"
+				item: { count: 1, id: "modularrouters:xp_vacuum_augment" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			id: "3D7E621374741748"
+			rewards: [{
+				id: "1BAB8612F63CCCC9"
+				item: {
+					count: 1
+					id: "modularrouters:stack_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CABBEFEA29A5692"
+				item: { count: 1, id: "modularrouters:stack_upgrade" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			id: "27F2EAA313795208"
+			rewards: [{
+				id: "2DA82C3A16F3ACB1"
+				item: {
+					count: 1
+					id: "modularrouters:blast_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "61DD5DD42B8E1C8E"
+				item: { count: 1, id: "modularrouters:blast_upgrade" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3E2016CF7DEAB4EE"]
+			id: "01DA715D5D271E92"
+			rewards: [{
+				id: "761880A207E10159"
+				item: {
+					count: 1
+					id: "integrateddynamics:part_display_panel"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0D75CAA1DE1284B2"
+					item: { count: 1, id: "integrateddynamics:part_block_reader" }
+					type: "item"
+				}
+				{
+					id: "25838A87475AEEC9"
+					item: { count: 1, id: "integratednbt:nbt_extractor" }
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			id: "642C66D035EC4141"
+			rewards: [{
+				id: "7571E7BDE443E313"
+				item: {
+					count: 1
+					id: "minecraft:comparator"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A160C7D2F6863B6"
+				item: { components: { "ftbquests:missing_item": "botania:red_string_comparator" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"30AA6A8DF0B65273"
+				"3468E652B4FE85FA"
+			]
+			id: "77F743435F64DFEC"
+			optional: true
+			rewards: [{
+				command: "/tellraw @p {\"text\":\"CC Tutorial Link\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtube.com/playlist?list=PLaiPn4ewcbkHYflo2jl0OuNaHK6Mj-koG\"}}"
+				id: "20E531EBA4E9DA87"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4B7B9611F1294D2B"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			id: "60A72B4FC2AFD9C3"
+			rewards: [{
+				id: "2D7425203F0BBD59"
+				item: {
+					count: 1
+					id: "modularrouters:puller_module_1"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "659E378856A13D06"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			id: "029313754BAF820E"
+			rewards: [{
+				id: "1B9A3A2F4383F914"
+				item: {
+					count: 1
+					id: "modularrouters:sender_module_1"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5CFF2A9710804BFA"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			icon: {
+				id: "modularrouters:energy_distributor_module"
+			}
+			id: "2AB330A73BD6447C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "27AFD476C3E9CE35"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "79300CFD6BA43948"
+					item: { count: 1, id: "modularrouters:energy_distributor_module" }
+					type: "item"
+				}
+				{
+					id: "36A2B364AA9213B8"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2AB330A73BD6447C"]
+			id: "5A7512AA919309E5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "56004BEDB4624F96"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0CF6F9BAA4502A0E"
+				item: { count: 1, id: "modularrouters:energy_upgrade" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			id: "5769B2F6C1C41BF9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "16F20BC236C77741"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4E92C9FC29427BD1"
+				item: { count: 1, id: "modularrouters:range_up_augment" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			id: "58F3471ACCC0F86A"
+			rewards: [{
+				id: "54186C7FFD7F0FE0"
+				item: {
+					count: 1
+					id: "mekanism:cardboard_box"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "035E21B5DBD9BD35"
+				item: { count: 1, id: "modularrouters:camouflage_upgrade" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			id: "3CB129682BA3399A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "67EA54AB859657A6"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0F3A18E0B4440919"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			id: "795B13C31D41A45D"
+			rewards: [{
+				id: "2E3F82B6A759073B"
+				item: {
+					count: 1
+					id: "modularrouters:bulk_item_filter"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B47A042CE63665C"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3FF1B8E5563D4ECF"]
+			id: "0460B6B82842ADA8"
+			rewards: [{
+				id: "1FBF8F3349ACA9D8"
+				item: {
+					count: 1
+					id: "trashcans:item_trash_can"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BBC6277D3E82E07"
+				item: { count: 1, id: "mekanism:logistical_sorter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+	]
+}

@@ -1,0 +1,1702 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism"
+	group: "72A9465344128AF9"
+	id: "00000000000000A5"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "00000000000006A1"
+			optional: true
+			rewards: [{
+				id: "0000000000000CAE"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "00000000000006A2"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["00000000000006A1"]
+			id: "00000000000006A5"
+			rewards: [{
+				id: "00000000000006CD"
+				item: {
+					count: 1
+					id: "mekanism:configurator"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000006A6"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"00000000000006A1"
+				"00000000000006B4"
+			]
+			id: "00000000000006A7"
+			rewards: [{
+				id: "0000000000000817"
+				item: {
+					count: 1
+					id: "mekanism:geiger_counter"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000006A8"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["00000000000006BA"]
+			id: "00000000000006AF"
+			rewards: [
+				{
+					count: 32
+					id: "000000000000080D"
+					item: {
+						count: 1
+						id: "minecraft:coal_block"
+					}
+					type: "item"
+				}
+				{
+					id: "0000000000000CAA"
+					item: {
+						count: 1
+						id: "mekanism:advanced_energy_cube"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000006B0"
+				item: { count: 1, id: "mekanismgenerators:heat_generator" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000006AF"]
+			id: "00000000000006B1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					id: "000000000000080E"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "0000000000000864"
+					item: {
+						count: 1
+						id: "mekanism:basic_universal_cable"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000006B2"
+				item: { count: 1, id: "mekanismgenerators:wind_generator" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"00000000000006B1"
+				"00000000000006C3"
+			]
+			id: "00000000000006B3"
+			rewards: [{
+				count: 2
+				id: "00000000000007D2"
+				item: {
+					count: 1
+					id: "mekanism:quantum_entangloporter"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000006B4"
+				item: { count: 1, id: "mekanismgenerators:gas_burning_generator" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000709"]
+			id: "00000000000006B5"
+			rewards: [
+				{
+					id: "0000000000000705"
+					item: {
+						count: 1
+						id: "mekanism:advanced_induction_cell"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+					id: "000000000000086B"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 40L
+					id: "00000000000006B6"
+					item: { count: 1, id: "mekanism:induction_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00000000000006B7"
+					item: { count: 1, id: "mekanism:induction_port" }
+					type: "item"
+				}
+				{
+					id: "0000000000000707"
+					item: { count: 1, id: "mekanism:advanced_induction_cell" }
+					type: "item"
+				}
+				{
+					id: "0000000000000708"
+					item: { count: 1, id: "mekanism:advanced_induction_provider" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000006A1"]
+			id: "00000000000006BA"
+			rewards: [{
+				id: "00000000000006CC"
+				item: {
+					count: 1
+					id: "mekanism:network_reader"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000006BB"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00000000000006A5"]
+			id: "00000000000006BD"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					id: "0000000000000816"
+					type: "command"
+				}
+				{
+					id: "0000000000000860"
+					item: {
+						count: 1
+						id: "mekanism:steel_casing"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000006BE"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000006BD"]
+			id: "00000000000006BF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					id: "0000000000000812"
+					type: "command"
+				}
+				{
+					count: 4
+					id: "0000000000000861"
+					item: {
+						count: 1
+						id: "mekanism:enriched_redstone"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0000000000000862"
+					item: {
+						count: 1
+						id: "mekanism:enriched_carbon"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000006C0"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00000000000006BF"]
+			id: "00000000000006C1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					id: "0000000000000810"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "000000000000082C"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:orange"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000006C2"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"00000000000006C1"
+				"00000000000006CE"
+			]
+			id: "00000000000006C3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				id: "000000000000080F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000006C4"
+				item: { count: 1, id: "mekanism:pressurized_reaction_chamber" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000006BF"]
+			id: "00000000000006C5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					id: "0000000000000813"
+					type: "command"
+				}
+				{
+					id: "0000000000000CA9"
+					item: {
+						count: 1
+						id: "mekanism:personal_chest"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000006C6"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00000000000006A7"]
+			id: "00000000000006C7"
+			rewards: [
+				{
+					id: "0000000000000703"
+					item: {
+						count: 1
+						id: "mekanism:resistive_heater"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0000000000000704"
+					item: {
+						count: 1
+						id: "mekanism:advanced_thermodynamic_conductor"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 36L
+					id: "00000000000006C9"
+					item: { count: 1, id: "mekanism:thermal_evaporation_block" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "00000000000006CA"
+					item: { count: 1, id: "mekanism:thermal_evaporation_valve" }
+					type: "item"
+				}
+				{
+					id: "00000000000006CB"
+					item: { count: 1, id: "mekanism:thermal_evaporation_controller" }
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "000000000000086E"
+					item: { count: 1, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["00000000000006BF"]
+			id: "00000000000006CE"
+			rewards: [
+				{
+					id: "0000000000000829"
+					item: {
+						count: 1
+						id: "mekanism:jetpack"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					id: "000000000000086C"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "00000000000006CF"
+				item: { count: 1, id: "mekanism:electrolytic_separator" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000006CE"]
+			id: "00000000000006D0"
+			rewards: [
+				{
+					count: 3
+					id: "00000000000006D5"
+					item: {
+						count: 1
+						id: "mekanism:basic_tier_installer"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+					id: "0000000000000814"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "00000000000006E3"
+					item: { count: 1, id: "mekanism:electrolytic_separator" }
+					type: "item"
+				}
+				{
+					id: "584EA4C1CB7A2268"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "2292FFBA8D9C5E76"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "731C1D72D3C19800"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "183415D2ACD363E7"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "220D5440056144D1"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["00000000000006C7"]
+			id: "0000000000000709"
+			rewards: [{
+				count: 16
+				id: "000000000000070C"
+				item: {
+					components: {
+						"ftbquests:missing_item": "emendatusenigmatica:lithium_dust"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "000000000000070A"
+					item: { count: 1, id: "mekanism:chemical_crystallizer" }
+					type: "item"
+				}
+				{
+					id: "0A65673DD920A57E"
+					item: { count: 1, id: "mekanism:rotary_condensentrator" }
+					type: "item"
+				}
+				{
+					id: "65ABA5E4FB3C53C2"
+					item: { components: { "ftbquests:missing_item": "emendatusenigmatica:lithium_dust" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000764"]
+			id: "000000000000072B"
+			optional: true
+			shape: "rsquare"
+			tasks: [{
+				id: "0000000000000737"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0000000000000765"]
+			id: "000000000000072D"
+			optional: true
+			shape: "rsquare"
+			tasks: [{
+				id: "0000000000000736"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000733"]
+			id: "000000000000072F"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "000000000000073B"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000765"]
+			icon: {
+				id: "mekanism:creative_fluid_tank"
+			}
+			id: "0000000000000731"
+			optional: true
+			shape: "rsquare"
+			tasks: [{
+				id: "0000000000000735"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["000000000000072B"]
+			id: "0000000000000733"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "000000000000073A"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"000000000000072F"
+				"0000000000000741"
+			]
+			id: "0000000000000738"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "000000000000073C"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000731"]
+			id: "000000000000073D"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "000000000000073E"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["000000000000073D"]
+			id: "000000000000073F"
+			optional: true
+			tasks: [{
+				id: "0000000000000740"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["000000000000073D"]
+			id: "0000000000000741"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000742"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000738"]
+			id: "0000000000000743"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000744"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0000000000000743"
+				"0000000000000749"
+			]
+			id: "0000000000000745"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000746"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000731"]
+			id: "0000000000000747"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000748"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000747"]
+			id: "0000000000000749"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "000000000000074A"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000745"]
+			id: "000000000000074B"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "000000000000074C"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"000000000000074B"
+				"000000000000074F"
+			]
+			id: "000000000000074D"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "000000000000074E"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000765"]
+			id: "000000000000074F"
+			optional: true
+			shape: "rsquare"
+			tasks: [{
+				id: "0000000000000750"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["000000000000074D"]
+			id: "0000000000000751"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000753"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"0000000000000751"
+				"0000000000000758"
+			]
+			id: "0000000000000754"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000755"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["000000000000075E"]
+			id: "0000000000000756"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000757"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["000000000000075C"]
+			icon: {
+				id: "mekanism:creative_chemical_tank"
+			}
+			id: "0000000000000758"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000759"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0000000000000754"]
+			icon: {
+				id: "mekanism:creative_chemical_tank"
+			}
+			id: "000000000000075A"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "000000000000075B"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000756"]
+			id: "000000000000075C"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "000000000000075D"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["000000000000072D"]
+			id: "000000000000075E"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "000000000000075F"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["000000000000075A"]
+			id: "0000000000000760"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000761"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0000000000000760"]
+			id: "0000000000000762"
+			optional: true
+			rewards: [
+				{
+					count: 3
+					id: "000000000000082B"
+					item: {
+						count: 1
+						id: "farmersdelight:sweet_berry_cookie"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "000000000000082D"
+					item: {
+						count: 1
+						id: "farmersdelight:honey_cookie"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "000000000000082E"
+					item: {
+						components: {
+							"ftbquests:missing_item": "simplefarming:peanut_butter_cookie"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "000000000000082F"
+					item: {
+						count: 1
+						id: "minecraft:cookie"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000A81"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000763"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"00000000000006A8"
+				"00000000000006A1"
+			]
+			id: "0000000000000764"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "000000000000082A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000765"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["000000000000079A"]
+			id: "0000000000000793"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "000000000000081A"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 30L
+					id: "0000000000000794"
+					item: { count: 1, id: "mekanismgenerators:fission_fuel_assembly" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "00000000000007A4"
+					item: { count: 1, id: "mekanismgenerators:control_rod_assembly" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00000000000006A7"]
+			id: "0000000000000795"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000818"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 69L
+					id: "0000000000000796"
+					item: { count: 1, id: "mekanismgenerators:fission_reactor_casing" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000798"
+					item: { count: 1, id: "mekanismgenerators:fission_reactor_port" }
+					type: "item"
+				}
+				{
+					count: 87L
+					id: "0000000000000799"
+					item: { count: 1, id: "mekanismgenerators:reactor_glass" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0000000000000795"]
+			id: "000000000000079A"
+			min_width: 255
+			rewards: [
+				{
+					id: "000000000000079C"
+					item: {
+						count: 1
+						id: "minecraft:gravel"
+					}
+					type: "item"
+				}
+				{
+					id: "000000000000079D"
+					item: {
+						count: 1
+						id: "minecraft:observer"
+					}
+					type: "item"
+				}
+				{
+					id: "000000000000079E"
+					item: {
+						count: 1
+						id: "minecraft:piston"
+					}
+					type: "item"
+				}
+				{
+					id: "000000000000079F"
+					item: {
+						count: 1
+						id: "minecraft:redstone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "000000000000079B"
+				item: { count: 1, id: "mekanismgenerators:fission_reactor_logic_adapter" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000793"]
+			id: "00000000000007A5"
+			rewards: [
+				{
+					id: "00000000000007D3"
+					item: {
+						count: 1
+						id: "mekanism:hazmat_mask"
+					}
+					type: "item"
+				}
+				{
+					id: "00000000000007D4"
+					item: {
+						count: 1
+						id: "mekanism:hazmat_gown"
+					}
+					type: "item"
+				}
+				{
+					id: "00000000000007D5"
+					item: {
+						count: 1
+						id: "mekanism:hazmat_pants"
+					}
+					type: "item"
+				}
+				{
+					id: "00000000000007D7"
+					item: {
+						count: 1
+						id: "mekanism:hazmat_boots"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "00000000000007D8"
+					item: {
+						components: {
+							"ftbquests:missing_item": "engineersdecor:sign_radioactive"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "00000000000007A6"
+				item: { count: 1, id: "mekanism:radioactive_waste_barrel" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["00000000000007A5"]
+			id: "00000000000007A7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000820"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "00000000000007A8"
+					item: { count: 1, id: "mekanism:isotopic_centrifuge" }
+					type: "item"
+				}
+				{
+					id: "00000000000007B0"
+					item: { count: 1, id: "mekanism:pressurized_reaction_chamber" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "000000000000081C"
+					item: { count: 1, id: "mekanism:pellet_plutonium" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["00000000000007A5"]
+			id: "00000000000007A9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "000000000000081E"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "00000000000007AA"
+					item: { count: 1, id: "mekanism:solar_neutron_activator" }
+					type: "item"
+				}
+				{
+					id: "00000000000007AF"
+					item: { count: 1, id: "mekanism:pressurized_reaction_chamber" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "000000000000081D"
+					item: { count: 1, id: "mekanism:pellet_polonium" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["00000000000006C3"]
+			id: "00000000000007AB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000815"
+				type: "command"
+			}]
+			tasks: [{
+				count: 64L
+				id: "00000000000007AC"
+				item: { count: 1, id: "mekanism:hdpe_pellet" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"00000000000007A7"
+				"00000000000007A9"
+				"00000000000007AC"
+			]
+			id: "00000000000007B1"
+			rewards: [
+				{
+					count: 64
+					id: "00000000000007D9"
+					item: {
+						components: {
+							"ftbquests:missing_item": "emendatusenigmatica:uranium_ore"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					id: "0000000000000842"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 60L
+					id: "00000000000007B2"
+					item: { count: 1, id: "mekanism:sps_casing" }
+					type: "item"
+				}
+				{
+					count: 122L
+					id: "00000000000007B3"
+					item: { count: 1, id: "mekanismgenerators:reactor_glass" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "00000000000007B4"
+					item: { count: 1, id: "mekanism:sps_port" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00000000000007B5"
+					item: { count: 1, id: "mekanism:supercharged_coil" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["00000000000007A9"]
+			id: "00000000000007B6"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000821"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "00000000000007B7"
+					item: { count: 1, id: "mekanismgenerators:fusion_reactor_controller" }
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "00000000000007E0"
+					item: { count: 1, id: "mekanismgenerators:fusion_reactor_frame" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "00000000000007E1"
+					item: { count: 1, id: "mekanismgenerators:fusion_reactor_port" }
+					type: "item"
+				}
+				{
+					id: "00000000000007E2"
+					item: { count: 1, id: "mekanismgenerators:laser_focus_matrix" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "00000000000007E3"
+					item: { count: 1, id: "mekanismgenerators:reactor_glass" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000793"]
+			id: "00000000000007B8"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000819"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "00000000000007B9"
+					item: { count: 1, id: "mekanismgenerators:turbine_blade" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "00000000000007BA"
+					item: { count: 1, id: "mekanismgenerators:electromagnetic_coil" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "00000000000007BB"
+					item: { count: 1, id: "mekanism:pressure_disperser" }
+					type: "item"
+				}
+				{
+					id: "00000000000007BC"
+					item: { count: 1, id: "mekanismgenerators:rotational_complex" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "00000000000007BD"
+					item: { count: 1, id: "mekanismgenerators:saturating_condenser" }
+					type: "item"
+				}
+				{
+					count: 58L
+					id: "00000000000007BE"
+					item: { count: 1, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+				{
+					count: 69L
+					id: "00000000000007BF"
+					item: { count: 1, id: "mekanismgenerators:turbine_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "00000000000007C0"
+					item: { count: 1, id: "mekanismgenerators:turbine_rotor" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00000000000007C1"
+					item: { count: 1, id: "mekanismgenerators:turbine_valve" }
+					type: "item"
+				}
+				{
+					count: 33L
+					id: "00000000000007C2"
+					item: { count: 1, id: "mekanismgenerators:turbine_vent" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00000000000007B1"]
+			id: "00000000000007C3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "000000000000081F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000007C4"
+				item: { count: 1, id: "mekanism:pellet_antimatter" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["00000000000007C3"]
+			id: "00000000000007C5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000828"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000007C6"
+				item: { count: 1, id: "mekanism:antiprotonic_nucleosynthesizer" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["00000000000007A9"]
+			id: "00000000000007C7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000827"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000007C8"
+				item: { count: 1, id: "mekanism:qio_drive_array" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["00000000000007C7"]
+			id: "00000000000007C9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000823"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000007CA"
+				item: { count: 1, id: "mekanism:qio_dashboard" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["00000000000007C7"]
+			id: "00000000000007CB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000826"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "00000000000007CC"
+					item: { count: 1, id: "mekanism:qio_importer" }
+					type: "item"
+				}
+				{
+					id: "00000000000007CD"
+					item: { count: 1, id: "mekanism:qio_exporter" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["00000000000007C7"]
+			id: "00000000000007CE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000824"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000007CF"
+				item: { count: 1, id: "mekanism:qio_drive_base" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["00000000000007C7"]
+			id: "00000000000007D0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000825"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000007D1"
+				item: { count: 1, id: "mekanism:qio_redstone_adapter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["00000000000007B6"]
+			id: "00000000000007DC"
+			rewards: [
+				{
+					id: "00000000000007DF"
+					item: {
+						count: 1
+						id: "mekanismgenerators:hohlraum"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					id: "0000000000000822"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "0000000000000873"
+					item: {
+						components: {
+							"ftbquests:missing_item": "engineersdecor:sign_laser"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "00000000000007DD"
+					item: { count: 1, id: "mekanism:laser_amplifier" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "00000000000007DE"
+					item: { count: 1, id: "mekanism:laser" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000793"]
+			id: "00000000000007E4"
+			optional: true
+			rewards: [{
+				command: "/mek radiation removeAll"
+				id: "00000000000007E6"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "00000000000007E9"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					id: "00000000000007EA"
+					item: { count: 1, id: "minecraft:cod" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000007B8"]
+			id: "0000000000000E78"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000E7E"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 80L
+					id: "0000000000000E79"
+					item: { count: 1, id: "mekanism:boiler_casing" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000E7A"
+					item: { count: 1, id: "mekanism:boiler_valve" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "0000000000000E7B"
+					item: { count: 1, id: "mekanism:pressure_disperser" }
+					type: "item"
+				}
+				{
+					count: 78L
+					id: "0000000000000E7C"
+					item: { count: 1, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "0000000000000E7D"
+					item: { count: 1, id: "mekanism:superheating_element" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00000000000006A5"]
+			id: "1100DDF4FA8D31C3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				id: "3954C7F86F9C301B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "590FDCF2C714EE6B"
+				item: { count: 1, id: "mekanism:gauge_dropper" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["00000000000006BD"]
+			id: "6AA3DA7395582D75"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				id: "21CAB75DA0FC846D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "487EEDB965838B35"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["00000000000006D0"]
+			id: "504DD59B5A254183"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "5CB2EF184247180B"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "581F64A5B70FD048"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "278A00997E5A1807"
+					item: { count: 1, id: "mekanism:upgrade_chemical" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["504DD59B5A254183"]
+			id: "1BA848F73C707DCC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "5F0D88FCA51E6BB3"
+				type: "command"
+			}]
+			tasks: [{
+				id: "38AF11C23B5E8A03"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["00000000000006BF"]
+			icon: {
+				id: "mekanism:precision_sawmill"
+			}
+			id: "46314C0EADF8EBAA"
+			rewards: [{
+				id: "483148CA72CDB1CD"
+				item: {
+					count: 1
+					id: "mekanism:cardboard_box"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "02D13AC31BDBC8A2"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["00000000000006BF"]
+			id: "25956D039907CBDA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				id: "0EF5031647DF246B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "5E962E033F464A5C"
+				item: { count: 1, id: "mekanism:teleporter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["00000000000006BF"]
+			id: "37B0CBFA4CBAD409"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				id: "2103C11313ED672B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4B3658ACF1768133"
+				item: { count: 1, id: "mekanism:digital_miner" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00000000000007DC"]
+			id: "3F1A8F0603103E2E"
+			min_width: 400
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					id: "526D36712006641A"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					id: "1D6DFBD767770794"
+					type: "command"
+				}
+				{
+					count: 2
+					id: "4FB1E142562746D5"
+					item: {
+						count: 1
+						id: "mekanism:rotary_condensentrator"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "242416B8A526386F"
+					item: { components: { "ftbquests:missing_item": "masterfulmachinery:industrial_deuterium_plant_controller" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "055E253A1C45D3F3"
+					item: { components: { "ftbquests:missing_item": "masterfulmachinery:stellar_neutron_activator_controller" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
+		}
+	]
+}

@@ -1,0 +1,683 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powah"
+	group: "72A9465344128AF9"
+	id: "000000000000016E"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "000000000000016F"
+			optional: true
+			rewards: [{
+				id: "413EB9C7629D2B60"
+				item: {
+					count: 1
+					id: "powah:wrench"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "4C763494FAB6F8A2"
+				item: { count: 1, id: "powah:dielectric_paste" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["000000000000016F"]
+			icon: {
+				id: "powah:wrench"
+			}
+			id: "0000000000000172"
+			rewards: [{
+				id: "0000000000000CA8"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000173"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["000000000000016F"]
+			id: "0000000000000174"
+			rewards: [{
+				count: 2
+				id: "7698C3956B71648E"
+				item: {
+					count: 1
+					id: "powah:dielectric_casing"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0000000000000175"
+				item: { count: 1, id: "powah:dielectric_casing" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000174"]
+			id: "0000000000000176"
+			rewards: [
+				{
+					count: 4
+					id: "00000000000001B2"
+					item: {
+						count: 1
+						id: "minecraft:coal_block"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					id: "0000000000000288"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "0000000000000177"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000174"]
+			id: "000000000000017C"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "0000000000000289"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000017D"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000176"]
+			id: "000000000000017E"
+			optional: true
+			rewards: [{
+				id: "00000000000001B4"
+				item: {
+					count: 1
+					id: "minecraft:lava_bucket"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000017F"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000176"]
+			id: "0000000000000180"
+			optional: true
+			rewards: [
+				{
+					id: "00000000000001B6"
+					item: {
+						count: 1
+						id: "industrialforegoing:water_condensator"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					id: "000000000000064D"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000181"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000176"]
+			id: "0000000000000182"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "000000000000028A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000183"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000182"]
+			id: "0000000000000184"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "000000000000064C"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000185"
+				item: { count: 1, id: "powah:lens_of_ender" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["000000000000018C"]
+			id: "0000000000000186"
+			rewards: [{
+				count: 8
+				id: "00000000000001BB"
+				item: {
+					count: 1
+					id: "powah:uraninite_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "0000000000000187"
+				item: { count: 1, id: "powah:uraninite" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0000000000000186"]
+			id: "0000000000000188"
+			rewards: [
+				{
+					count: 32
+					id: "00000000000001BD"
+					item: {
+						count: 1
+						id: "powah:uraninite"
+					}
+					only_one: true
+					type: "item"
+				}
+				{
+					count: 32
+					id: "00000000000001BE"
+					item: {
+						count: 1
+						id: "minecraft:blue_ice"
+					}
+					only_one: true
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 36L
+				id: "0000000000000189"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000188"]
+			id: "000000000000018A"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "00000000000001C2"
+				item: {
+					count: 1
+					id: "powah:charged_snowball"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 16L
+				id: "000000000000018B"
+				item: { count: 1, id: "powah:dry_ice" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["000000000000016F"]
+			id: "000000000000018C"
+			rewards: [{
+				count: 2
+				id: "00000000000001C5"
+				item: {
+					count: 1
+					id: "powah:energizing_rod_basic"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "000000000000018D"
+					item: { count: 1, id: "powah:energizing_orb" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00000000000001C3"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000174"]
+			id: "000000000000018E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "000000000000028E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000018F"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["000000000000018E"]
+			id: "0000000000000190"
+			min_width: 300
+			rewards: [{
+				id: "0000000000000226"
+				item: {
+					count: 1
+					id: "powah:energy_cell_hardened"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000191"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["000000000000018E"]
+			id: "0000000000000192"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "000000000000028F"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000193"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000224"
+					item: { count: 1, id: "powah:binding_card" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000190"]
+			id: "0000000000000194"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "0000000000000227"
+				item: {
+					count: 1
+					id: "powah:ender_core"
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000195"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000192"]
+			id: "0000000000000198"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "0000000000000290"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000199"
+				item: { count: 1, id: "powah:binding_card_dim" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["000000000000018C"]
+			id: "000000000000019A"
+			rewards: [{
+				id: "0000000000000215"
+				item: {
+					count: 1
+					id: "powah:battery_hardened"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000019B"
+				item: { count: 1, id: "powah:steel_energized" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["000000000000019A"]
+			id: "000000000000019C"
+			rewards: [{
+				count: 4
+				id: "0000000000000217"
+				item: {
+					count: 1
+					id: "powah:energized_steel_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000019D"
+				item: { count: 1, id: "powah:crystal_blazing" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["000000000000019C"]
+			id: "000000000000019E"
+			rewards: [{
+				count: 2
+				id: "0000000000000219"
+				item: {
+					count: 1
+					id: "powah:energizing_rod_niotic"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000019F"
+				item: { count: 1, id: "powah:crystal_niotic" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["000000000000019E"]
+			id: "00000000000001A0"
+			rewards: [
+				{
+					count: 8
+					id: "000000000000021B"
+					item: {
+						count: 1
+						id: "powah:uraninite_block"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "000000000000021C"
+					item: {
+						count: 1
+						id: "powah:niotic_crystal_block"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "000000000000021D"
+					item: {
+						count: 1
+						id: "powah:dry_ice"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000001A1"
+				item: { count: 1, id: "powah:crystal_spirited" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00000000000001A0"]
+			id: "00000000000001A2"
+			rewards: [
+				{
+					id: "000000000000021F"
+					item: {
+						count: 1
+						id: "powah:energy_cell_nitro"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					id: "0000000000000294"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "00000000000001A3"
+				item: { count: 1, id: "powah:crystal_nitro" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["000000000000019A"]
+			id: "00000000000001A4"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "0000000000000291"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 16L
+				id: "00000000000001A5"
+				item: { count: 1, id: "powah:capacitor_hardened" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["000000000000019C"]
+			id: "00000000000001A6"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "0000000000000292"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 24L
+				id: "00000000000001A7"
+				item: { count: 1, id: "powah:capacitor_blazing" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["000000000000019E"]
+			id: "00000000000001A8"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "0000000000000293"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 32L
+				id: "00000000000001A9"
+				item: { count: 1, id: "powah:capacitor_niotic" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["00000000000001A0"]
+			id: "00000000000001AA"
+			optional: true
+			rewards: [{
+				id: "000000000000021E"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			tasks: [{
+				count: 48L
+				id: "00000000000001AB"
+				item: { count: 1, id: "powah:capacitor_spirited" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["00000000000001A2"]
+			id: "00000000000001AC"
+			optional: true
+			rewards: [
+				{
+					id: "0000000000000221"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					command: "/say @p has completed Powah's final crafting challenge! I bet you can't!"
+					id: "0000000000000223"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					id: "0000000000000295"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				count: 64L
+				id: "00000000000001AD"
+				item: { count: 1, id: "powah:capacitor_nitro" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0000000000000188"]
+			hide_until_deps_visible: true
+			icon: {
+				id: "powah:battery_nitro"
+			}
+			id: "00000000000001AE"
+			optional: true
+			rewards: [
+				{
+					id: "00000000000001C0"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					auto: "enabled"
+					command: "/say @p completed Powah's Ultimate Power Quest! Woot!"
+					icon: {
+						id: "powah:battery_nitro"
+					}
+					id: "00000000000001C1"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+					id: "000000000000064B"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "mekanism:basic_induction_cell"
+				}
+				id: "4D1EA493FB926104"
+				item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+	]
+}

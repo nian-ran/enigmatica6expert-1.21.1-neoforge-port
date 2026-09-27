@@ -1,0 +1,780 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "resourceful_bees"
+	group: "5A8B89F87F77CF4C"
+	id: "000000000000070D"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0000000000000A94"]
+			id: "000000000000070E"
+			rewards: [
+				{
+					count: 4
+					id: "0000000000000711"
+					item: {
+						components: {
+							"ftbquests:missing_item": "resourcefulbees:bee_jar"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "0000000000000B08"
+					item: {
+						count: 1
+						id: "farmersdelight:honey_cookie"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "77E4B4652B2EF7F1"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["0000000000000714"]
+			id: "0000000000000712"
+			rewards: [{
+				id: "0000000000000B12"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000713"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["0000000000000A94"]
+			id: "0000000000000714"
+			rewards: [{
+				id: "0000000000000B11"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000715"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: -16.5d
+		}
+		{
+			dependencies: ["0000000000000A94"]
+			id: "0000000000000716"
+			rewards: [{
+				id: "0000000000000B09"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000717"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: -16.5d
+		}
+		{
+			dependencies: ["0000000000000712"]
+			id: "0000000000000718"
+			rewards: [{
+				id: "0000000000000B13"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000719"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["000000000000070E"]
+			id: "0000000000000723"
+			rewards: [{
+				count: 8
+				id: "0000000000000B14"
+				item: {
+					count: 1
+					id: "minecraft:honeycomb"
+				}
+				random_bonus: 8
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000724"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:t1_hive_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -10.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["0000000000000723"]
+			id: "0000000000000727"
+			rewards: [{
+				count: 8
+				id: "0000000000000766"
+				item: {
+					count: 1
+					id: "minecraft:honeycomb_block"
+				}
+				random_bonus: 8
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000072A"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:t2_hive_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["0000000000000A94"]
+			id: "0000000000000874"
+			rewards: [{
+				id: "0000000000000B06"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000875"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["46B0BAD934FFB2A9"]
+			id: "0000000000000A94"
+			rewards: [
+				{
+					count: 8
+					id: "6DA6F6AC7E54E2C9"
+					item: {
+						components: {
+							"ftbquests:missing_item": "resourcefulbees:bee_jar"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "0C1504955F2C86AD"
+					item: {
+						components: {
+							"ftbquests:missing_item": "resourcefulbees:beepedia"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				icon: {
+					id: "patchouli:guide_book"
+				}
+				id: "0000000000000A95"
+				type: "checkmark"
+			}]
+			x: -11.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["0000000000000A94"]
+			id: "0000000000000A97"
+			rewards: [
+				{
+					id: "0000000000000B04"
+					item: {
+						count: 1
+						id: "minecraft:shears"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000B05"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000A98"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["0000000000000A97"]
+			id: "0000000000000A99"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
+				id: "0000000000000B03"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000A9A"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:mechanical_centrifuge" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["0000000000000A99"]
+			id: "0000000000000A9B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_epic"
+				id: "0000000000000B02"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000A9C"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:centrifuge" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["0000000000000A9B"]
+			id: "0000000000000A9D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_legendary"
+					id: "0000000000000AF9"
+					type: "command"
+				}
+				{
+					id: "0000000000000AFA"
+					item: {
+						components: {
+							"ftbquests:missing_item": "resourcefulbees:oreo_cookie"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000A9E"
+					item: { components: { "ftbquests:missing_item": "resourcefulbees:centrifuge_controller" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 35L
+					id: "0000000000000AC6"
+					item: { components: { "ftbquests:missing_item": "resourcefulbees:centrifuge_casing" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["0000000000000AAC"]
+			id: "0000000000000A9F"
+			rewards: [{
+				id: "0000000000000B1C"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "0000000000000AA0"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:apiary_breeder_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["0000000000000727"]
+			id: "0000000000000AA6"
+			rewards: [{
+				count: 8
+				id: "0000000000000B15"
+				item: {
+					count: 1
+					id: "minecraft:honey_block"
+				}
+				random_bonus: 8
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000AA7"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:t3_hive_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["0000000000000AA6"]
+			id: "0000000000000AA8"
+			rewards: [
+				{
+					id: "0000000000000B17"
+					item: {
+						count: 1
+						id: "farmersdelight:honey_glazed_ham"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0000000000000B18"
+					item: {
+						count: 1
+						id: "minecraft:honey_bottle"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+					id: "0000000000000C0A"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000AA9"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:t4_hive_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["0000000000000AB8"]
+			id: "0000000000000AAA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000B1E"
+					type: "command"
+				}
+				{
+					id: "0000000000000B1F"
+					item: {
+						components: {
+							"ftbquests:missing_item": "resourcefulbees:oreo_cookie"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000AAB"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:apiary_storage" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["0000000000000AB8"]
+			id: "0000000000000AAC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+					id: "0000000000000B1A"
+					type: "command"
+				}
+				{
+					id: "0000000000000B1B"
+					item: {
+						count: 1
+						id: "farmersdelight:honey_cookie"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000AAD"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:apiary_breeder" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["0000000000000AAC"]
+			id: "0000000000000AAE"
+			rewards: [{
+				id: "0000000000000B1D"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "0000000000000AAF"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:apiary_breed_time_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -20.0d
+		}
+		{
+			dependencies: ["0000000000000AAA"]
+			id: "0000000000000AB0"
+			rewards: [{
+				id: "0000000000000B20"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000AB1"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:iron_storage_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["0000000000000AB0"]
+			id: "0000000000000AB2"
+			rewards: [
+				{
+					id: "0000000000000B21"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "0000000000000B26"
+					item: {
+						count: 1
+						id: "farmersdelight:honey_glazed_ham"
+					}
+					random_bonus: 1
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000AB3"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:gold_storage_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["0000000000000AB2"]
+			id: "0000000000000AB4"
+			rewards: [
+				{
+					id: "0000000000000B22"
+					type: "xp"
+					xp: 300
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000C0C"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000AB5"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:diamond_storage_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["0000000000000AB4"]
+			id: "0000000000000AB6"
+			rewards: [
+				{
+					id: "0000000000000B23"
+					type: "xp"
+					xp: 400
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000C0D"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000AB7"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:emerald_storage_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["0000000000000AA8"]
+			id: "0000000000000AB8"
+			rewards: [
+				{
+					count: 8
+					id: "0000000000000B00"
+					item: {
+						count: 1
+						id: "minecraft:honeycomb"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0000000000000B01"
+					item: {
+						count: 1
+						id: "minecraft:honey_bottle"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0000000000000B19"
+					item: {
+						count: 1
+						id: "minecraft:honeycomb_block"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000C0B"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000AB9"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:t1_apiary" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["0000000000000AB8"]
+			id: "0000000000000ABA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
+				id: "0000000000000AFE"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000ABB"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:t2_apiary" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["0000000000000ABA"]
+			id: "0000000000000ABC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_epic"
+				id: "0000000000000AFD"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000ABD"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:t3_apiary" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["0000000000000ABC"]
+			id: "0000000000000ABE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_legendary"
+					id: "0000000000000AFB"
+					type: "command"
+				}
+				{
+					id: "0000000000000AFC"
+					item: {
+						components: {
+							"ftbquests:missing_item": "resourcefulbees:oreo_cookie"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000ABF"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:t4_apiary" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -19.5d
+		}
+		{
+			dependencies: ["0000000000000716"]
+			id: "0000000000000AC0"
+			rewards: [{
+				id: "0000000000000B0E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000B0D"
+				type: "checkmark"
+			}]
+			x: -13.73979591836735d
+			y: -16.484693877551017d
+		}
+		{
+			dependencies: ["0000000000000716"]
+			id: "0000000000000AC2"
+			rewards: [{
+				id: "0000000000000B10"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000B0F"
+				type: "checkmark"
+			}]
+			x: -13.372448979591837d
+			y: -15.811224489795919d
+		}
+		{
+			dependencies: ["0000000000000716"]
+			id: "0000000000000AC4"
+			rewards: [{
+				id: "0000000000000B0C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000B0A"
+				type: "checkmark"
+			}]
+			x: -13.372448979591837d
+			y: -17.158163265306122d
+		}
+		{
+			dependencies: ["0000000000000A94"]
+			id: "24D88FC1C6DCE052"
+			rewards: [{
+				count: 2
+				id: "7ECD253B38639D34"
+				item: {
+					components: {
+						"ftbquests:missing_item": "resourcefulbees:bee_jar"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 3
+				type: "item"
+			}]
+			tasks: [{
+				id: "57CDAF18A5A66D82"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:bee_jar" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["24D88FC1C6DCE052"]
+			id: "2F7254D5AD380CB4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
+				id: "4D2AFDFEAA880455"
+				type: "command"
+			}]
+			tasks: [{
+				id: "78200ABCDC11BF2F"
+				item: { components: { "ftbquests:missing_item": "resourcefulbees:bee_box" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["0000000000000714"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "resourcefulbees:bee_jar"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "307E22ADC2DB4EB8"
+			rewards: [{
+				id: "4FB651D2A18E0A02"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "362C63F136B07060"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["0000000000000A97"]
+			id: "1DFA48325FD10EE9"
+			rewards: [{
+				id: "0BC7625BD64FD174"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3D810B866704DE92"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: -14.0d
+		}
+		{
+			id: "46B0BAD934FFB2A9"
+			optional: true
+			rewards: [{
+				id: "214D29C16AA98E43"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4DBF1905A99D474C"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: -18.0d
+		}
+	]
+}

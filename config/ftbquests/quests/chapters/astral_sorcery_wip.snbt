@@ -1,0 +1,944 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "astral_sorcery_wip"
+	group: "5A8B89F87F77CF4C"
+	id: "0000000000000AF3"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0000000000000AF4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "00B5497F8AA28D93"
+				item: {
+					count: 1
+					id: "astralsorcery:marble_raw"
+				}
+				random_bonus: 16
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				count: 4L
+				id: "68C3AD7DEDCF8C8B"
+				item: { count: 1, id: "astralsorcery:aquamarine" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0000000000000AF4"]
+			id: "0000000000000B6E"
+			min_width: 300
+			rewards: [
+				{
+					count: 16
+					id: "0000000000000BDB"
+					item: {
+						count: 1
+						id: "ars_nouveau:warp_scroll"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000C5E"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000B77"
+				item: { components: { "ftbquests:missing_item": "astralsorcery:altar_discovery" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0000000000000B8E"]
+			id: "0000000000000B70"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C4D"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000B90"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:ritual_pedestal" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0000000000000B91"
+					item: { count: 1, id: "astralsorcery:marble_raw" }
+					type: "item"
+				}
+				{
+					id: "0000000000000B92"
+					item: { count: 1, id: "astralsorcery:marble_chiseled" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0000000000000B93"
+					item: { count: 1, id: "astralsorcery:marble_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "0000000000000B94"
+					item: { count: 1, id: "astralsorcery:marble_arch" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0000000000000BA3"]
+			id: "0000000000000B72"
+			rewards: [
+				{
+					count: 8
+					id: "0000000000000BE0"
+					item: {
+						components: {
+							"ftbquests:missing_item": "astralsorcery:aquamarine_sand_ore"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000C60"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000B86"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:well" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000BDF"
+					item: { count: 1, id: "astralsorcery:aquamarine" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B74"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "0000000000000C51"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000B87"
+				item: { count: 1, id: "astralsorcery:constellation_paper" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B79"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "0000000000000C42"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000B7A"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:altar_attunement" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0000000000000C2F"
+					item: { count: 1, id: "astralsorcery:marble_pillar" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0000000000000C30"
+					item: { count: 1, id: "astralsorcery:marble_chiseled" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0000000000000C31"
+					item: { count: 1, id: "astralsorcery:marble_bricks" }
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "0000000000000C32"
+					item: { count: 1, id: "astralsorcery:marble_arch" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "0000000000000C33"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:black_marble_raw" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000B79"]
+			id: "0000000000000B7B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C43"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000B7C"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:altar_constellation" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000C34"
+					item: { count: 1, id: "astralsorcery:marble_runed" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000C35"
+					item: { count: 1, id: "astralsorcery:marble_chiseled" }
+					type: "item"
+				}
+				{
+					count: 49L
+					id: "0000000000000C36"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:black_marble_raw" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0000000000000C37"
+					item: { count: 1, id: "astralsorcery:marble_raw" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0000000000000C38"
+					item: { count: 1, id: "astralsorcery:marble_pillar" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "0000000000000C39"
+					item: { count: 1, id: "astralsorcery:marble_bricks" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000B7B"]
+			id: "0000000000000B7D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				id: "0000000000000C44"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000B7E"
+					item: { count: 1, id: "astralsorcery:altar_radiance" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0000000000000C3A"
+					item: { count: 1, id: "astralsorcery:marble_pillar" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000C3B"
+					item: { count: 1, id: "astralsorcery:marble_chiseled" }
+					type: "item"
+				}
+				{
+					count: 68L
+					id: "0000000000000C3C"
+					item: { count: 1, id: "astralsorcery:marble_bricks" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0000000000000C3D"
+					item: { count: 1, id: "astralsorcery:marble_raw" }
+					type: "item"
+				}
+				{
+					count: 49L
+					id: "0000000000000C3E"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:black_marble_raw" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000B9F"]
+			id: "0000000000000B7F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "0000000000000C46"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000B80"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:spectral_relay" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000B81"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:black_marble_raw" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000B82"
+					item: { count: 1, id: "astralsorcery:marble_arch" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000B83"
+					item: { count: 1, id: "astralsorcery:marble_chiseled" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0000000000000B74"]
+			id: "0000000000000B88"
+			rewards: [
+				{
+					command: "/tamedsummon minecraft:cat @p ~ ~ ~"
+					id: "0000000000000C22"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "0000000000000C23"
+					item: {
+						count: 1
+						id: "minecraft:cod"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000B89"
+				item: { components: { "ftbquests:missing_item": "astralsorcery:hand_telescope" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000B79"]
+			id: "0000000000000B8A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "0000000000000C4B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000B8B"
+				item: { components: { "ftbquests:missing_item": "astralsorcery:telescope" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0000000000000B7D"]
+			id: "0000000000000B8C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				id: "0000000000000C4A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000B8D"
+				item: { components: { "ftbquests:missing_item": "astralsorcery:observatory" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0000000000000B8A"]
+			id: "0000000000000B8E"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C4C"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000B8F"
+				item: { count: 1, id: "astralsorcery:attunement_altar" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B95"
+			rewards: [{
+				id: "0000000000000C2E"
+				item: {
+					components: {
+						"ftbquests:missing_item": "astralsorcery:illuminator"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0000000000000B96"
+					item: { count: 1, id: "astralsorcery:nocturnal_powder" }
+					type: "item"
+				}
+				{
+					id: "0000000000000B97"
+					item: { count: 1, id: "astralsorcery:illumination_powder" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"0000000000000B70"
+				"0000000000000BCD"
+			]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "astralsorcery:celestial_collector_crystal"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "0000000000000B98"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				id: "0000000000000C52"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000B99"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000B9A"
+					item: { count: 1, id: "astralsorcery:marble_pillar" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0000000000000B9B"
+					item: { count: 1, id: "astralsorcery:marble_engraved" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "0000000000000B9C"
+					item: { count: 1, id: "astralsorcery:marble_raw" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0000000000000B9D"
+					item: { count: 1, id: "astralsorcery:marble_chiseled" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0000000000000B9E"
+					item: { count: 1, id: "astralsorcery:marble_runed" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B9F"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "0000000000000C45"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BA0"
+				item: { components: { "ftbquests:missing_item": "astralsorcery:resonator" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000BA3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000C5F"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000BA4"
+					item: { count: 1, id: "astralsorcery:rock_crystal" }
+					type: "item"
+				}
+				{
+					id: "543F8C616957EB53"
+					item: { count: 1, id: "astralsorcery:wand" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0000000000000BA3"]
+			id: "0000000000000BA5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C54"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BA6"
+				item: { count: 1, id: "astralsorcery:crystal_pickaxe" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0000000000000B7B"]
+			id: "0000000000000BA7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C48"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000BA8"
+					item: { count: 1, id: "astralsorcery:infuser" }
+					type: "item"
+				}
+				{
+					id: "0000000000000BA9"
+					item: { count: 1, id: "minecraft:lapis_block" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0000000000000BAA"
+					item: { count: 1, id: "astralsorcery:marble_chiseled" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000BAB"
+					item: { count: 1, id: "astralsorcery:marble_pillar" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "0000000000000BAC"
+					item: { count: 1, id: "astralsorcery:marble_runed" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0000000000000BAD"
+					item: { count: 1, id: "astralsorcery:marble_raw" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0000000000000BB3"]
+			id: "0000000000000BAE"
+			rewards: [{
+				id: "0000000000000BB0"
+				item: {
+					count: 1
+					id: "minecraft:enchanted_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000BAF"
+				item: { count: 1, id: "astralsorcery:chisel" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0000000000000B72"]
+			id: "0000000000000BB1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "0000000000000C56"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BB2"
+				item: { count: 1, id: "astralsorcery:liquid_starlight_bucket" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0000000000000BA3"]
+			id: "0000000000000BB3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "0000000000000C55"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BB4"
+				item: { count: 1, id: "astralsorcery:starmetal_ore" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0000000000000B7D"]
+			id: "0000000000000BB5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				id: "0000000000000C49"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BB6"
+				item: { count: 1, id: "astralsorcery:chalice" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0000000000000B70"]
+			id: "0000000000000BB7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C53"
+				type: "command"
+			}]
+			tasks: [{
+				count: 2L
+				id: "0000000000000BB8"
+				item: { components: { "ftbquests:missing_item": "astralsorcery:ritual_link" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000BD1"]
+			id: "0000000000000BBD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C59"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BBE"
+				item: { count: 1, id: "astralsorcery:lens" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0000000000000BBD"]
+			id: "0000000000000BC7"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				id: "0000000000000C5B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BC8"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0000000000000BBD"]
+			id: "0000000000000BCD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C5A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BCE"
+				item: { components: { "ftbquests:missing_item": "astralsorcery:celestial_collector_crystal" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0000000000000BD1"]
+			id: "0000000000000BCF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				id: "0000000000000C58"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BE1"
+				item: { count: 1, id: "astralsorcery:celestial_crystal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"0000000000000BB1"
+				"0000000000000BAE"
+			]
+			icon: {
+				id: "astralsorcery:celestial_crystal_cluster"
+			}
+			id: "0000000000000BD1"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000C57"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BD2"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0000000000000B8A"]
+			icon: {
+				id: "astralsorcery:celestial_gateway"
+			}
+			id: "0000000000000BD3"
+			rewards: [
+				{
+					id: "0000000000000C21"
+					item: {
+						count: 1
+						id: "astralsorcery:celestial_gateway"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000C5D"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000BD4"
+					item: { count: 1, id: "astralsorcery:celestial_gateway" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "0000000000000C1D"
+					item: { count: 1, id: "astralsorcery:marble_arch" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000C1E"
+					item: { count: 1, id: "astralsorcery:marble_engraved" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000C1F"
+					item: { count: 1, id: "astralsorcery:marble_runed" }
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "0000000000000C20"
+					item: { components: { "ftbquests:missing_item": "astralsorcery:black_marble_raw" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000B7B"]
+			id: "0000000000000BD5"
+			rewards: [
+				{
+					id: "0000000000000C2D"
+					item: {
+						components: {
+							"ftbquests:missing_item": "astralsorcery:infused_glass"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+					id: "0000000000000C47"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000BD6"
+				item: { components: { "ftbquests:missing_item": "astralsorcery:refraction_table" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0000000000000BBD"]
+			id: "0000000000000BD9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C5C"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BDA"
+				item: { count: 1, id: "astralsorcery:prism" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0000000000000B8E"]
+			id: "0000000000000C24"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				id: "0000000000000C4F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000C25"
+				item: { count: 1, id: "astralsorcery:shifting_star" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000C24"]
+			id: "0000000000000C26"
+			rewards: [
+				{
+					id: "0000000000000C2B"
+					item: {
+						count: 1
+						id: "minecraft:jukebox"
+					}
+					type: "item"
+				}
+				{
+					id: "0000000000000C2C"
+					item: {
+						count: 1
+						id: "minecraft:music_disc_pigstep"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+					id: "0000000000000C50"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000C27"
+				item: { count: 1, id: "astralsorcery:enchantment_amulet" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0000000000000C24"]
+			id: "0000000000000C28"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				id: "0000000000000C4E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000C2A"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+	]
+}

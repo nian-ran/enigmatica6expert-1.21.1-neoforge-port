@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "name": "undergarden:ink_mushroom",
+          "type": "minecraft:item"
+        }
+      ],
+      "conditions": [
+        {
+          "chance": 0.8,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "rolls": {
+        "max": 1,
+        "type": "minecraft:uniform",
+        "min": 1
+      },
+      "bonus_rolls": 0.0
+    },
+    {
+      "entries": [
+        {
+          "name": "undergarden:ink_mushroom_cap",
+          "type": "minecraft:item"
+        }
+      ],
+      "conditions": [
+        {
+          "chance": 0.1,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "rolls": {
+        "max": 1,
+        "type": "minecraft:uniform",
+        "min": 1
+      },
+      "bonus_rolls": 0.0
+    },
+    {
+      "entries": [
+        {
+          "name": "minecraft:mushroom_stem",
+          "type": "minecraft:item"
+        }
+      ],
+      "conditions": [
+        {
+          "chance": 0.1,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "rolls": {
+        "max": 1,
+        "type": "minecraft:uniform",
+        "min": 1
+      },
+      "bonus_rolls": 0.0
+    }
+  ],
+  "type": "minecraft:block"
+}

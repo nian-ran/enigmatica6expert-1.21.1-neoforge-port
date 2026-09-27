@@ -1,0 +1,763 @@
+[
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_botanical_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "minecraft:oak_leaves",
+          "count": 64
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "astralsorcery:stardust",
+          "count": 16
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "astralsorcery:resonating_gem",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "create:deployer",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 40000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:botanical_mastery_shard",
+          "count": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_astronomy_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:observatory_lens",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "astralsorcery:attuned_celestial_crystal",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "astralsorcery:resonating_gem",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "astralsorcery:stardust",
+          "count": 32
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 45000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:astronomy_mastery_shard",
+          "count": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_alchemy_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "create:mechanical_mixer",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "create:spout",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "minecraft:glass_bottle",
+          "count": 32
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "minecraft:blaze_powder",
+          "count": 16
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "naturesaura:death_ring",
+          "count": 2
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 35000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:alchemy_mastery_shard",
+          "count": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_ritual_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "eidolon_repraised:unholy_symbol",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "neovitae:hellfire_forge",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "neovitae:rune_charging",
+          "count": 16
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "neovitae:rune_acceleration",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "neovitae:rune_dislocation",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "occultism:chalk_gold",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 40000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:ritual_mastery_shard",
+          "count": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_aura_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "naturesaura:aura_trove",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "naturesaura:firework_generator",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "naturesaura:generator_limit_remover",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "naturesaura:projectile_generator",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "naturesaura:aura_detector",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 35000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:aura_mastery_shard",
+          "count": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_engineering_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "pneumaticcraft:advanced_pressure_tube",
+          "count": 64
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "pneumaticcraft:advanced_liquid_compressor",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "create:rotation_speed_controller",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "create:large_cogwheel",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "pneumaticcraft:assembly_drill",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "pneumaticcraft:assembly_laser",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 45000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:engineering_mastery_shard",
+          "count": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_energistics_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "mekanism:ultimate_induction_provider",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "mekanism:ultimate_induction_cell",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "mekanism:pellet_antimatter",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "mekanism:ultimate_control_circuit",
+          "count": 16
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "powah:ender_core",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "refinedstorage:controller",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 50000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:energistics_mastery_shard",
+          "count": 50
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_dimensional_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "mekanism:quantum_entangloporter",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "refinedstorage:network_receiver",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "refinedstorage:network_transmitter",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "refinedstorage:network_card",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "mekanism:teleporter",
+          "count": 5
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "powah:ender_core",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 45000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:dimensional_mastery_shard",
+          "count": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_battle_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "minecraft:netherite_helmet",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "minecraft:netherite_chestplate",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "minecraft:netherite_leggings",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "minecraft:netherite_boots",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "mekanism:pellet_antimatter",
+          "count": 2
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "mekanism:ultimate_control_circuit",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 45000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:battle_mastery_shard",
+          "count": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_excavation_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "industrialforegoing:ore_laser_base",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "industrialforegoing:laser_drill",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "occultism:dimensional_mineshaft",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "immersiveengineering:survey_tools",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "mekanism:atomic_disassembler",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 40000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:excavation_mastery_shard",
+          "count": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_culinary_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "farmersdelight:roast_chicken",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "farmersdelight:beef_stew",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "farmersdelight:vegetable_soup",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "farmersdelight:stuffed_pumpkin",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 25000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:culinary_mastery_shard",
+          "count": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/enigmatic_tree_of_life/adapted_automation_mastery_shard",
+    "controllerId": "enigmatic_tree_of_life",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "refinedstorage:controller",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "refinedstorage:pattern_grid",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "refinedstorage:pattern",
+          "count": 64
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "create:deployer",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "create:mechanical_arm",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "pneumaticcraft:universal_sensor",
+          "count": 4
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "perTick": true,
+        "data": {
+          "amount": 40000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "kubejs:automation_mastery_shard",
+          "count": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "enigmatica:expert/masterful_machinery/wicked_altar/adapted_reaper_scythe",
+    "controllerId": "wicked_altar",
+    "ticks": 200,
+    "inputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "eidolon_repraised:soul_shard",
+          "count": 8
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "minecraft:netherite_ingot",
+          "count": 2
+        }
+      },
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "minecraft:nether_star",
+          "count": 1
+        }
+      },
+      {
+        "type": "masterfulmachinery:fluids",
+        "data": {
+          "fluid": "neovitae:essentia_vitae_source",
+          "amount": 1000
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "type": "masterfulmachinery:items",
+        "data": {
+          "item": "eidolon_repraised:reaper_scythe",
+          "count": 1
+        }
+      }
+    ]
+  }
+]

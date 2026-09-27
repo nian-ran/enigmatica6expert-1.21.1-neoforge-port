@@ -1,0 +1,1980 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tools"
+	group: "74B3CF67FCEAB20F"
+	icon: {
+		id: "minecraft:netherite_pickaxe"
+	}
+	id: "0000000000000093"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0000000000000145"]
+			id: "00000000000001C6"
+			rewards: [
+				{
+					id: "00000000000001C8"
+					item: {
+						count: 1
+						id: "pneumaticcraft:drill_bit_compressed_iron"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000A58"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "00000000000001C7"
+				item: { count: 1, id: "pneumaticcraft:jackhammer" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["00000000000001C6"]
+			id: "00000000000001C9"
+			rewards: [
+				{
+					count: 5
+					id: "00000000000001CB"
+					item: {
+						count: 1
+						id: "pneumaticcraft:volume_upgrade"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "00000000000006F8"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "00000000000001CA"
+				item: { count: 1, id: "pneumaticcraft:drill_bit_diamond" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["00000000000001C9"]
+			id: "00000000000001CC"
+			rewards: [
+				{
+					count: 2
+					id: "00000000000001CE"
+					item: {
+						count: 1
+						id: "pneumaticcraft:speed_upgrade"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "00000000000006F7"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "00000000000001CD"
+				item: { count: 1, id: "pneumaticcraft:drill_bit_netherite" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0000000000000165"]
+			id: "00000000000001CF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000650"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001D0"
+				item: { count: 1, id: "pneumaticcraft:pneumatic_chestplate" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0000000000000165"]
+			id: "00000000000001D1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "000000000000064F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001D2"
+				item: { count: 1, id: "pneumaticcraft:pneumatic_helmet" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0000000000000165"]
+			id: "00000000000001D3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000651"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001D4"
+				item: { count: 1, id: "pneumaticcraft:pneumatic_leggings" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0000000000000165"]
+			id: "00000000000001D5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000652"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001D6"
+				item: { count: 1, id: "pneumaticcraft:pneumatic_boots" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"00000000000001D1"
+				"00000000000001D5"
+				"00000000000001D3"
+				"00000000000001CF"
+			]
+			dependency_requirement: "one_completed"
+			id: "00000000000001D7"
+			rewards: [{
+				count: 4
+				id: "0000000000000654"
+				item: {
+					count: 1
+					id: "pneumaticcraft:armor_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "00000000000001D8"
+				item: { count: 1, id: "pneumaticcraft:armor_upgrade" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["00000000000001D1"]
+			id: "00000000000001D9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000645"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001DA"
+				item: { count: 1, id: "pneumaticcraft:night_vision_upgrade" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["00000000000001D1"]
+			id: "00000000000001DB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000644"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001DC"
+				item: { count: 1, id: "pneumaticcraft:scuba_upgrade" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["00000000000001CF"]
+			id: "00000000000001DD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000642"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001DE"
+				item: { count: 1, id: "pneumaticcraft:magnet_upgrade" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["00000000000001CF"]
+			id: "00000000000001DF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000643"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001E0"
+				item: { count: 1, id: "pneumaticcraft:charging_upgrade" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["00000000000001D5"]
+			id: "00000000000001E3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "000000000000063F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001E4"
+				item: { count: 1, id: "pneumaticcraft:flippers_upgrade" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0000000000000145"]
+			id: "00000000000001E7"
+			rewards: [{
+				id: "0000000000000653"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+			tasks: [{
+				id: "00000000000001E8"
+				item: { count: 1, id: "pneumaticcraft:memory_stick" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["00000000000001D3"]
+			id: "00000000000001ED"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				id: "0000000000000641"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001EE"
+				item: { count: 1, id: "pneumaticcraft:jumping_upgrade_4" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["00000000000001D5"]
+			id: "00000000000001F5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				id: "0000000000000640"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001F6"
+				item: { count: 1, id: "pneumaticcraft:jet_boots_upgrade_5" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0000000000000165"]
+			id: "00000000000001F7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000A56"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000001F8"
+				item: { count: 1, id: "pneumaticcraft:micromissiles" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["00000000000001FB"]
+			id: "00000000000001F9"
+			rewards: [{
+				id: "0000000000000868"
+				item: {
+					count: 1
+					id: "pneumaticcraft:gun_ammo_ap"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000001FA"
+				item: { count: 1, id: "pneumaticcraft:sentry_turret" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["00000000000000B3"]
+			id: "00000000000001FB"
+			rewards: [{
+				id: "0000000000000867"
+				item: {
+					count: 1
+					id: "pneumaticcraft:gun_ammo"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000001FC"
+				item: { count: 1, id: "pneumaticcraft:minigun" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["00000000000001FB"]
+			id: "0000000000000202"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				id: "0000000000000A55"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000203"
+					item: { count: 1, id: "pneumaticcraft:gun_ammo_freezing" }
+					type: "item"
+				}
+				{
+					id: "000000000000020B"
+					item: { count: 1, id: "pneumaticcraft:gun_ammo_explosive" }
+					type: "item"
+				}
+				{
+					id: "0000000000000869"
+					item: { count: 1, id: "pneumaticcraft:gun_ammo_incendiary" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["00000000000001FB"]
+			id: "000000000000020E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "0000000000000655"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000020F"
+				item: { count: 1, id: "pneumaticcraft:guard_drone" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["000000000000020E"]
+			id: "0000000000000210"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				id: "0000000000000A57"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000211"
+				item: { count: 1, id: "pneumaticcraft:minigun_upgrade" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0000000000000168"]
+			id: "0000000000000212"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "0000000000000894"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000213"
+				item: { count: 1, id: "pneumaticcraft:aerial_interface" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000435"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000836"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000436"
+				item: { count: 1, id: "mekanism:mekasuit_helmet" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000437"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000835"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000438"
+				item: { count: 1, id: "mekanism:mekasuit_bodyarmor" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000439"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000834"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000043A"
+				item: { count: 1, id: "mekanism:mekasuit_pants" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["00000000000007A9"]
+			id: "000000000000043B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000833"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000043C"
+				item: { count: 1, id: "mekanism:mekasuit_boots" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["00000000000006A5"]
+			id: "000000000000043D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "000000000000083D"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "000000000000043E"
+					item: { count: 1, id: "mekanism:canteen" }
+					type: "item"
+				}
+				{
+					id: "00000000000004B5"
+					item: { count: 1, id: "mekanism:nutritional_liquifier" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0000000000000435"]
+			id: "000000000000043F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "000000000000083B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000440"
+				item: { count: 1, id: "mekanism:module_vision_enhancement_unit" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0000000000000435"]
+			id: "0000000000000441"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "000000000000083A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000442"
+				item: { count: 1, id: "mekanism:module_electrolytic_breathing_unit" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["000000000000043B"]
+			id: "0000000000000443"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000839"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000444"
+				item: { count: 1, id: "mekanism:module_hydraulic_propulsion_unit" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["000000000000043B"]
+			id: "0000000000000445"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "000000000000083E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000446"
+				item: { count: 1, id: "mekanism:module_magnetic_attraction_unit" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0000000000000437"]
+			id: "0000000000000447"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000837"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000448"
+				item: { count: 1, id: "mekanism:module_charge_distribution_unit" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"0000000000000437"
+				"000000000000043B"
+				"0000000000000435"
+				"0000000000000439"
+			]
+			id: "0000000000000449"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "000000000000083F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000044A"
+				item: { count: 1, id: "mekanism:module_energy_unit" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0000000000000437"]
+			id: "000000000000044B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "000000000000083C"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000044C"
+				item: { count: 1, id: "mekanism:module_jetpack_unit" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0000000000000439"]
+			id: "000000000000044D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000838"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000044E"
+				item: { count: 1, id: "mekanism:module_locomotive_boosting_unit" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["00000000000006C5"]
+			id: "000000000000044F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000831"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000450"
+				item: { count: 1, id: "mekanism:atomic_disassembler" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000451"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				id: "0000000000000832"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000452"
+				item: { count: 1, id: "mekanism:meka_tool" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["00000000000007A9"]
+			id: "0000000000000453"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				id: "0000000000000830"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000454"
+				item: { count: 1, id: "mekanism:modification_station" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			id: "000000000000045C"
+			rewards: [{
+				id: "0000000000000CA4"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: {
+					id: "minecraft:netherite_chestplate"
+				}
+				id: "000000000000045D"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["000000000000046C"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "mininggadgets:mininggadget"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "000000000000045F"
+			rewards: [
+				{
+					id: "000000000000067D"
+					item: {
+						components: {
+							"ftbquests:missing_item": "mininggadgets:upgrade_light_placer"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000A52"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000460"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "00000000000006F2"
+					item: { components: { "ftbquests:missing_item": "mininggadgets:modificationtable" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["000000000000045F"]
+			id: "0000000000000464"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				id: "00000000000006EF"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000465"
+				item: { components: { "ftbquests:missing_item": "mininggadgets:upgrade_fortune_3" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["000000000000045F"]
+			id: "0000000000000466"
+			rewards: [
+				{
+					id: "000000000000067B"
+					item: {
+						components: {
+							"ftbquests:missing_item": "mininggadgets:upgrade_magnet"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000A53"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "000000000000067C"
+				item: { components: { "ftbquests:missing_item": "mininggadgets:upgrade_silk" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["000000000000045F"]
+			id: "0000000000000468"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				id: "00000000000006EE"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000469"
+				item: { components: { "ftbquests:missing_item": "mininggadgets:upgrade_efficiency_5" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["000000000000045F"]
+			id: "000000000000046A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000A54"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000046B"
+				item: { components: { "ftbquests:missing_item": "mininggadgets:upgrade_battery_3" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"0000000000000475"
+				"0000000000000595"
+			]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "mythicbotany:alfsteel_helmet"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "0000000000000470"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				id: "000000000000065C"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000471"
+					item: { components: { "ftbquests:missing_item": "mythicbotany:alfsteel_helmet" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000472"
+					item: { components: { "ftbquests:missing_item": "mythicbotany:alfsteel_chestplate" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000473"
+					item: { components: { "ftbquests:missing_item": "mythicbotany:alfsteel_leggings" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000474"
+					item: { components: { "ftbquests:missing_item": "mythicbotany:alfsteel_boots" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0000000000000517"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "botania:terrasteel_helmet"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "0000000000000475"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				id: "000000000000065D"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000476"
+					item: { components: { "ftbquests:missing_item": "botania:terrasteel_helmet" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000477"
+					item: { components: { "ftbquests:missing_item": "botania:terrasteel_chestplate" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000478"
+					item: { components: { "ftbquests:missing_item": "botania:terrasteel_leggings" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000479"
+					item: { components: { "ftbquests:missing_item": "botania:terrasteel_boots" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0000000000000517"]
+			id: "000000000000047A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				id: "000000000000065E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000047B"
+				item: { components: { "ftbquests:missing_item": "aiotbotania:terra_aiot" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0000000000000595"]
+			id: "000000000000047C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				id: "000000000000065B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000047D"
+				item: { components: { "ftbquests:missing_item": "aiotbotania:alfsteel_aiot" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["00000000000004B3"]
+			icon: {
+				id: "aquaculture:neptunium_helmet"
+			}
+			id: "000000000000047E"
+			rewards: [
+				{
+					id: "000000000000065F"
+					item: {
+						count: 1
+						id: "aquaculture:nether_star_hook"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+					id: "00000000000006F4"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000047F"
+					item: { count: 1, id: "aquaculture:neptunium_helmet" }
+					type: "item"
+				}
+				{
+					id: "0000000000000660"
+					item: { count: 1, id: "aquaculture:neptunium_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0000000000000661"
+					item: { count: 1, id: "aquaculture:neptunium_leggings" }
+					type: "item"
+				}
+				{
+					id: "0000000000000662"
+					item: { count: 1, id: "aquaculture:neptunium_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["00000000000004B3"]
+			id: "0000000000000480"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				id: "00000000000006F5"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000481"
+				item: { count: 1, id: "aquaculture:neptunium_pickaxe" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["00000000000003D5"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "ars_nouveau:archmage_hood"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "0000000000000486"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					id: "0000000000000666"
+					type: "command"
+				}
+				{
+					id: "000000000000066E"
+					item: {
+						count: 1
+						id: "minecraft:enchanted_book"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000487"
+					item: { components: { "ftbquests:missing_item": "ars_nouveau:archmage_hood" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000048A"
+					item: { components: { "ftbquests:missing_item": "ars_nouveau:archmage_robes" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000048B"
+					item: { components: { "ftbquests:missing_item": "ars_nouveau:archmage_leggings" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000048C"
+					item: { components: { "ftbquests:missing_item": "ars_nouveau:archmage_boots" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["00000000000002E9"]
+			icon: {
+				id: "naturesaura:sky_helmet"
+			}
+			id: "0000000000000488"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
+				id: "0000000000000665"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000489"
+					item: { count: 1, id: "naturesaura:sky_helmet" }
+					type: "item"
+				}
+				{
+					id: "000000000000048D"
+					item: { count: 1, id: "naturesaura:sky_chest" }
+					type: "item"
+				}
+				{
+					id: "000000000000048E"
+					item: { count: 1, id: "naturesaura:sky_pants" }
+					type: "item"
+				}
+				{
+					id: "000000000000048F"
+					item: { count: 1, id: "naturesaura:sky_shoes" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["00000000000004A3"]
+			id: "0000000000000490"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+					id: "0000000000000657"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000865"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000491"
+				item: { components: { "ftbquests:missing_item": "thermal:flux_drill" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["00000000000004A3"]
+			id: "0000000000000492"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+					id: "0000000000000656"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000866"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000493"
+				item: { components: { "ftbquests:missing_item": "thermal:flux_saw" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["00000000000004A6"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "thermal:hazmat_helmet"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "0000000000000494"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "0000000000000659"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000495"
+					item: { components: { "ftbquests:missing_item": "thermal:hazmat_helmet" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000049A"
+					item: { components: { "ftbquests:missing_item": "thermal:hazmat_chestplate" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000049B"
+					item: { components: { "ftbquests:missing_item": "thermal:hazmat_leggings" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000049C"
+					item: { components: { "ftbquests:missing_item": "thermal:hazmat_boots" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["00000000000003A2"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "thermal:diving_helmet"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "0000000000000496"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "0000000000000658"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000497"
+					item: { components: { "ftbquests:missing_item": "thermal:diving_helmet" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000049D"
+					item: { components: { "ftbquests:missing_item": "thermal:diving_chestplate" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000049E"
+					item: { components: { "ftbquests:missing_item": "thermal:diving_leggings" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000049F"
+					item: { components: { "ftbquests:missing_item": "thermal:diving_boots" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["00000000000004A3"]
+			id: "0000000000000498"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "000000000000065A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000499"
+				item: { components: { "ftbquests:missing_item": "thermal:flux_magnet" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["00000000000002E9"]
+			id: "00000000000004B6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic"
+				id: "0000000000000664"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000004B7"
+				item: { count: 1, id: "naturesaura:sky_pickaxe" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["000000000000046E"]
+			id: "0000000000000AF7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000B0B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000AF8"
+				item: { components: { "ftbquests:missing_item": "portable_stonecutter:portable_stonecutter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0000000000000082"]
+			id: "0000000000000F5F"
+			tasks: [{
+				id: "0000000000000F60"
+				item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_drill" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["0000000000000F09"]
+			id: "0000000000000F61"
+			tasks: [{
+				id: "0000000000000F62"
+				item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_saw" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0000000000000F07"]
+			id: "0000000000000F63"
+			tasks: [{
+				id: "0000000000000F64"
+				item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b, "industrialforegoing:infinity_trident_channeling": 0b, "industrialforegoing:infinity_trident_loyalty": 0, "industrialforegoing:infinity_trident_riptide": 0 }, count: 1, id: "industrialforegoing:infinity_trident" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0000000000000F0B"]
+			id: "0000000000000F65"
+			tasks: [{
+				id: "0000000000000F66"
+				item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_hammer_beheading": 0, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_hammer" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"00000000000004A4"
+				"0000000000000490"
+				"0000000000000492"
+				"0000000000000498"
+			]
+			dependency_requirement: "one_completed"
+			id: "0000000000000F98"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+					id: "0000000000000F9A"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000F9B"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000F99"
+				item: { components: { "ftbquests:missing_item": "thermal:area_radius_augment" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "1487479CFA348530"
+			rewards: [
+				{
+					id: "4AA86E1E20DADE27"
+					item: {
+						count: 1
+						id: "mekanism:advanced_fluid_tank"
+					}
+					type: "item"
+				}
+				{
+					id: "17E85BEC398930AD"
+					item: {
+						count: 1
+						id: "immersiveengineering:sawblade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "716019716B2915F9"
+				item: { count: 1, id: "immersiveengineering:buzzsaw" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "52DFEA36FFFBCDD5"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+					id: "098BE70A0BFCDBDC"
+					type: "command"
+				}
+				{
+					count: 64
+					id: "02E988D98405DAFB"
+					item: {
+						components: {
+							"ftbquests:missing_item": "immersiveengineering:casull"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "54E76BD7C4FB9D97"
+				item: { count: 1, id: "immersiveengineering:revolver" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "0A476C6332EB6477"
+			rewards: [
+				{
+					id: "5D7232BCA248639D"
+					item: {
+						count: 1
+						id: "mekanism:advanced_fluid_tank"
+					}
+					type: "item"
+				}
+				{
+					id: "7683853C5B00EE25"
+					item: {
+						count: 1
+						id: "immersiveengineering:drillhead_iron"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5B3CC19ED97DFA26"
+				item: { count: 1, id: "immersiveengineering:drill" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "69C4E9422B0C695A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+					id: "57BCCB513CA91D6B"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "6BCA8B2194807B4D"
+					item: {
+						components: {
+							"ftbquests:missing_item": "emendatusenigmatica:iron_rod"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "404F5C421F8FFFD5"
+				item: { count: 1, id: "immersiveengineering:railgun" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["52DFEA36FFFBCDD5"]
+			id: "3FC9C9BA6C4B9597"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "24A27D154F9FB236"
+				type: "command"
+			}]
+			tasks: [{
+				id: "46FB2138D39F9238"
+				item: { count: 1, id: "immersiveengineering:speedloader" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["52DFEA36FFFBCDD5"]
+			id: "3C6A4FF4F12DCAB2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "1EE1E0D6A82D9B90"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4E1995B3908BE0A1"
+				item: { count: 1, id: "immersiveengineering:toolupgrade_revolver_bayonet" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["69C4E9422B0C695A"]
+			id: "4AEF4EECF33AAD14"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "388801C14A6A9916"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1722BA00297D1CD5"
+				item: { count: 1, id: "immersiveengineering:toolupgrade_railgun_capacitors" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["69C4E9422B0C695A"]
+			id: "375C292687CF5637"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "231932437B4E9839"
+				type: "command"
+			}]
+			tasks: [{
+				id: "258019F9C44FA366"
+				item: { count: 1, id: "immersiveengineering:toolupgrade_railgun_scope" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["69C4E9422B0C695A"]
+			id: "149EC37E85BC39BB"
+			tasks: [{
+				id: "0946F869835964E3"
+				item: { count: 1, id: "immersiveengineering:powerpack" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["52DFEA36FFFBCDD5"]
+			id: "7EA4E88D7230D94D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "673B7ECE0BDE897E"
+				type: "command"
+			}]
+			tasks: [{
+				count: 24L
+				id: "3E8BA9F57E3C4452"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1487479CFA348530"]
+			id: "650F8ED52289B8AC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "541EA45AC0E8D7CF"
+				type: "command"
+			}]
+			tasks: [{
+				id: "07CF70C497212059"
+				item: { count: 1, id: "immersiveengineering:rockcutter" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0A476C6332EB6477"]
+			id: "322F7E60078AC6F6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "5691DD3285ADB605"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4D1F4C0716B593B9"
+				item: { count: 1, id: "immersiveengineering:toolupgrade_drill_waterproof" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0A476C6332EB6477"]
+			id: "13AA0065B8167EF4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "39097B6C7B38506A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6A6D387D221FEC38"
+				item: { count: 1, id: "immersiveengineering:drillhead_steel" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5B3CC19ED97DFA26"
+				"716019716B2915F9"
+			]
+			dependency_requirement: "one_completed"
+			id: "546222019B6470BA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "713B059CB5DBEBCA"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4A295A3D115FE1F2"
+				item: { count: 1, id: "immersiveengineering:toolupgrade_drill_lube" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"716019716B2915F9"
+				"672C630D81BD8E94"
+				"5B3CC19ED97DFA26"
+			]
+			dependency_requirement: "one_completed"
+			id: "7B384B41FCA9F17A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "60482427F2F16E9B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "5761B4339C81361F"
+				item: { count: 1, id: "immersiveengineering:toolupgrade_drill_capacity" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0A476C6332EB6477"]
+			id: "1A0053922B30B033"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "1D732032B9C86AB5"
+				type: "command"
+			}]
+			tasks: [{
+				id: "762650E500C59FAF"
+				item: { count: 1, id: "immersiveengineering:toolupgrade_drill_damage" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1487479CFA348530"]
+			id: "283516E560D1D20E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "36142E0E21AC2474"
+				type: "command"
+			}]
+			tasks: [{
+				id: "59195DC2ADAA355B"
+				item: { count: 1, id: "immersiveengineering:toolupgrade_buzzsaw_spareblades" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "4498690DCA41A562"
+			rewards: [{
+				id: "2DBC321E9D2AE461"
+				item: {
+					count: 1
+					id: "immersiveengineering:toolupgrade_chemthrower_focus"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "672C630D81BD8E94"
+				item: { count: 1, id: "immersiveengineering:chemthrower" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			id: "322E9DDDEE1623E3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "43188DFF0C8F9DDC"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2AF9B5D1BACA4A59"
+				item: { count: 1, id: "quark:bottled_cloud" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["000000000000046D"]
+			id: "7AE1180EFAF22376"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "4FDD99B9F9F65B1D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4D29649F3F51D7D3"
+				item: { components: { "ftbquests:missing_item": "tiab:timeinabottle" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["3EA3751B482189B7"]
+			id: "1C861BDF9266B721"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				id: "196A0F3B1A3EB04F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "14ED2E5760DB70B5"
+				item: { components: { "ftbquests:missing_item": "mythicbotany:mjoellnir" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["00000000000003D7"]
+			id: "4A1C227E044B02D6"
+			tasks: [
+				{
+					id: "0733FFA5BAB24544"
+					item: { count: 1, id: "ars_nouveau:spell_bow" }
+					type: "item"
+				}
+				{
+					id: "25A8965A5E3C4458"
+					item: { count: 1, id: "ars_nouveau:enchanters_sword" }
+					type: "item"
+				}
+				{
+					id: "4CDEBD46316A28AF"
+					item: { count: 1, id: "ars_nouveau:wand" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["000000000000046F"]
+			id: "03CE9A1AE5E2538D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "1A05BF41EEF353BA"
+				type: "command"
+			}]
+			tasks: [{
+				id: "21050326FB2FBF70"
+				item: { components: { "ftbquests:missing_item": "clockout:clockout_block" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["00000000000003FF"]
+			id: "2A74822BE970E9D4"
+			min_width: 300
+			rewards: [
+				{
+					count: 8
+					id: "39498CF292AB8B53"
+					item: {
+						count: 1
+						id: "minecraft:glass_bottle"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "00012916E3BF0CC7"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "417D1AA02B005770"
+				item: { count: 1, id: "shrink:shrinking_device" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -12.0d
+		}
+		{
+			id: "7EDFBD3AEAC8B587"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "2826CA3ECD3974D4"
+				type: "command"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "0D382E19423F7F14"
+				item: { count: 1, id: "morphtool:tool" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["000000000000019B"]
+			id: "32543CB763F99E26"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "1CB81CA01A66EFF3"
+				type: "command"
+			}]
+			tasks: [{
+				id: "5E0566EA6AC167A7"
+				item: { components: { "ftbquests:missing_item": "ironjetpacks:hardened_jetpack" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["32543CB763F99E26"]
+			id: "517AFDCCF9B4F556"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "2A08858F195AB557"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6CC77BA53377140C"
+				item: { components: { "ftbquests:missing_item": "ironjetpacks:invar_jetpack" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["517AFDCCF9B4F556"]
+			id: "3DE9AC6CE13B591B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "3CF8EC622824974F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "55F87954F5A7F169"
+				item: { components: { "ftbquests:missing_item": "ironjetpacks:blazing_jetpack" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["3DE9AC6CE13B591B"]
+			id: "7A685C5CF8B6792E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "2F7341AFE1379D57"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3AC7C02A3C65D157"
+				item: { components: { "ftbquests:missing_item": "ironjetpacks:signalum_jetpack" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["7A685C5CF8B6792E"]
+			id: "53232F72A2133D14"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "1C0DB38F8304E24B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "377EE5AC5053521D"
+				item: { components: { "ftbquests:missing_item": "ironjetpacks:niotic_jetpack" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["53232F72A2133D14"]
+			id: "64D05D57CD3BD048"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "1A8129ADCF741705"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7632CE1603104C5B"
+				item: { components: { "ftbquests:missing_item": "ironjetpacks:lumium_jetpack" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["64D05D57CD3BD048"]
+			id: "78FB2B0A5D565203"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "44AEA9FA58AF9913"
+				type: "command"
+			}]
+			tasks: [{
+				id: "76E9010CA6A45910"
+				item: { components: { "ftbquests:missing_item": "ironjetpacks:spirited_jetpack" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["0430DED82424A380"]
+			id: "4A1D635E224616E5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
+				id: "4C390C7FDB3F39FD"
+				type: "command"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1E21A04D7897170A"
+				item: { components: { "ftbquests:missing_item": "ironjetpacks:nitro_jetpack" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["78FB2B0A5D565203"]
+			id: "0430DED82424A380"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic"
+				id: "33DDF92F40291EBA"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3AD4174B377A96BE"
+				item: { components: { "ftbquests:missing_item": "ironjetpacks:enderium_jetpack" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -18.5d
+		}
+	]
+}

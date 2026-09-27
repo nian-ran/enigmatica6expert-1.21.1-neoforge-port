@@ -1,0 +1,9 @@
+{
+  "block": "ars_nouveau:arcane_pedestal",
+  "stats": {
+    "maxEterna": 15,
+    "eterna": 1,
+    "arcana": 2,
+    "quanta": -2
+  }
+}

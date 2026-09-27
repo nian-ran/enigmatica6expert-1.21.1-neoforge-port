@@ -1,0 +1,8 @@
+#The delay in ticks before the spell is cast
+# Default: 10
+# Range: > 0
+delay = 10
+#The cost of casting this spell
+# Default: 3
+# Range: > 0
+cost = 3

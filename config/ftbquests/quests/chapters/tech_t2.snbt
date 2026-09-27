@@ -1,0 +1,405 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tech_t2"
+	group: "34B7FB260B6AEB81"
+	id: "1367E0A795499DE6"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0000000000000FDB"]
+			id: "67F7E4C19E39F9F3"
+			shape: "rsquare"
+			tasks: [{
+				count: 16L
+				id: "76965E68CB17945A"
+				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000FD5"]
+			id: "06F4A47216226927"
+			shape: "rsquare"
+			tasks: [{
+				count: 27L
+				id: "369D57ECAEBF7A77"
+				item: { count: 1, id: "immersiveengineering:cokebrick" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06F4A47216226927"]
+			id: "0FF412352C4AA995"
+			tasks: [{
+				count: 27L
+				id: "5CDC032E69DE6348"
+				item: { count: 1, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["159CEE8160564096"]
+			id: "51C4B771C756A8DD"
+			tasks: [{
+				count: 8L
+				id: "1696A045279F7734"
+				item: { count: 1, id: "immersiveengineering:alloybrick" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0FF412352C4AA995"]
+			id: "159CEE8160564096"
+			shape: "diamond"
+			tasks: [{
+				id: "1E770D18A73E9D10"
+				item: { count: 1, id: "kubejs:smoldering_lapis_lazuli_compound" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"640AF7C1C65218DD"
+				"51C4B771C756A8DD"
+			]
+			id: "56A05A07C30709EC"
+			tasks: [{
+				id: "2B7F725CA5D12C72"
+				item: { count: 1, id: "immersiveengineering:blueprint" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["56A05A07C30709EC"]
+			id: "3AC1DD7E5DDDC129"
+			shape: "diamond"
+			tasks: [{
+				id: "4DDB5EC00B0ACDFE"
+				item: { count: 1, id: "immersiveengineering:workbench" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3AC1DD7E5DDDC129"]
+			id: "065270B7FA576ED0"
+			shape: "diamond"
+			tasks: [{
+				id: "18E3BEB02D473233"
+				item: { count: 1, id: "immersiveengineering:component_iron" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"065270B7FA576ED0"
+				"3DA107DD546F8E02"
+			]
+			id: "1B3A149D46540273"
+			shape: "octagon"
+			tasks: [{
+				id: "0153100351695FB1"
+				item: { count: 1, id: "industrialforegoing:machine_frame_pity" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3AC1DD7E5DDDC129"]
+			id: "3DA107DD546F8E02"
+			shape: "diamond"
+			tasks: [{
+				id: "2B67FC4FC12C5684"
+				item: { count: 1, id: "immersiveengineering:concrete_leaded" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"37CC74C655BCE0C0"
+				"54DA0B6FC5FE6F1A"
+			]
+			id: "4B7BDCCE4535A4F9"
+			tasks: [
+				{
+					id: "70256FD4A3182AA1"
+					item: { count: 1, id: "pneumaticcraft:assembly_controller" }
+					type: "item"
+				}
+				{
+					id: "7111F86DD237301D"
+					item: { count: 1, id: "pneumaticcraft:assembly_program_drill_laser" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6EC89B2EB48331A5"]
+			id: "640AF7C1C65218DD"
+			tasks: [{
+				id: "4AC6C6F032DAAE12"
+				item: { count: 1, id: "pneumaticcraft:thermopneumatic_processing_plant" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["67F7E4C19E39F9F3"]
+			id: "6EC89B2EB48331A5"
+			tasks: [{
+				id: "5D63662B1B0695CE"
+				item: { count: 1, id: "pneumaticcraft:liquid_compressor" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["601203BF957994C2"]
+			id: "5258B21FEBF3E222"
+			shape: "diamond"
+			tasks: [{
+				id: "77060D75C44D7CC2"
+				item: { count: 1, id: "pneumaticcraft:plastic" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5258B21FEBF3E222"
+				"4214CE273DD3B183"
+			]
+			id: "37CC74C655BCE0C0"
+			tasks: [{
+				id: "789B1A4C9CE21200"
+				item: { count: 1, id: "pneumaticcraft:printed_circuit_board" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6EC89B2EB48331A5"]
+			id: "601203BF957994C2"
+			tasks: [
+				{
+					id: "007E6DD90C5F3F4C"
+					item: { count: 1, id: "pneumaticcraft:refinery" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "715292E89B95375D"
+					item: { count: 1, id: "pneumaticcraft:refinery_output" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["66A2267B602C6232"]
+			id: "4214CE273DD3B183"
+			shape: "diamond"
+			tasks: [{
+				id: "42384EBFD1848ACD"
+				item: { count: 1, id: "refinedstorage:basic_processor" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7773B233487FEBD2"]
+			id: "174A3B072A1CEFE5"
+			shape: "octagon"
+			tasks: [{
+				id: "39703E840E7CE98F"
+				item: { count: 1, id: "refinedstorage:controller" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["66A2267B602C6232"]
+			id: "7773B233487FEBD2"
+			shape: "diamond"
+			tasks: [{
+				id: "51C37065B81DA404"
+				item: { count: 1, id: "refinedstorage:advanced_processor" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5258B21FEBF3E222"]
+			id: "54DA0B6FC5FE6F1A"
+			shape: "diamond"
+			tasks: [{
+				id: "585089F444DD3061"
+				item: { count: 1, id: "powah:capacitor_basic_large" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6EC89B2EB48331A5"]
+			id: "66A2267B602C6232"
+			tasks: [
+				{
+					count: 22L
+					id: "68B66FC4450F1B1B"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_wall" }
+					type: "item"
+				}
+				{
+					id: "28CA1F0A1B98D1D7"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_valve" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3AA19ED845355309"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_interface" }
+					type: "item"
+				}
+				{
+					id: "5CBC4FC4423F78F0"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_glass" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5258B21FEBF3E222"]
+			id: "26BE40771EA0B53D"
+			tasks: [{
+				id: "3A2FE29E3F3C08FA"
+				item: { count: 1, id: "pneumaticcraft:amadron_tablet" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"2F4E5595CF6E7C18"
+				"2B8E1E0F065271FC"
+				"77685CCEBB43BE31"
+			]
+			id: "44D8EF9036E30760"
+			shape: "gear"
+			tasks: [{
+				id: "6DF327D277407CBF"
+				item: { count: 1, id: "kubejs:medium_machinery_schematics" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4B7BDCCE4535A4F9"]
+			id: "1560E98A52BEF117"
+			shape: "octagon"
+			tasks: [{
+				id: "7F4FBA868C08B64B"
+				item: { count: 1, id: "rftoolsbase:machine_frame" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["26BE40771EA0B53D"]
+			id: "50971B41665D4AD5"
+			shape: "diamond"
+			tasks: [{
+				id: "5C3819A92A37BF5A"
+				item: { count: 1, id: "kubejs:amadron_survey_tools" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["26BE40771EA0B53D"]
+			id: "2F4E5595CF6E7C18"
+			shape: "diamond"
+			tasks: [{
+				id: "0B08E1FD7B99D610"
+				item: { count: 1, id: "kubejs:engineering_student_meals" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["26BE40771EA0B53D"]
+			id: "2B8E1E0F065271FC"
+			shape: "diamond"
+			tasks: [{
+				id: "792FFEF4FD9A35BE"
+				item: { count: 1, id: "kubejs:construction_tools" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["26BE40771EA0B53D"]
+			id: "77685CCEBB43BE31"
+			shape: "diamond"
+			tasks: [
+				{
+					count: 5L
+					id: "65B40E4EE6596323"
+					item: { count: 1, id: "kubejs:building_materials" }
+					type: "item"
+				}
+				{
+					id: "457B0FD1BEFC5F7B"
+					item: { count: 1, id: "kubejs:foundation_materials" }
+					type: "item"
+				}
+				{
+					id: "6B9D17102A99F785"
+					item: { count: 1, id: "kubejs:landscaping_materials" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 7.5d
+		}
+	]
+}

@@ -1,0 +1,496 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "challenges"
+	group: ""
+	id: "0000000000000098"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1C6E46EA96373E74"]
+			id: "4473CCD6EB0E60E0"
+			rewards: [{
+				id: "18625435104F6277"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					id: "mekanism:ultimate_induction_cell"
+				}
+				id: "43D8479933BD78E5"
+				item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			id: "1C6E46EA96373E74"
+			rewards: [{
+				id: "7F0FC16030FE7D99"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "6C159C9408B0C66C"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C6E46EA96373E74"]
+			id: "64A6812D6EFF4308"
+			rewards: [{
+				id: "2CEB97E39BE8BBE5"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:missing_item": "industrialforegoing:supreme_black_hole_tank"
+					}
+					id: "ftbquests:missing_item"
+				}
+				id: "5484233E300B3E29"
+				item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C6E46EA96373E74"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "industrialforegoing:supreme_black_hole_tank"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "6D463AE8FE933401"
+			rewards: [{
+				id: "2B3C7A66BA863710"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:missing_item": "industrialforegoing:supreme_black_hole_tank"
+					}
+					id: "ftbquests:missing_item"
+				}
+				id: "68B113885B76682E"
+				item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1C6E46EA96373E74"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "industrialforegoing:supreme_black_hole_tank"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "378F01CE074D79A0"
+			rewards: [{
+				id: "2F30217DBD536B5C"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:missing_item": "industrialforegoing:supreme_black_hole_tank"
+					}
+					id: "ftbquests:missing_item"
+				}
+				id: "53630EB2AB461FE0"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C6E46EA96373E74"]
+			id: "2AEE1AFA3BC416CE"
+			rewards: [{
+				id: "1101CE8B58FFDB74"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "enigmatica:husbandry/tame_all_animals"
+				criterion: ""
+				id: "6550FEDCE5175F8C"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1C6E46EA96373E74"]
+			id: "24ED473C9C545C09"
+			rewards: [{
+				id: "2CBDA020ED4C5E9C"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "minecraft:husbandry/bred_all_animals"
+				criterion: ""
+				id: "76A9D7B6C6D4C04F"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C6E46EA96373E74"]
+			id: "17E8CDC64C0FB5EA"
+			rewards: [
+				{
+					id: "485894E4EE24E3E1"
+					item: {
+						components: {
+							"ftbquests:missing_item": "trofers:small_trophy"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "23558895485FF9E0"
+					item: {
+						components: {
+							"ftbquests:missing_item": "trofers:small_trophy"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "2E4A9E23F542A9BF"
+					item: {
+						components: {
+							"ftbquests:missing_item": "trofers:small_trophy"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "0992ACAB5C09DAE0"
+					item: {
+						components: {
+							"ftbquests:missing_item": "trofers:small_trophy"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "7EF5A4E188996336"
+					item: {
+						components: {
+							"ftbquests:missing_item": "trofers:small_trophy"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "6457AAA4C0F166C9"
+					item: {
+						components: {
+							"ftbquests:missing_item": "trofers:small_trophy"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					id: "42B3BA6BE0A12001"
+					item: {
+						components: {
+							"ftbquests:missing_item": "trofers:small_trophy"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					icon: {
+						components: {
+							"industrialforegoing:infinity_can_charge": 1b
+							"industrialforegoing:infinity_item_power": 0L
+							"industrialforegoing:infinity_item_selected_tier": "poor"
+							"industrialforegoing:infinity_item_special": 0b
+						}
+						id: "industrialforegoing:infinity_drill"
+					}
+					id: "4801DE27B925DA50"
+					item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"industrialforegoing:infinity_can_charge": 1b
+							"industrialforegoing:infinity_hammer_beheading": 0
+							"industrialforegoing:infinity_item_power": 0L
+							"industrialforegoing:infinity_item_selected_tier": "poor"
+							"industrialforegoing:infinity_item_special": 0b
+						}
+						id: "industrialforegoing:infinity_hammer"
+					}
+					id: "7FD0249142690FBD"
+					item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"industrialforegoing:infinity_can_charge": 1b
+							"industrialforegoing:infinity_item_power": 0L
+							"industrialforegoing:infinity_item_selected_tier": "poor"
+							"industrialforegoing:infinity_item_special": 0b
+							"industrialforegoing:infinity_trident_channeling": 0b
+							"industrialforegoing:infinity_trident_loyalty": 0
+							"industrialforegoing:infinity_trident_riptide": 0
+						}
+						id: "industrialforegoing:infinity_trident"
+					}
+					id: "625720B1A137C6DF"
+					item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"industrialforegoing:infinity_can_charge": 1b
+							"industrialforegoing:infinity_item_power": 0L
+							"industrialforegoing:infinity_item_selected_tier": "poor"
+							"industrialforegoing:infinity_item_special": 0b
+						}
+						id: "industrialforegoing:infinity_saw"
+					}
+					id: "314182BBA59CFDD8"
+					item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"industrialforegoing:infinity_can_charge": 1b
+							"industrialforegoing:infinity_item_power": 0L
+							"industrialforegoing:infinity_item_selected_tier": "poor"
+							"industrialforegoing:infinity_item_special": 0b
+						}
+						id: "industrialforegoing:infinity_backpack"
+					}
+					id: "09A7BEA11BB1C9B1"
+					item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"industrialforegoing:infinity_can_charge": 1b
+							"industrialforegoing:infinity_item_power": 0L
+							"industrialforegoing:infinity_item_selected_tier": "poor"
+							"industrialforegoing:infinity_item_special": 0b
+						}
+						id: "industrialforegoing:infinity_nuke"
+					}
+					id: "1C420C2B58ADD9F4"
+					item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					icon: {
+						components: {
+							"industrialforegoing:configuration_action": "RELEASE"
+							"industrialforegoing:infinity_can_charge": 1b
+							"industrialforegoing:infinity_item_power": 0L
+							"industrialforegoing:infinity_item_selected_tier": "poor"
+							"industrialforegoing:infinity_item_special": 0b
+						}
+						id: "industrialforegoing:infinity_launcher"
+					}
+					id: "50D6D2760038E934"
+					item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1C6E46EA96373E74"]
+			id: "3DB3B9732A87744A"
+			rewards: [{
+				id: "75E761B2293C1707"
+				item: {
+					components: {
+						"ftbquests:missing_item": "trofers:large_trophy"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 2863L
+					id: "77ECAC90AB981C2F"
+					item: { count: 1, id: "farmersdelight:potato_crate" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "0B0BD4EA2A6DE4E9"
+					item: { components: { "ftbquests:missing_item": "thermal:rf_potato" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "382A604CF0387758"
+					item: { components: { "ftbquests:missing_item": "botania:tiny_potato" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "1B6A594B8B7AEDC7"
+					item: { count: 1, id: "minecraft:baked_potato" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "054D2C2D441C2021"
+					item: { count: 1, id: "minecraft:poisonous_potato" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "4597CD2D2CBA65E7"
+					item: { count: 1, id: "pneumaticcraft:cod_n_chips" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "469924BD6C490BF2"
+					item: { components: { "ftbquests:missing_item": "simplefarming:fish_and_chips" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "174E223CF910A58D"
+					item: { count: 1, id: "farmersdelight:steak_and_potatoes" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "19B011AE9B837D9E"
+					item: { count: 1, id: "farmersdelight:stuffed_potato" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "5BAE86CC78F24DFD"
+					item: { components: { "ftbquests:missing_item": "simplefarming:potato_knish" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "3D08E07D00A24BEB"
+					item: { components: { "ftbquests:missing_item": "botania:cosmetic_tiny_potato_mask" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2863L
+					id: "18DA6C0BF3BF2334"
+					item: { count: 1, id: "farmersdelight:wild_potatoes" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -1.0d
+		}
+	]
+}

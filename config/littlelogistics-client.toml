@@ -1,0 +1,15 @@
+[general]
+	#Modify the rate of smoke produced by a tug. Min 0, Max 1, Default 0.4
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	tugSmoke = 0.4
+	#Modify the rate of smoke produced by a locomotive. Min 0, Max 1, Default 0.2
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	locomotiveSmoke = 0.2
+	#Disable in-world route waypoint markers when holding a route item. Default false.
+	disableRouteMarkers = false
+	#Show nearby registered tug routes while holding the Conductor's Wrench. Default true.
+	showWrenchTugRoutes = true
+	#Show nearby registered locomotive routes while holding the Conductor's Wrench. Default true.
+	showWrenchLocoRoutes = true

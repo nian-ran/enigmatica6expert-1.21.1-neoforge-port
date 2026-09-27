@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "emendatusenigmatica:shield_upgrade_template"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "template_unlock": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/iron"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "template_unlock"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "emendatusenigmatica:shield_upgrade_template"
+    ]
+  }
+}

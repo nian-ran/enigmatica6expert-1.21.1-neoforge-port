@@ -1,0 +1,921 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_foregoing"
+	group: "72A9465344128AF9"
+	id: "0000000000000003"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "000000000000004A"
+			optional: true
+			rewards: [
+				{
+					id: "234EA77258AE837C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 6
+					id: "63727AE711541D73"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "452B662F54BEAD8D"
+				item: { count: 1, id: "industrialforegoing:machine_frame_pity" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["000000000000004A"]
+			id: "000000000000004B"
+			rewards: [
+				{
+					count: 32
+					id: "0000000000000628"
+					item: {
+						count: 1
+						id: "minecraft:acacia_log"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0000000000000CAB"
+					item: {
+						count: 1
+						id: "minecraft:acacia_sapling"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "000000000000004C"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["000000000000004B"]
+			id: "000000000000004F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				id: "0000000000000629"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000050"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0000000000000057"]
+			id: "0000000000000051"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				id: "0000000000000632"
+				type: "command"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				id: "0000000000000052"
+				item: { count: 1, id: "industrialforegoing:machine_frame_simple" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["000000000000004F"]
+			id: "0000000000000053"
+			rewards: [{
+				id: "0000000000000626"
+				item: {
+					count: 1
+					id: "industrialforegoing:meat_feeder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000054"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"000000000000004C"
+				"000000000000004F"
+			]
+			id: "0000000000000057"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				id: "000000000000062A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000006B"
+				item: { count: 1, id: "industrialforegoing:dissolution_chamber" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0000000000000057"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "industrialforegoing:range_addon11"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "0000000000000076"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				id: "0000000000000631"
+				type: "command"
+			}]
+			tasks: [{
+				id: "35428F7A336EE4A1"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"0000000000000050"
+				"0000000000000051"
+				"0000000000000053"
+			]
+			id: "0000000000000078"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+				id: "0000000000000633"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000079"
+				item: { count: 1, id: "industrialforegoing:machine_frame_advanced" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			id: "000000000000007A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+				id: "0000000000000636"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000007B"
+				item: { count: 1, id: "industrialforegoing:mob_crusher" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["000000000000007A"]
+			id: "000000000000007C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+					id: "0000000000000635"
+					type: "command"
+				}
+				{
+					id: "0000000000000F3B"
+					item: {
+						components: {
+							"ftbquests:missing_item": "industrialforegoing:common_black_hole_tank"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000007D"
+					item: { count: 1, id: "industrialforegoing:enchantment_factory" }
+					type: "item"
+				}
+				{
+					id: "0000000000000F0E"
+					item: { count: 1, id: "industrialforegoing:enchantment_applicator" }
+					type: "item"
+				}
+				{
+					id: "0000000000000F0F"
+					item: { count: 1, id: "industrialforegoing:enchantment_extractor" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			id: "000000000000007E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+				id: "0000000000000637"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000007F"
+				item: { count: 1, id: "industrialforegoing:material_stonework_factory" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["000000000000004F"]
+			id: "0000000000000080"
+			rewards: [
+				{
+					count: 8
+					id: "000000000000062C"
+					item: {
+						count: 1
+						id: "minecraft:beetroot"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "000000000000062D"
+					item: {
+						count: 1
+						id: "minecraft:carrot"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "000000000000062E"
+					item: {
+						count: 1
+						id: "minecraft:potato"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000081"
+				item: { count: 1, id: "industrialforegoing:bioreactor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000057"]
+			id: "0000000000000082"
+			rewards: [{
+				id: "0000000000000F36"
+				item: {
+					components: {
+						"ftbquests:missing_item": "industrialforegoing:common_black_hole_tank"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000083"
+				item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_drill" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000051"]
+			id: "0000000000000086"
+			rewards: [{
+				count: 16
+				id: "0000000000000634"
+				item: {
+					count: 1
+					id: "industrialforegoing:fertilizer"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000087"
+				item: { count: 1, id: "industrialforegoing:plant_fertilizer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"000000000000004C"
+				"000000000000004F"
+			]
+			id: "0000000000000088"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_rare"
+				id: "000000000000062B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000089"
+				item: { count: 1, id: "industrialforegoing:conveyor" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			id: "0000000000000EDC"
+			rewards: [{
+				id: "0000000000000EE0"
+				item: {
+					count: 1
+					id: "industrialforegoing:ether_gas_bucket"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "0000000000000EDD"
+				item: { count: 1, id: "industrialforegoing:machine_frame_supreme" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000051"]
+			hide_dependency_lines: true
+			id: "0000000000000EE1"
+			tasks: [{
+				id: "0000000000000EE2"
+				item: { count: 1, id: "industrialforegoing:mycelial_furnace" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0000000000000EE1"
+				"0000000000000EE5"
+				"0000000000000EE7"
+				"0000000000000EE9"
+				"0000000000000EEB"
+				"0000000000000EEF"
+				"0000000000000EED"
+				"0000000000000EFB"
+				"0000000000000F03"
+				"0000000000000EF1"
+				"0000000000000EF3"
+				"0000000000000EF7"
+				"0000000000000EF5"
+				"0000000000000EF9"
+				"0000000000000EFD"
+				"0000000000000F01"
+				"0000000000000EDC"
+			]
+			id: "0000000000000EE3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic"
+				id: "00EAC9D358EBDA6E"
+				type: "command"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "0000000000000EE4"
+				item: { count: 1, id: "industrialforegoing:mycelial_reactor" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000EE5"
+			tasks: [{
+				id: "0000000000000EE6"
+				item: { count: 1, id: "industrialforegoing:mycelial_slimey" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0000000000000051"]
+			hide_dependency_lines: true
+			id: "0000000000000EE7"
+			tasks: [{
+				id: "0000000000000EE8"
+				item: { count: 1, id: "industrialforegoing:mycelial_culinary" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000EE9"
+			tasks: [{
+				id: "0000000000000EEA"
+				item: { count: 1, id: "industrialforegoing:mycelial_potion" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000EEB"
+			tasks: [{
+				id: "0000000000000EEC"
+				item: { count: 1, id: "industrialforegoing:mycelial_disenchantment" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000EED"
+			tasks: [{
+				id: "0000000000000EEE"
+				item: { count: 1, id: "industrialforegoing:mycelial_ender" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000EEF"
+			tasks: [{
+				id: "0000000000000EF0"
+				item: { count: 1, id: "industrialforegoing:mycelial_explosive" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000051"]
+			hide_dependency_lines: true
+			id: "0000000000000EF1"
+			tasks: [{
+				id: "0000000000000EF2"
+				item: { count: 1, id: "industrialforegoing:mycelial_frosty" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000EDC"]
+			hide_dependency_lines: true
+			id: "0000000000000EF3"
+			tasks: [{
+				id: "0000000000000EF4"
+				item: { count: 1, id: "industrialforegoing:mycelial_halitosis" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000EF5"
+			tasks: [{
+				id: "0000000000000EF6"
+				item: { count: 1, id: "industrialforegoing:mycelial_magma" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000051"]
+			hide_dependency_lines: true
+			id: "0000000000000EF7"
+			tasks: [{
+				id: "0000000000000EF8"
+				item: { count: 1, id: "industrialforegoing:mycelial_pink" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000EDC"]
+			hide_dependency_lines: true
+			id: "0000000000000EF9"
+			tasks: [{
+				id: "0000000000000EFA"
+				item: { count: 1, id: "industrialforegoing:mycelial_netherstar" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000EFB"
+			tasks: [{
+				id: "0000000000000EFC"
+				item: { count: 1, id: "industrialforegoing:mycelial_death" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000EFD"
+			tasks: [{
+				id: "0000000000000EFE"
+				item: { count: 1, id: "industrialforegoing:mycelial_rocket" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000F01"
+			tasks: [{
+				id: "0000000000000F02"
+				item: { count: 1, id: "industrialforegoing:mycelial_crimed" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0000000000000EDC"]
+			hide_dependency_lines: true
+			id: "0000000000000F03"
+			tasks: [{
+				id: "0000000000000F04"
+				item: { count: 1, id: "industrialforegoing:mycelial_meatallurgic" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0000000000000057"]
+			id: "0000000000000F05"
+			rewards: [{
+				id: "0000000000000F37"
+				item: {
+					components: {
+						"ftbquests:missing_item": "industrialforegoing:common_black_hole_tank"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000F06"
+				item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_backpack" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0000000000000057"]
+			id: "0000000000000F07"
+			rewards: [{
+				id: "0000000000000F38"
+				item: {
+					components: {
+						"ftbquests:missing_item": "industrialforegoing:common_black_hole_tank"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000F08"
+				item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b, "industrialforegoing:infinity_trident_channeling": 0b, "industrialforegoing:infinity_trident_loyalty": 0, "industrialforegoing:infinity_trident_riptide": 0 }, count: 1, id: "industrialforegoing:infinity_trident" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0000000000000057"]
+			id: "0000000000000F09"
+			rewards: [{
+				id: "0000000000000F39"
+				item: {
+					components: {
+						"ftbquests:missing_item": "industrialforegoing:common_black_hole_tank"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000F0A"
+				item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_saw" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0000000000000057"]
+			id: "0000000000000F0B"
+			rewards: [{
+				id: "0000000000000F3A"
+				item: {
+					components: {
+						"ftbquests:missing_item": "industrialforegoing:common_black_hole_tank"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000F0C"
+				item: { components: { "industrialforegoing:infinity_can_charge": 1b, "industrialforegoing:infinity_hammer_beheading": 0, "industrialforegoing:infinity_item_power": 0L, "industrialforegoing:infinity_item_selected_tier": "poor", "industrialforegoing:infinity_item_special": 0b }, count: 1, id: "industrialforegoing:infinity_hammer" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["000000000000004A"]
+			hide_dependency_lines: true
+			id: "0000000000000F10"
+			rewards: [{
+				id: "0000000000000F2B"
+				type: "xp"
+				xp: 16
+			}]
+			tasks: [{
+				id: "0000000000000F11"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:common_black_hole_unit" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -9.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "0000000000000F12"
+			rewards: [{
+				id: "0000000000000F2C"
+				type: "xp"
+				xp: 32
+			}]
+			tasks: [{
+				id: "0000000000000F13"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:pity_black_hole_unit" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0000000000000051"]
+			hide_dependency_lines: true
+			id: "0000000000000F14"
+			rewards: [{
+				id: "0000000000000F2D"
+				type: "xp"
+				xp: 64
+			}]
+			tasks: [{
+				id: "0000000000000F15"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:simple_black_hole_unit" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000F16"
+			rewards: [{
+				id: "0000000000000F2E"
+				type: "xp"
+				xp: 128
+			}]
+			tasks: [{
+				id: "0000000000000F17"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:advanced_black_hole_unit" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000EDC"]
+			hide_dependency_lines: true
+			id: "0000000000000F18"
+			rewards: [{
+				id: "0000000000000F2F"
+				type: "xp"
+				xp: 256
+			}]
+			tasks: [{
+				id: "0000000000000F19"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:supreme_black_hole_unit" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["000000000000004A"]
+			hide_dependency_lines: true
+			id: "0000000000000F1A"
+			rewards: [{
+				id: "0000000000000F31"
+				type: "xp"
+				xp: 16
+			}]
+			tasks: [{
+				id: "0000000000000F1B"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:common_black_hole_tank" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -9.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "0000000000000F1C"
+			rewards: [{
+				id: "0000000000000F32"
+				type: "xp"
+				xp: 32
+			}]
+			tasks: [{
+				id: "0000000000000F1D"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:pity_black_hole_tank" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0000000000000051"]
+			hide_dependency_lines: true
+			id: "0000000000000F1E"
+			rewards: [{
+				id: "0000000000000F33"
+				type: "xp"
+				xp: 64
+			}]
+			tasks: [{
+				id: "0000000000000F1F"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:simple_black_hole_tank" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0000000000000078"]
+			hide_dependency_lines: true
+			id: "0000000000000F20"
+			rewards: [{
+				id: "0000000000000F34"
+				type: "xp"
+				xp: 128
+			}]
+			tasks: [{
+				id: "0000000000000F21"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:advanced_black_hole_tank" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000EDC"]
+			hide_dependency_lines: true
+			id: "0000000000000F22"
+			rewards: [{
+				id: "0000000000000F35"
+				type: "xp"
+				xp: 256
+			}]
+			tasks: [{
+				id: "0000000000000F23"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:supreme_black_hole_tank" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0000000000000EDC"]
+			hide_dependency_lines: true
+			id: "0000000000000F24"
+			rewards: [{
+				id: "0000000000000F30"
+				type: "xp"
+				xp: 512
+			}]
+			tasks: [{
+				id: "0000000000000F25"
+				item: { components: { "ftbquests:missing_item": "industrialforegoing:black_hole_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0000000000000057"]
+			id: "68F315FF23CD8A22"
+			rewards: [{
+				id: "0997C2E0E6DE8F76"
+				item: {
+					components: {
+						"ftbquests:missing_item": "industrialforegoing:common_black_hole_tank"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3991AE48C18012EC"
+				item: { count: 1, id: "industrialforegoing:mechanical_dirt" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["000000000000007A"]
+			id: "73E9574B069570BD"
+			rewards: [{
+				id: "24B8F1EFDCF5A2D9"
+				item: {
+					count: 1
+					id: "industrialforegoing:mob_imprisonment_tool"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "27D665ECBDA02E5A"
+				item: { count: 1, id: "industrialforegoing:mob_duplicator" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+	]
+}

@@ -1,0 +1,1428 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "occultism"
+	group: "5A8B89F87F77CF4C"
+	icon: {
+		id: "occultism:miner_djinni_ores"
+	}
+	id: "0000000000000CB0"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0000000000000CB1"
+			optional: true
+			rewards: [{
+				id: "72582AC6CA1713DA"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "379B9C805D818944"
+				item: { count: 1, id: "occultism:datura_seeds" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0000000000000CB1"]
+			hide_dependency_lines: false
+			id: "0000000000000CB5"
+			rewards: [
+				{
+					id: "0000000000000E1A"
+					type: "xp"
+					xp: 400
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000E1B"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000CB6"
+				item: { count: 1, id: "occultism:datura" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0000000000000CDA"]
+			icon: {
+				id: "occultism:divination_rod"
+			}
+			id: "0000000000000CB7"
+			min_width: 300
+			rewards: [
+				{
+					id: "0000000000000DF7"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 4
+					id: "0000000000000DF8"
+					item: {
+						count: 1
+						id: "occultism:otherworld_log"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0000000000000DF9"
+					item: {
+						count: 1
+						id: "occultism:otherworld_sapling_natural"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0000000000000E1D"
+					item: {
+						count: 1
+						id: "occultism:otherstone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000CB8"
+					item: { count: 1, id: "occultism:divination_rod" }
+					type: "item"
+				}
+				{
+					id: "0000000000000E1C"
+					item: { count: 1, id: "occultism:otherworld_log" }
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000CB5"]
+			id: "0000000000000CDA"
+			rewards: [
+				{
+					auto: "disabled"
+					count: 8
+					id: "0000000000000CDE"
+					item: {
+						count: 1
+						id: "occultism:otherstone"
+					}
+					type: "item"
+				}
+				{
+					auto: "disabled"
+					count: 4
+					id: "0000000000000CDF"
+					item: {
+						count: 1
+						id: "occultism:spirit_attuned_gem"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000E22"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000CDC"
+					item: { count: 1, id: "occultism:spirit_attuned_gem" }
+					type: "item"
+				}
+				{
+					id: "0000000000000CDD"
+					item: { count: 1, id: "occultism:otherstone" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000DD8"]
+			id: "0000000000000CF7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000CFB"
+					type: "command"
+				}
+				{
+					count: 2
+					id: "0000000000000E64"
+					item: {
+						count: 1
+						id: "occultism:crushed_end_stone"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_foliot_crusher"
+				criterion: ""
+				icon: {
+					components: {
+						"occultism:spirit_name": "Firzersyr"
+					}
+					id: "occultism:book_of_binding_bound_foliot"
+				}
+				id: "0000000000000CF8"
+				type: "advancement"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000D9A"]
+			id: "0000000000000D92"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000DFD"
+					type: "command"
+				}
+				{
+					id: "0000000000000E26"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000DF3"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000DF4"
+					item: { count: 1, id: "occultism:butcher_knife" }
+					type: "item"
+				}
+				{
+					id: "0000000000000DF5"
+					item: { count: 1, id: "occultism:tallow" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0000000000000CDA"]
+			id: "0000000000000D96"
+			rewards: [
+				{
+					count: 4
+					id: "0000000000000DEB"
+					item: {
+						count: 1
+						id: "occultism:purified_ink"
+					}
+					type: "item"
+				}
+				{
+					id: "0000000000000DEC"
+					type: "xp"
+					xp: 300
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000E21"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000D97"
+				item: { count: 1, id: "occultism:purified_ink" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000CDA"]
+			id: "0000000000000D98"
+			rewards: [
+				{
+					id: "0000000000000DEA"
+					type: "xp"
+					xp: 300
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000E1E"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000D99"
+				item: { count: 1, id: "occultism:chalk_white_impure" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000D98"]
+			id: "0000000000000D9A"
+			rewards: [
+				{
+					id: "0000000000000E24"
+					type: "xp"
+					xp: 400
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000E25"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000D9B"
+				item: { count: 1, id: "occultism:chalk_white" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000D9A"]
+			id: "0000000000000D9C"
+			rewards: [{
+				id: "0000000000000E28"
+				type: "xp"
+				xp: 400
+			}]
+			tasks: [{
+				id: "0000000000000D9D"
+				item: { count: 1, id: "occultism:chalk_gold" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000D9C"]
+			id: "0000000000000D9E"
+			rewards: [
+				{
+					id: "0000000000000E40"
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "64B928DADA731482"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000D9F"
+				item: { count: 1, id: "occultism:chalk_purple" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000DE0"]
+			id: "0000000000000DA0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000E52"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
+					id: "0000000000000E53"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000DA1"
+				item: { count: 1, id: "occultism:chalk_red" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000000D9C"
+				"0000000000000D9E"
+			]
+			id: "0000000000000DA4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "0000000000000E6C"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DA5"
+				item: { count: 1, id: "occultism:storage_controller" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000DA4"]
+			id: "0000000000000DA8"
+			rewards: [
+				{
+					id: "0000000000000E59"
+					item: {
+						count: 1
+						id: "occultism:storage_stabilizer_tier1"
+					}
+					type: "item"
+				}
+				{
+					id: "0000000000000E5A"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DA9"
+				item: { count: 1, id: "occultism:storage_stabilizer_tier1" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000DA8"]
+			id: "0000000000000DAA"
+			rewards: [
+				{
+					id: "0000000000000E61"
+					item: {
+						count: 1
+						id: "occultism:storage_stabilizer_tier2"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000E62"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DAB"
+				item: { count: 1, id: "occultism:storage_stabilizer_tier2" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000DAA"]
+			id: "0000000000000DAC"
+			rewards: [
+				{
+					id: "0000000000000E56"
+					type: "xp"
+					xp: 800
+				}
+				{
+					id: "0000000000000E57"
+					item: {
+						count: 1
+						id: "occultism:storage_stabilizer_tier3"
+					}
+					type: "item"
+				}
+				{
+					id: "0000000000000E58"
+					item: {
+						count: 1
+						id: "occultism:iesnium_block"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DAD"
+				item: { count: 1, id: "occultism:storage_stabilizer_tier3" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0000000000000DAC"
+				"0000000000000DA0"
+			]
+			id: "0000000000000DAE"
+			rewards: [
+				{
+					id: "0000000000000E54"
+					item: {
+						count: 1
+						id: "occultism:storage_stabilizer_tier4"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
+					id: "0000000000000E55"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DAF"
+				item: { count: 1, id: "occultism:storage_stabilizer_tier4" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0000000000000DA4"]
+			id: "0000000000000DB2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000E5D"
+					type: "command"
+				}
+				{
+					id: "0000000000000E5E"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DB3"
+				item: { count: 1, id: "occultism:storage_remote" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0000000000000DA4"]
+			id: "0000000000000DBA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000E5B"
+					type: "command"
+				}
+				{
+					id: "0000000000000E5C"
+					item: {
+						count: 1
+						id: "occultism:stable_wormhole"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DBB"
+				item: { count: 1, id: "occultism:stable_wormhole" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0000000000000D9C"
+				"0000000000000D9E"
+			]
+			id: "0000000000000DBC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "0000000000000E36"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DBD"
+				item: { count: 1, id: "occultism:soul_gem" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000D9C"]
+			id: "0000000000000DBE"
+			rewards: [
+				{
+					count: 4
+					id: "0000000000000E5F"
+					item: {
+						count: 1
+						id: "occultism:iesnium_ingot"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000E60"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000DBF"
+				item: { count: 1, id: "occultism:otherworld_goggles" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000D9C"]
+			id: "0000000000000DC0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000E29"
+					type: "command"
+				}
+				{
+					id: "0000000000000E2C"
+					type: "xp"
+					xp: 400
+				}
+				{
+					count: 8
+					id: "0000000000000E2D"
+					item: {
+						components: {
+							"ftbquests:missing_item": "resourcefulbees:oreo_cookie"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DC1"
+				item: { count: 1, id: "occultism:satchel" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000DE6"]
+			id: "0000000000000DC2"
+			rewards: [
+				{
+					id: "0000000000000E47"
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000E48"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000E49"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000DC3"
+				item: { count: 1, id: "occultism:iesnium_pickaxe" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000D9C"]
+			id: "0000000000000DC4"
+			rewards: [
+				{
+					count: 16
+					id: "0000000000000E66"
+					item: {
+						count: 1
+						id: "minecraft:end_stone"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000E67"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					advancement: "occultism:occultism/possess_endermite"
+					criterion: ""
+					id: "0000000000000E10"
+					type: "advancement"
+				}
+				{
+					entity: "occultism:possessed_endermite"
+					id: "0000000000000E11"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000D9C"]
+			id: "0000000000000DC6"
+			rewards: [
+				{
+					count: 2
+					id: "0000000000000E65"
+					item: {
+						count: 1
+						id: "minecraft:skeleton_skull"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000E68"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					advancement: "occultism:occultism/possess_skeleton"
+					criterion: ""
+					id: "0000000000000E0E"
+					type: "advancement"
+				}
+				{
+					entity: "occultism:possessed_skeleton"
+					id: "0000000000000E0F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "0000000000000DC8"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000E37"
+					type: "command"
+				}
+				{
+					count: 8
+					id: "0000000000000E3A"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					advancement: "occultism:occultism/possess_enderman"
+					criterion: ""
+					id: "0000000000000E12"
+					type: "advancement"
+				}
+				{
+					entity: "occultism:possessed_enderman"
+					id: "0000000000000E13"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000DE6"]
+			id: "0000000000000DCA"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000E4A"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000E69"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DCB"
+				item: { count: 1, id: "occultism:dimensional_mineshaft" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000DCA"]
+			id: "0000000000000DCC"
+			rewards: [
+				{
+					id: "0000000000000E4B"
+					type: "xp"
+					xp: 400
+				}
+				{
+					id: "0000000000000E4C"
+					item: {
+						count: 1
+						id: "occultism:iesnium_block"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000E4D"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DCD"
+				item: { count: 1, id: "occultism:miner_foliot_unspecialized" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000DCC"]
+			id: "0000000000000DCE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
+					id: "0000000000000E4E"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "0000000000000E6A"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DCF"
+				item: { count: 1, id: "occultism:miner_djinni_ores" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "0000000000000DD0"
+			rewards: [{
+				command: "execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				id: "0000000000000E45"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000DD1"
+				item: { count: 1, id: "occultism:infused_pickaxe" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000CDA"]
+			id: "0000000000000DD2"
+			rewards: [{
+				id: "0000000000000DED"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "0000000000000DD3"
+				item: { count: 1, id: "occultism:spirit_attuned_crystal" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000D9A"]
+			id: "0000000000000DD6"
+			rewards: [{
+				id: "0000000000000DFA"
+				type: "xp"
+				xp: 300
+			}]
+			tasks: [{
+				id: "0000000000000DD7"
+				item: { count: 1, id: "occultism:sacrificial_bowl" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000DD6"]
+			id: "0000000000000DD8"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000DFC"
+					type: "command"
+				}
+				{
+					id: "0000000000000E63"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "0000000000000DD9"
+				item: { count: 1, id: "occultism:golden_sacrificial_bowl" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000D9A"]
+			id: "0000000000000DDA"
+			rewards: [{
+				id: "0000000000000DF1"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000DDB"
+				item: { count: 1, id: "occultism:brush" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "0000000000000DDC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000E3D"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000E3E"
+					type: "command"
+				}
+				{
+					id: "0000000000000E3F"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "0000000000000E42"
+					item: {
+						count: 1
+						id: "artifacts:umbrella"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_djinni_clear_weather"
+				criterion: ""
+				id: "0000000000000E14"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "0000000000000DDE"
+			rewards: [
+				{
+					id: "0000000000000E43"
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000E44"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_djinni_night_time"
+				criterion: ""
+				id: "0000000000000E16"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "0000000000000DE0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
+					id: "0000000000000E50"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
+					id: "0000000000000E51"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "0000000000000DE1"
+					item: { count: 1, id: "occultism:book_of_binding_afrit" }
+					type: "item"
+				}
+				{
+					id: "0000000000000E4F"
+					item: { count: 1, id: "occultism:afrit_essence" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "0000000000000DE4"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000E6F"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000E70"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_wild_hunt"
+				criterion: ""
+				id: "0000000000000E6D"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000DD0"]
+			icon: {
+				id: "occultism:divination_rod"
+			}
+			id: "0000000000000DE6"
+			rewards: [{
+				count: 8
+				id: "0000000000000E46"
+				item: {
+					count: 1
+					id: "occultism:iesnium_ore"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000E18"
+				item: { count: 1, id: "occultism:iesnium_ore" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000CF7"]
+			id: "0000000000000E00"
+			rewards: [{
+				count: 16
+				id: "0000000000000E03"
+				item: {
+					count: 1
+					id: "occultism:otherworld_sapling"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_foliot_sapling_trader"
+				criterion: ""
+				id: "0000000000000E01"
+				type: "advancement"
+			}]
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0000000000000CF7"]
+			icon: {
+				id: "minecraft:iron_axe"
+			}
+			id: "0000000000000E04"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "0000000000000E06"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_foliot_lumberjack"
+				criterion: ""
+				icon: {
+					id: "occultism:book_of_calling_foliot_lumberjack"
+				}
+				id: "0000000000000E05"
+				type: "advancement"
+			}]
+			x: 9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000CF7"]
+			id: "0000000000000E0A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "0000000000000E23"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_foliot_transport_items"
+				criterion: ""
+				id: "0000000000000E0B"
+				type: "advancement"
+			}]
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000DA4"]
+			id: "0000000000000E71"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000E76"
+					type: "command"
+				}
+				{
+					id: "0000000000000E77"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_djinni_manage_machine"
+					criterion: ""
+					id: "0000000000000E72"
+					type: "advancement"
+				}
+				{
+					id: "0000000000000E75"
+					item: { count: 1, id: "occultism:book_of_binding_djinni" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "0000000000000F3C"
+			rewards: [
+				{
+					id: "0000000000000EDF"
+					type: "xp"
+					xp: 250
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					id: "0000000000000F3E"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/familiar_otherworld_bird"
+				criterion: ""
+				id: "0000000000000F3D"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000000D9C"
+				"0000000000000D9E"
+			]
+			id: "50FCDBB9ABEFC493"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "132D5C23B97D5E1F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "402BD39506DFCF52"
+				item: { count: 1, id: "occultism:familiar_ring" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "23F2BBC592B563EB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "0484AA9E23B3AA18"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_djinni_crusher"
+				criterion: ""
+				id: "20A0152295838A26"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000DA0"]
+			id: "2DD7DA15B901B864"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
+				id: "78123D89DEBE5797"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_afrit_crusher"
+				criterion: ""
+				id: "5E33713DDBCB2F88"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2DD7DA15B901B864"]
+			id: "62EC5B3B5D4AC29A"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
+					id: "6CA0ED39817B0F4E"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
+					id: "55F8A50BA2FEEFF5"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_marid_crusher"
+				criterion: ""
+				id: "08209C430C9A42F4"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0000000000000D9A"]
+			id: "55DC3E0B9FA8AA4F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "63C1F20FAAC09395"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/summon_foliot_cleaner"
+				criterion: ""
+				id: "326131CF6E83F4CC"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0000000000000D9C"]
+			id: "7C066CF3F26957FA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "28BE9B44E120DB5B"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/familiar_greedy"
+				criterion: ""
+				id: "35B087061AEF871F"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "7FC9B2436C688AAC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "1E3C943984A0CFE0"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/familiar_bat"
+				criterion: ""
+				id: "070C2A8C0AFB562F"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0000000000000D9C"]
+			id: "21C673E65278AB87"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "20E494C1C5407A03"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "occultism:occultism/familiar_deer"
+				criterion: ""
+				icon: {
+					components: {
+						"ftbquests:missing_item": "alexsmobs:moose_headgear"
+					}
+					id: "ftbquests:missing_item"
+				}
+				id: "0064A5E6F29E8FEC"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "37BA1FD75B5F474F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "10284540330AD4CF"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/familiar_cthulhu"
+				criterion: ""
+				id: "73C75966A8C84D63"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000D9E"]
+			id: "5C7B9EA6F5861807"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				id: "6DB0BF49C13038F7"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/familiar_blacksmith"
+				criterion: ""
+				id: "3AE8D0B894D9FAC1"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000000F3C"
+				"37BA1FD75B5F474F"
+				"5C7B9EA6F5861807"
+				"7FC9B2436C688AAC"
+			]
+			dependency_requirement: "one_completed"
+			id: "6267BAB65DB567DA"
+			rewards: [{
+				count: 3
+				id: "751C76DF5C4D8BA3"
+				item: {
+					count: 1
+					id: "occultism:book_of_binding_djinni"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BEA5559EF14E691"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+	]
+}

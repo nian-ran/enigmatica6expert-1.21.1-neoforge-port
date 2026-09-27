@@ -1,0 +1,11 @@
+{
+  "source": "D:\\HMCL\\.minecraft\\versions\\Enigmatica6Expert-1.21.1-NeoForge\\config\\ftbquests\\quests\\lang\\en_us.snbt",
+  "output": "D:\\HMCL\\.minecraft\\versions\\Enigmatica6Expert-1.21.1-NeoForge\\config\\ftbquests\\quests\\lang\\zh_cn.snbt",
+  "string_literals": 6101,
+  "nonempty_strings": 4620,
+  "unique_translated": 4300,
+  "output_chars": 274118,
+  "source_keys": 3045,
+  "output_keys": 3089,
+  "elapsed_seconds": 348.64
+}

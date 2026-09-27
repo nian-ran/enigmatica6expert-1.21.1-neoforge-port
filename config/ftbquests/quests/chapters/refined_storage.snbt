@@ -1,0 +1,616 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "refined_storage"
+	group: "0856CF7F5CBEB20A"
+	id: "0000000000000240"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "000000000000024F"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "000000000000027A"
+					item: {
+						count: 1
+						id: "minecraft:slime_ball"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "000000000000027B"
+					item: {
+						count: 1
+						id: "minecraft:string"
+					}
+					type: "item"
+				}
+				{
+					id: "0000000000000F4D"
+					item: {
+						count: 1
+						id: "refinedstorage:wrench"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "42C8AA65635D8B7B"
+				item: { count: 1, id: "refinedstorage:quartz_enriched_iron" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["000000000000024F"]
+			id: "0000000000000252"
+			rewards: [{
+				count: 16
+				id: "00000000000005AF"
+				item: {
+					count: 1
+					id: "refinedstorage:quartz_enriched_iron"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0000000000000253"
+					item: { count: 1, id: "refinedstorage:basic_processor" }
+					type: "item"
+				}
+				{
+					id: "0000000000000254"
+					item: { count: 1, id: "refinedstorage:improved_processor" }
+					type: "item"
+				}
+				{
+					id: "0000000000000255"
+					item: { count: 1, id: "refinedstorage:advanced_processor" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000252"]
+			id: "0000000000000256"
+			rewards: [{
+				count: 16
+				id: "00000000000005B0"
+				item: {
+					count: 1
+					id: "refinedstorage:cable"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "0000000000000257"
+					item: { count: 1, id: "refinedstorage:controller" }
+					type: "item"
+				}
+				{
+					id: "0000000000000287"
+					item: { count: 1, id: "refinedstorage:cable" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000264"]
+			id: "0000000000000258"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					id: "00000000000005B1"
+					type: "command"
+				}
+				{
+					count: 2
+					id: "00000000000005BD"
+					item: {
+						count: 1
+						id: "refinedstorage:storage_housing"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000259"
+					item: { count: 1, id: "refinedstorage:disk_drive" }
+					type: "item"
+				}
+				{
+					id: "0000000000000286"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000268"]
+			id: "000000000000025D"
+			rewards: [{
+				id: "00000000000005BB"
+				item: {
+					components: {
+						"ftbquests:missing_item": "refinedstorage:256k_fluid_storage_part"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000025E"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000256"]
+			id: "000000000000025F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "00000000000005BA"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000260"
+					item: { count: 1, id: "refinedstorage:importer" }
+					type: "item"
+				}
+				{
+					id: "0000000000000261"
+					item: { count: 1, id: "refinedstorage:exporter" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000256"]
+			id: "0000000000000262"
+			rewards: [{
+				id: "00000000000005BF"
+				item: {
+					count: 1
+					id: "mekanism:advanced_bin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000263"
+				item: { count: 1, id: "refinedstorage:external_storage" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000256"]
+			id: "0000000000000264"
+			rewards: [{
+				count: 8
+				id: "00000000000005BE"
+				item: {
+					count: 1
+					id: "refinedstorage:cable"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000265"
+				item: { count: 1, id: "refinedstorage:grid" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000264"]
+			id: "0000000000000266"
+			rewards: [{
+				count: 4
+				id: "00000000000005C0"
+				item: {
+					count: 1
+					id: "refinedstorage:storage_housing"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000267"
+				item: { count: 1, id: "refinedstorage:storage_monitor" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000264"]
+			id: "0000000000000268"
+			rewards: [{
+				count: 2
+				id: "00000000000005C2"
+				item: {
+					components: {
+						"ftbquests:missing_item": "refinedstorage:256k_fluid_storage_part"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000269"
+				item: { components: { "ftbquests:missing_item": "refinedstorage:fluid_grid" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000264"]
+			id: "000000000000026A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "00000000000005C5"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000026B"
+				item: { count: 1, id: "refinedstorage:crafting_grid" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["000000000000026A"]
+			id: "000000000000026C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "00000000000005C3"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "000000000000026D"
+					item: { components: { "ftbquests:missing_item": "refinedstorageaddons:wireless_crafting_grid" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "000000000000029A"
+					item: { count: 1, id: "refinedstorage:wireless_transmitter" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["000000000000026C"]
+			id: "000000000000026E"
+			rewards: [{
+				count: 4
+				id: "00000000000005C4"
+				item: {
+					count: 1
+					id: "minecraft:ender_pearl"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000026F"
+				item: { count: 1, id: "refinedstorage:range_upgrade" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0000000000000264"]
+			id: "0000000000000270"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "00000000000005C1"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000271"
+					item: { count: 1, id: "refinedstorage:pattern_grid" }
+					type: "item"
+				}
+				{
+					id: "0000000000000297"
+					item: { count: 1, id: "refinedstorage:pattern" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0000000000000270"]
+			id: "0000000000000272"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					id: "00000000000005B2"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					id: "00000000000005B3"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				id: "0000000000000273"
+				item: { components: { "ftbquests:missing_item": "refinedstorage:crafter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0000000000000256"]
+			id: "0000000000000274"
+			rewards: [{
+				count: 2
+				id: "00000000000005B5"
+				item: {
+					count: 1
+					id: "refinedstorage:speed_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000275"
+				item: { count: 1, id: "refinedstorage:speed_upgrade" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000274"]
+			id: "0000000000000276"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "00000000000005B4"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000277"
+				item: { count: 1, id: "refinedstorage:stack_upgrade" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0000000000000272"]
+			id: "0000000000000278"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "00000000000005BC"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000279"
+				item: { components: { "ftbquests:missing_item": "refinedstorage:crafting_monitor" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["000000000000025F"]
+			id: "0000000000000298"
+			rewards: [{
+				id: "00000000000005B9"
+				item: {
+					count: 1
+					id: "refinedstorage:interface"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000299"
+				item: { count: 1, id: "refinedstorage:interface" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0000000000000256"]
+			id: "000000000000029B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					id: "00000000000005B6"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					id: "00000000000005B7"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000029C"
+					item: { count: 1, id: "refinedstorage:network_transmitter" }
+					type: "item"
+				}
+				{
+					id: "000000000000029D"
+					item: { count: 1, id: "refinedstorage:network_receiver" }
+					type: "item"
+				}
+				{
+					id: "000000000000029E"
+					item: { count: 1, id: "refinedstorage:network_card" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000256"]
+			id: "0000000000000F3F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "0000000000000F4C"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000F40"
+					item: { count: 1, id: "refinedstorage:constructor" }
+					type: "item"
+				}
+				{
+					id: "0000000000000F41"
+					item: { count: 1, id: "refinedstorage:destructor" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0000000000000272"]
+			id: "0000000000000F42"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "0000000000000F4F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000F43"
+				item: { components: { "ftbquests:missing_item": "extrastorage:iron_crafter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0000000000000F42"]
+			id: "0000000000000F44"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "0000000000000F50"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0000000000000F45"
+				item: { components: { "ftbquests:missing_item": "extrastorage:netherite_crafter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0000000000000272"]
+			id: "0000000000000F46"
+			rewards: [{
+				id: "0000000000000F4E"
+				item: {
+					components: {
+						"ftbquests:missing_item": "refinedstorage:crafter"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000F47"
+				item: { components: { "ftbquests:missing_item": "refinedstorage:crafter_manager" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["000000000000026E"]
+			id: "2306493F2E5034A9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "20EF5FBDB4D844CB"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6F47C4273FB03E51"
+				item: { count: 1, id: "rsinfinitybooster:infinity_card" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2306493F2E5034A9"]
+			id: "005B9AE555D13DE7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "3E28C6692FC99AEB"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7AFFE72DF5E94D4F"
+				item: { count: 1, id: "rsinfinitybooster:dimension_card" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0000000000000298"]
+			id: "5DA4C492523C7D72"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				id: "504B58199A20F9B0"
+				type: "command"
+			}]
+			tasks: [{
+				id: "34568F90E5706133"
+				item: { count: 1, id: "rsrequestify:requester" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 9.5d
+		}
+	]
+}

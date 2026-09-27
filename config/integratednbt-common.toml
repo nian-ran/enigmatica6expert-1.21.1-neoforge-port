@@ -1,0 +1,3 @@
+	[general.general]
+		#The base energy usage for the NBT Extractor.
+		nbtExtractorBaseConsumption = 2

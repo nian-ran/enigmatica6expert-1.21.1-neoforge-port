@@ -1,0 +1,23 @@
+{
+  "block.e6e_mbd2.advanced_assembly_table": "高级组装台",
+  "block.e6e_mbd2.auto_iridescent_altar": "自动虹彩祭坛",
+  "block.e6e_mbd2.enigmatic_tree_of_life": "神秘生命之树",
+  "block.e6e_mbd2.gaia_reactor": "盖亚反应堆",
+  "block.e6e_mbd2.industrial_deuterium_plant": "工业氘生产厂",
+  "block.e6e_mbd2.stellar_neutron_activator": "恒星中子活化器",
+  "block.e6e_mbd2.wicked_altar": "邪恶祭坛",
+  "block.e6e_mbd2.item_input": "MBD2 物品输入端口",
+  "block.e6e_mbd2.item_output": "MBD2 物品输出端口",
+  "block.e6e_mbd2.fluid_input": "MBD2 流体输入端口",
+  "block.e6e_mbd2.fluid_output": "MBD2 流体输出端口",
+  "block.e6e_mbd2.energy_input": "MBD2 能量输入端口",
+  "block.e6e_mbd2.energy_output": "MBD2 能量输出端口",
+  "block.e6e_mbd2.pressure_input": "MBD2 气压输入端口",
+  "recipe_type.e6e_mbd2.advanced_assembly_table": "高级组装台",
+  "recipe_type.e6e_mbd2.auto_iridescent_altar": "自动虹彩祭坛",
+  "recipe_type.e6e_mbd2.enigmatic_tree_of_life": "神秘生命之树",
+  "recipe_type.e6e_mbd2.gaia_reactor": "盖亚反应堆",
+  "recipe_type.e6e_mbd2.industrial_deuterium_plant": "工业氘生产厂",
+  "recipe_type.e6e_mbd2.stellar_neutron_activator": "恒星中子活化器",
+  "recipe_type.e6e_mbd2.wicked_altar": "邪恶祭坛"
+}

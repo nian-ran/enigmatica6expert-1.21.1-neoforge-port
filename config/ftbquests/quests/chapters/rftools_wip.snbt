@@ -1,0 +1,610 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "rftools_wip"
+	group: "72A9465344128AF9"
+	id: "0000000000000349"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "000000000000034A"
+			optional: true
+			rewards: [{
+				id: "0000000000000C00"
+				item: {
+					count: 1
+					id: "rftoolsbase:smartwrench"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "0EB362B38C59907A"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["000000000000034A"]
+			id: "000000000000034D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000C6A"
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "000000000000034E"
+				item: { count: 1, id: "rftoolsbase:machine_frame" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["000000000000034A"]
+			id: "0000000000000380"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				id: "0000000000000C69"
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0000000000000381"
+				item: { count: 1, id: "rftoolsbase:machine_base" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000380"]
+			id: "0000000000000382"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C6C"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000383"
+					item: { count: 1, id: "rftoolsutility:redstone_transmitter" }
+					type: "item"
+				}
+				{
+					id: "000000000000056E"
+					item: { count: 1, id: "rftoolsutility:redstone_receiver" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000380"]
+			id: "0000000000000386"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C6B"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000387"
+				item: { count: 1, id: "rftoolsutility:invchecker" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000380"]
+			id: "0000000000000388"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "0000000000000C68"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000389"
+				item: { count: 1, id: "rftoolsutility:timer" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000380"]
+			id: "000000000000038A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "0000000000000C6E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000038B"
+				item: { count: 1, id: "rftoolsutility:logic" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["000000000000038A"]
+			id: "000000000000038E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C6F"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000038F"
+				item: { count: 1, id: "rftoolsutility:analog" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["000000000000038E"]
+			id: "0000000000000390"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C70"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000391"
+				item: { count: 1, id: "rftoolsutility:sequencer" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000380"]
+			id: "0000000000000392"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C6D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000393"
+				item: { count: 1, id: "rftoolsutility:sensor" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["000000000000034D"]
+			id: "0000000000000394"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C67"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000395"
+					item: { count: 1, id: "rftoolsutility:matter_transmitter" }
+					type: "item"
+				}
+				{
+					id: "0000000000000396"
+					item: { count: 1, id: "rftoolsutility:matter_receiver" }
+					type: "item"
+				}
+				{
+					id: "0000000000000C02"
+					item: { count: 1, id: "rftoolsutility:dialing_device" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0000000000000394"]
+			id: "0000000000000399"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C71"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "000000000000039A"
+				item: { count: 1, id: "rftoolsutility:advanced_charged_porter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["000000000000034A"]
+			id: "000000000000039B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				id: "0000000000000C65"
+				type: "command"
+			}]
+			tasks: [{
+				count: 16L
+				id: "000000000000039C"
+				item: { count: 1, id: "rftoolsbase:dimensionalshard" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"000000000000039B"
+				"000000000000034D"
+			]
+			id: "000000000000039D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C7E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000039E"
+				item: { count: 1, id: "rftoolsbase:machine_infuser" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["000000000000034D"]
+			id: "000000000000039F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C76"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000003A0"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["000000000000034D"]
+			id: "000000000000055B"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C75"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000055C"
+				item: { count: 1, id: "rftoolsbuilder:builder" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["000000000000055B"]
+			id: "000000000000055D"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C7B"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "000000000000055E"
+				item: { count: 1, id: "rftoolsbuilder:shape_card_quarry" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["000000000000055B"]
+			id: "000000000000055F"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C7C"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000560"
+				item: { count: 1, id: "rftoolsbuilder:shape_card_def" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["000000000000055B"]
+			id: "0000000000000561"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C7D"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000BFB"
+				item: { count: 1, id: "rftoolsbuilder:shape_card_pump" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["000000000000034D"]
+			id: "0000000000000563"
+			rewards: [
+				{
+					id: "0000000000000BFF"
+					item: {
+						count: 1
+						id: "rftoolsstorage:storage_module0"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000C77"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000564"
+				item: { count: 1, id: "rftoolsstorage:modular_storage" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000563"]
+			id: "0000000000000565"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C79"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000566"
+				item: { count: 1, id: "rftoolsstorage:storage_module3" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["000000000000034D"]
+			id: "0000000000000567"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C72"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000568"
+					item: { count: 1, id: "rftoolscontrol:processor" }
+					type: "item"
+				}
+				{
+					id: "000000000000056B"
+					item: { count: 1, id: "rftoolscontrol:programmer" }
+					type: "item"
+				}
+				{
+					id: "000000000000056C"
+					item: { count: 1, id: "rftoolscontrol:workbench" }
+					type: "item"
+				}
+				{
+					id: "000000000000056D"
+					item: { count: 1, id: "rftoolscontrol:program_card" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["000000000000034A"]
+			id: "0000000000000571"
+			min_width: 300
+			rewards: [
+				{
+					count: 32
+					id: "0000000000000C03"
+					item: {
+						components: {
+							"ftbquests:missing_item": "xnet:netcable_blue"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0000000000000C04"
+					item: {
+						components: {
+							"ftbquests:missing_item": "xnet:connector_blue"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0000000000000572"
+				item: { components: { "ftbquests:missing_item": "xnet:controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000571"]
+			id: "0000000000000578"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C66"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000579"
+				item: { components: { "ftbquests:missing_item": "xnet:connector_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000563"]
+			id: "0000000000000BF4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C78"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BF5"
+				item: { count: 1, id: "rftoolsstorage:storage_scanner" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["000000000000034D"]
+			id: "0000000000000BF6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C73"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000BF7"
+				item: { count: 1, id: "rftoolspower:cell1" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["000000000000034D"]
+			dependency_requirement: "one_completed"
+			id: "0000000000000BF8"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				id: "0000000000000C74"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000BF9"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0000000000000BFA"
+					item: { count: 1, id: "rftoolspower:powercell_card" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0000000000000BF4"]
+			id: "0000000000000BFC"
+			optional: true
+			rewards: [
+				{
+					id: "0000000000000BFE"
+					item: {
+						count: 1
+						id: "rftoolsstorage:storage_control_module"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+					id: "0000000000000C7A"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000BFD"
+				item: { count: 1, id: "rftoolsbase:tablet" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000571"]
+			id: "0000000000000C14"
+			optional: true
+			rewards: [{
+				command: "/tellraw @p {\"text\":\"XNet Tutorial Link\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/ksaJgiipaOg\"}}"
+				id: "0000000000000C16"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000C15"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0000000000000567"]
+			id: "0000000000000C1A"
+			optional: true
+			rewards: [{
+				command: "/tellraw @p {\"text\":\"RFTools Control Tutorial Link\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.youtube.com/watch?v=18-R5L-CATg&t=814s\"}}"
+				id: "0000000000000C1C"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0000000000000C1B"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+  "block.e6e_mbd2.advanced_assembly_table": "Advanced Assembly Table",
+  "block.e6e_mbd2.auto_iridescent_altar": "Automated Iridescent Altar",
+  "block.e6e_mbd2.enigmatic_tree_of_life": "Enigmatic Tree of Life",
+  "block.e6e_mbd2.gaia_reactor": "Gaia Reactor",
+  "block.e6e_mbd2.industrial_deuterium_plant": "Industrial Deuterium Plant",
+  "block.e6e_mbd2.stellar_neutron_activator": "Stellar Neutron Activator",
+  "block.e6e_mbd2.wicked_altar": "Wicked Altar",
+  "block.e6e_mbd2.item_input": "MBD2 Item Input",
+  "block.e6e_mbd2.item_output": "MBD2 Item Output",
+  "block.e6e_mbd2.fluid_input": "MBD2 Fluid Input",
+  "block.e6e_mbd2.fluid_output": "MBD2 Fluid Output",
+  "block.e6e_mbd2.energy_input": "MBD2 Energy Input",
+  "block.e6e_mbd2.energy_output": "MBD2 Energy Output",
+  "block.e6e_mbd2.pressure_input": "MBD2 Pressure Input",
+  "recipe_type.e6e_mbd2.advanced_assembly_table": "Advanced Assembly Table",
+  "recipe_type.e6e_mbd2.auto_iridescent_altar": "Automated Iridescent Altar",
+  "recipe_type.e6e_mbd2.enigmatic_tree_of_life": "Enigmatic Tree of Life",
+  "recipe_type.e6e_mbd2.gaia_reactor": "Gaia Reactor",
+  "recipe_type.e6e_mbd2.industrial_deuterium_plant": "Industrial Deuterium Plant",
+  "recipe_type.e6e_mbd2.stellar_neutron_activator": "Stellar Neutron Activator",
+  "recipe_type.e6e_mbd2.wicked_altar": "Wicked Altar"
+}

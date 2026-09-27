@@ -1,0 +1,92 @@
+["managed vehicle loading - requires restart"]
+	#Tugs and locomotives placed by players are owned automatically. Active vehicles can load their consist footprint and a forward window of their compiled route. At level 0 only Little Logistics entities are ticked manually.
+	#Chunkloading level, from low perf impact to high. 0: no ticking (except LL, recommended), 1: tile entity ticking, 2: entity ticking (regular).
+	# Default: 0
+	# Range: 0 ~ 2
+	chunkLoadingLevel = 0
+	#Allow automatically owned tugs and locomotives to load the chunks required by their active compiled route.
+	managedVehicleLoading = true
+	#Load vehicles even when the player is offline
+	offlineLoading = false
+	#Approximate maximum-speed travel time to preload along an active compiled route.
+	# Default: 8
+	# Range: 1 ~ 60
+	routeLookAheadSeconds = 8
+	#Ticks to retain route chunks after they leave a vehicle's required window.
+	# Default: 40
+	# Range: 0 ~ 1200
+	chunkReleaseGraceTicks = 40
+
+	[vessel.general]
+		#Damage sources that vessels are invulnerable to
+		vesselInvuln = ["create.mechanical_saw", "create.mechanical_drill"]
+
+	[vessel.barge]
+		#Modify the chance of using the treasure loot table with the auto fishing barge, other factors such as depth and overfishing still play a role. Default 0.04.
+		fishingTreasureChance = 0.04
+		#Loot table to use when fishing barge catches a fish. Change to 'minecraft:gameplay/fishing' if some modded fish aren't being caught. Defaults to 'minecraft:gameplay/fishing/fish'.
+		fishingLootTable = "minecraft:gameplay/fishing/fish"
+		#Cooldown before each fishing attempt
+		# Default: 40
+		# Range: 0 ~ 200000
+		fishingCooldown = 40
+
+	[vessel.tug]
+		#Base speed of the tugs. Default 2.4.
+		# Default: 2.4
+		# Range: 0.1 ~ 10.0
+		tugBaseSpeed = 2.4
+		#Multiplier for tug pathfinding search space, high values may impact performance. Default 1.
+		# Default: 1
+		# Range: 1 ~ 10
+		tugPathfindMult = 1
+		#Maximum Euclidean distance, in blocks, between two tug route waypoints. Default 96.
+		# Default: 96
+		# Range: 4 ~ 1024
+		tugRouteMaxSegmentLength = 96
+		#Increases the burn duration of Steam tug fuel by N times when compared to furnace, must be >= 0.01. Default 4.0.
+		# Default: 4.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		steamTugFuelMultiplier = 4.0
+		#Base maximum capacity of the Energy tug in FE, must be an integer >= 1. Default 10000.
+		# Default: 10000
+		# Range: > 1
+		energyTugBaseCapacity = 10000
+		#Base energy usage of the Energy tug in FE/tick, must be an integer >= 1. Default 1.
+		# Default: 1
+		# Range: > 1
+		energyTugBaseEnergyUsage = 1
+		#Base max charge rate of the Energy tug in FE/tick, must be an integer >= 1. Default 100.
+		# Default: 100
+		# Range: > 1
+		energyTugBaseMaxChargeRate = 100
+
+	[train.general]
+		#Max speed that trains can be accelerated to. High speed may cause chunk loading lag or issues, not advised for servers or packs. Default 0.6, max is 1
+		# Default: 0.6
+		# Range: 0.01 ~ 1.0
+		trainMaxSpeed = 0.6
+		#Damage sources that trains are invulnerable to
+		trainInvuln = ["create.mechanical_saw", "create.mechanical_drill"]
+
+	[train.locomotive]
+		#Locomotive base speed. High speed may cause chunk loading lag or issues, not advised for servers or packs. Default 0.5, max is 0.9
+		# Default: 0.5
+		# Range: 0.01 ~ 0.9
+		locoBaseSpeed = 0.5
+		#Increases the burn duration of Steam locomotive fuel by N times when compared to furnace, must be >= 0.01. Default 4.0.
+		# Default: 4.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		steamLocoFuelMultiplier = 4.0
+		#Base maximum capacity of the Energy locomotive in FE, must be an integer >= 1. Default 10000.
+		# Default: 10000
+		# Range: > 1
+		energyLocoBaseCapacity = 10000
+		#Base energy usage of the Energy locomotive in FE/tick, must be an integer >= 1. Default 1.
+		# Default: 1
+		# Range: > 1
+		energyLocoBaseEnergyUsage = 1
+		#Base max charge rate of the Energy locomotive in FE/tick, must be an integer >= 1. Default 100.
+		# Default: 100
+		# Range: > 1
+		energyLocoBaseMaxChargeRate = 100

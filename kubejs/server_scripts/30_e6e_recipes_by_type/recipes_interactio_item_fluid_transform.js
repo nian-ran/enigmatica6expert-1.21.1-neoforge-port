@@ -1,0 +1,627 @@
+// 配方类型：interactio:item_fluid_transform
+// 中文名称：掉落物与流体反应
+// 用途：用于登记Interactio 掉落物交互的掉落物与流体反应配方。
+
+(function () {
+if (['alexsmobs', 'astralsorcery', 'byg', 'dustrial_decor', 'interactio', 'resourcefulbees'].every((modId) => e6ePortedRecipeModLoaded(modId))) {
+ServerEvents.recipes((event) => {
+    const id_prefix = 'enigmatica:base/interactio/item_fluid_transform/';
+
+    const recipes = [
+        {
+            inputs: [{ tag: 'minecraft:planks', count: 1, return_chance: 0 }],
+            fluid: { fluid: 'immersiveengineering:creosote' },
+            output: {
+                entries: [{ result: { item: 'immersiveengineering:treated_wood_horizontal', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.125
+        },
+        {
+            inputs: [{ tag: 'forge:rods/wooden', count: 1, return_chance: 0 }],
+            fluid: { fluid: 'immersiveengineering:creosote' },
+            output: {
+                entries: [{ result: { item: 'immersiveengineering:stick_treated', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.005
+        },
+        {
+            inputs: [{ tag: 'minecraft:logs_that_burn', count: 16, return_chance: 0 }],
+            fluid: { fluid: 'minecraft:water' },
+            output: {
+                entries: [{ result: { item: 'upgrade_aquatic:driftwood_log', count: 16 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.005
+        },
+        {
+            inputs: [{ item: 'minecraft:rotten_flesh', count: 8, return_chance: 0 }],
+            fluid: { fluid: 'pneumaticcraft:yeast_culture' },
+            output: {
+                entries: [{ result: { item: 'alexsmobs:maggot', count: 32 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 1.0
+        },
+        {
+            inputs: [{ item: 'resourcefulbees:starry_honeycomb', count: 1, return_chance: 0 }],
+            fluid: { fluid: 'astralsorcery:liquid_starlight' },
+            output: {
+                entries: [{ result: { item: 'astralsorcery:starmetal_ingot', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.1
+        },
+        {
+            inputs: [{ item: 'resourcefulbees:starry_honeycomb_block', count: 1, return_chance: 0 }],
+            fluid: { fluid: 'astralsorcery:liquid_starlight' },
+            output: {
+                entries: [{ result: { item: 'astralsorcery:starmetal', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 1.0
+        }
+    ];
+
+    const simpleTagRecipes = [
+        {
+            input: 'forge:ingots/iron',
+            output: 'dustrial_decor:rusty_iron_ingot'
+        },
+        {
+            input: 'forge:nuggets/iron',
+            output: 'dustrial_decor:rusty_iron_nugget'
+        },
+        {
+            input: 'forge:storage_blocks/iron',
+            output: 'dustrial_decor:rusty_iron_block'
+        }
+    ];
+
+    const simpleItemRecipes = [
+        {
+            output: 'dustrial_decor:rusty_iron_door',
+            input: 'minecraft:iron_door'
+        },
+        {
+            output: 'dustrial_decor:rusty_iron_trapdoor',
+            input: 'minecraft:iron_trapdoor'
+        },
+        {
+            output: 'minecraft:soul_sand',
+            input: 'byg:nylium_soul_sand'
+        },
+        {
+            output: 'minecraft:soul_soil',
+            input: 'byg:nylium_soul_soil'
+        }
+    ];
+
+    const rustyItems = [
+        'quark:rusty_iron_plate_slab',
+        'quark:rusty_iron_plate_stairs',
+        'quark:rusty_iron_plate_vertical_slab',
+        'dustrial_decor:rusty_sheet_metal',
+        'dustrial_decor:rusty_sheet_metal_plating',
+        'dustrial_decor:rusty_sheet_metal_plating_slab',
+        'dustrial_decor:rusty_sheet_metal_plating_stairs',
+        'dustrial_decor:rusty_sheet_metal_paneling',
+        'dustrial_decor:rusty_sheet_metal_siding',
+        'dustrial_decor:rusty_sheet_metal_walling',
+        'dustrial_decor:rusty_sheet_metal_treading',
+        'dustrial_decor:rusty_sheet_metal_treading_slab',
+        'dustrial_decor:rusty_sheet_metal_treading_stairs',
+        'dustrial_decor:rusty_sheet_metal_trapdoor',
+        'dustrial_decor:rusty_sheet_metal_door'
+    ];
+
+    recipes.forEach((recipe) => {
+        fallback_id(
+            event.custom({
+                type: 'interactio:item_fluid_transform',
+                inputs: recipe.inputs,
+                fluid: recipe.fluid,
+                output: recipe.output,
+                consume_fluid: recipe.consume_fluid
+            }),
+            id_prefix
+        );
+    });
+
+    simpleTagRecipes.forEach((recipe) => {
+        fallback_id(
+            event.custom({
+                type: 'interactio:item_fluid_transform',
+                inputs: [{ tag: recipe.input, count: 1, return_chance: 0 }],
+                fluid: { fluid: 'minecraft:water' },
+                output: {
+                    entries: [{ result: { item: recipe.output, count: 1 }, weight: 1 }],
+                    empty_weight: 0,
+                    rolls: 1
+                },
+                consume_fluid: 0.0
+            }),
+            id_prefix
+        );
+    });
+
+    simpleItemRecipes.forEach((recipe) => {
+        fallback_id(
+            event.custom({
+                type: 'interactio:item_fluid_transform',
+                inputs: [{ item: recipe.input, count: 1, return_chance: 0 }],
+                fluid: { fluid: 'minecraft:water' },
+                output: {
+                    entries: [{ result: { item: recipe.output, count: 1 }, weight: 1 }],
+                    empty_weight: 0,
+                    rolls: 1
+                },
+                consume_fluid: 0.0
+            }),
+            id_prefix
+        );
+    });
+
+    rustyItems.forEach((rustyItem) => {
+        let unrustedItem = rustyItem.replace('rusty_', '');
+        fallback_id(
+            event.custom({
+                type: 'interactio:item_fluid_transform',
+                inputs: [{ item: unrustedItem, count: 1, return_chance: 0 }],
+                fluid: { fluid: 'minecraft:water' },
+                output: {
+                    entries: [{ result: { item: rustyItem, count: 1 }, weight: 1 }],
+                    empty_weight: 0,
+                    rolls: 1
+                },
+                consume_fluid: 0.0
+            }),
+            id_prefix
+        );
+    });
+});
+
+}
+})();
+
+(function () {
+if (['atum', 'eidolon_repraised', 'interactio', 'meetyourfight'].every((modId) => e6ePortedRecipeModLoaded(modId))) {
+ServerEvents.recipes((event) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
+    const id_prefix = 'enigmatica:expert/interactio/item_fluid_transform/';
+    const recipes = [
+        {
+            inputs: ['2x eidolon_repraised:enchanted_ash', '#forge:clay', '#forge:dusts/mana', '#forge:dusts/lapis'],
+            fluid: { fluid: 'water' },
+            output: {
+                entries: [{ result: { item: 'ars_nouveau:magic_clay', count: 2 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.0,
+            id: 'ars_nouveau:magic_clay'
+        },
+        {
+            inputs: [
+                'eidolon_repraised:enchanted_ash',
+                '6x atum:coin_gold',
+                'meetyourfight:phantoplasm',
+                '#forge:dusts/mana',
+                '#forge:dusts/lapis'
+            ],
+            fluid: { fluid: 'water' },
+            output: {
+                entries: [{ result: { item: 'meetyourfight:spectres_eye', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.0,
+            id: 'meetyourfight:spectres_eye'
+        },
+        {
+            inputs: ['kubejs:hot_compressed_iron_ingot'],
+            fluid: { fluid: 'water' },
+            output: {
+                entries: [{ result: { item: 'pneumaticcraft:ingot_iron_compressed', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.0,
+            id: `${id_prefix}ingot_iron_compressed`
+        },
+        {
+            inputs: ['kubejs:hot_compressed_iron_block'],
+            fluid: { fluid: 'water' },
+            output: {
+                entries: [{ result: { item: 'pneumaticcraft:compressed_iron_block', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.0,
+            id: `${id_prefix}compressed_iron_block`
+        }
+    ];
+
+    recipes.forEach((recipe) => {
+        recipe.type = 'interactio:item_fluid_transform';
+        recipe.inputs = recipe.inputs.map((input) => Ingredient.of(input).toJson());
+
+        event.custom(recipe).id(recipe.id);
+    });
+});
+
+}
+})();
+
+(function () {
+// 专家版材料统一与矿石加工；可选配方按目标端实际安装的模组分别注册。
+ServerEvents.recipes((__e6eOriginalEvent) => {
+    const event = e6eRecipeTypeView(__e6eOriginalEvent, "interactio:item_fluid_transform", false, ["botania:mana_infusion","create:pressing","e6e_mbd2:thermal_press","immersiveengineering:crusher","immersiveengineering:metal_press","interactio:item_fluid_transform","interactio:item_lightning","mekanism:smelting","minecraft:blasting","minecraft:crafting_shaped","minecraft:crafting_shapeless","naturesaura:altar","neovitae:ara_vitae_recipe"]);
+    if (global.isExpertMode == false) {
+        return;
+    }
+    const id_prefix = 'enigmatica:expert/unification/unify_materials/';
+    const hasMbd2 = e6ePortedRecipeModLoaded('e6e_mbd2');
+    const hasImmersiveEngineering = e6ePortedRecipeModLoaded('immersiveengineering') && e6ePortedRecipeModLoaded('immersive_engineering_js');
+    const hasCreate = e6ePortedRecipeModLoaded('create') && e6ePortedRecipeModLoaded('kubejs_create');
+
+    function tagFor(type, material) {
+        const candidates = [`#c:${type}/${material}`, `#forge:${type}/${material}`];
+        for (let i = 0; i < candidates.length; i++) {
+            if (e6eRecipeIngredientExists(candidates[i])) return candidates[i];
+        }
+        return null;
+    }
+
+    function preferred(tag) {
+        if (!tag) return air;
+        try {
+            return getPreferredItemInTag(Ingredient.of(tag)).id;
+        } catch (error) {
+            return air;
+        }
+    }
+
+    function firstExistingTag(candidates) {
+        for (var i = 0; i < candidates.length; i++) {
+            if (e6eRecipeIngredientExists(candidates[i])) return candidates[i];
+        }
+        return null;
+    }
+
+    function addMbd2ThermalPress(output, input, recipeId) {
+        if (!hasMbd2 || !e6eRecipeOutputExists(output) || !e6eRecipeIngredientExists(input)) return;
+        event.recipes.e6e_mbd2.thermal_press()
+            .id(recipeId)
+            .duration(100)
+            .inputItems(`4x ${input}`)
+            .outputItems(output)
+            .inputFE(2400);
+    }
+
+    materialsToUnify.forEach((material) => {
+        var ingotTag = tagFor('ingots', material);
+        var nuggetTag = tagFor('nuggets', material);
+        var gemTag = tagFor('gems', material);
+        var plateTag = tagFor('plates', material);
+        var gearTag = tagFor('gears', material);
+        var rodTag = tagFor('rods', material);
+        var wireTag = tagFor('wires', material);
+        var oreTag = tagFor('ores', material);
+        var crushedOreTag = e6eRecipeIngredientExists(`#create:crushed_ores/${material}`)
+            ? `#create:crushed_ores/${material}` : null;
+        var manaClusterTag = `#enigmatica:mana_clusters/${material}`;
+        var fulminatedClusterTag = `#enigmatica:fulminated_clusters/${material}`;
+        var levigatedMaterialTag = `#enigmatica:levigated_materials/${material}`;
+        var crystallineSliverTag = `#enigmatica:crystalline_slivers/${material}`;
+
+        var ingot = preferred(ingotTag);
+        var nugget = preferred(nuggetTag);
+        var gem = preferred(gemTag);
+        var plate = preferred(plateTag);
+        var gear = preferred(gearTag);
+        var rod = preferred(rodTag);
+        var wire = preferred(wireTag);
+        var ore = preferred(oreTag);
+        var crushed_ore = preferred(crushedOreTag);
+        var mana_cluster = preferred(manaClusterTag);
+        var fulminated_cluster = preferred(fulminatedClusterTag);
+        var levigated_material = preferred(levigatedMaterialTag);
+        var crystalline_sliver = preferred(crystallineSliverTag);
+        var materialTag = ingot !== air ? ingotTag : gemTag;
+
+        ore_ingot_smelting(event, material, ore, ingot, oreTag);
+        gear_unification(event, material, ingot, gem, gear, materialTag);
+        rod_unification(event, material, ingot, gem, rod, plate, materialTag, plateTag);
+        plate_unification(event, material, ingot, gem, plate, materialTag);
+        wire_unification(event, material, ingot, gem, wire, plate, materialTag, plateTag);
+
+        immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot, oreTag, crushedOreTag);
+
+        magical_ore_processing(
+            event,
+            material,
+            ore,
+            ingot,
+            nugget,
+            mana_cluster,
+            fulminated_cluster,
+            levigated_material,
+            crystalline_sliver,
+            oreTag
+        );
+    });
+
+    function ore_ingot_smelting(event, material, ore, ingot, oreTag) {
+        if (ore == air || ingot == air || !oreTag) {
+            return;
+        }
+
+        const blacklistedMaterials = ['ender'];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+        var output = ingot,
+            input = oreTag;
+        event.blasting(output, input).xp(0.7).id(`${id_prefix}blasting/${material}/ingot/from_ore`);
+
+        event.recipes.mekanism.smelting(output, input).id(`${id_prefix}smelting/${material}/ingot/from_ore`);
+
+    }
+
+    function gear_unification(event, material, ingot, gem, gear, materialTag) {
+        if (gear == air || !materialTag || (ingot == air && gem == air)) {
+            return;
+        }
+
+        event.remove({ output: gear });
+
+        var output = gear,
+            input = materialTag,
+            mold = 'immersiveengineering:mold_gear';
+
+        addMbd2ThermalPress(output, input, `${id_prefix}mbd2/press/gear/${material}`);
+
+        if (hasImmersiveEngineering && e6ePortedItemExists(mold)) {
+            event.recipes.immersiveengineering
+                .metal_press(`4x ${output}`, `16x ${input}`, mold)
+                .id(`${id_prefix}immersiveengineering/gear/${material}`);
+        }
+
+        const centerPlate = tagFor('plates', 'iron_tin');
+        const sideNuggets = tagFor('nuggets', 'aluminum');
+        if (centerPlate && sideNuggets) {
+            event.shaped(output, ['CAC', 'ABA', 'CAC'], { A: input, B: centerPlate, C: sideNuggets })
+                .id(`${id_prefix}crafting/gear/${material}`);
+        }
+    }
+
+    function rod_unification(event, material, ingot, gem, rod, plate, materialTag, plateTag) {
+        if (rod == air || !materialTag || (ingot == air && gem == air)) {
+            return;
+        }
+
+        event.remove({ output: rod });
+
+        let output = rod,
+            input = materialTag,
+            mold = 'immersiveengineering:mold_rod';
+        const hammer = firstExistingTag(['#c:tools/crafting_hammer', '#c:tools/hammers', '#forge:tools/crafting_hammer']);
+
+        addMbd2ThermalPress(`4x ${rod}`, input, `${id_prefix}mbd2/press/rod/${material}`);
+
+        if (hasImmersiveEngineering && e6ePortedItemExists(mold)) {
+            event.recipes.immersiveengineering
+                .metal_press(`4x ${rod}`, `4x ${input}`, mold)
+                .id(`${id_prefix}immersiveengineering/rod/${material}`);
+        }
+
+        if (plate !== air && plateTag && hammer) {
+            event.shapeless(output, [plateTag, hammer, plateTag]).id(`${id_prefix}crafting/rod/${material}`);
+        }
+    }
+
+    function plate_unification(event, material, ingot, gem, plate, materialTag) {
+        if (plate == air || !materialTag || (ingot == air && gem == air)) {
+            return;
+        }
+
+        event.remove({ output: plate });
+        const output = plate,
+            mold = 'immersiveengineering:mold_plate',
+            hammer = firstExistingTag(['#c:tools/crafting_hammer', '#c:tools/hammers', '#forge:tools/crafting_hammer']);
+        const input = materialTag;
+
+        if (hammer) event.shapeless(output, [input, hammer, input]).id(`${id_prefix}crafting/plate/${material}`);
+        if (hasImmersiveEngineering && e6ePortedItemExists(mold)) {
+            event.recipes.immersiveengineering
+                .metal_press(`4x ${output}`, `4x ${input}`, mold)
+                .id(`${id_prefix}immersiveengineering/plate/${material}`);
+        }
+        if (hasCreate) event.recipes.create.pressing(output, input).id(`${id_prefix}create/plate/${material}`);
+
+        addMbd2ThermalPress(`4x ${output}`, input, `${id_prefix}mbd2/press/plate/${material}`);
+    }
+
+    function wire_unification(event, material, ingot, gem, wire, plate, materialTag, plateTag) {
+        if (wire == air || plate == air || !materialTag || !plateTag || (ingot == air && gem == air)) {
+            return;
+        }
+
+        event.remove({ output: wire });
+
+        let output = wire,
+            mold = 'immersiveengineering:mold_wire';
+
+        addMbd2ThermalPress(`16x ${output}`, plateTag, `${id_prefix}mbd2/press/wire/${material}`);
+
+        if (hasImmersiveEngineering && e6ePortedItemExists(mold)) {
+            event.recipes.immersiveengineering
+                .metal_press(`16x ${output}`, `4x ${plateTag}`, mold)
+                .id(`${id_prefix}immersiveengineering/wire/${material}`);
+        }
+
+        const wireCutters = firstExistingTag(['#c:tools/wirecutters', '#c:tools/wire_cutter', '#forge:tools/wirecutter']);
+        if (wireCutters) {
+            event.shapeless(Item.of(output, 2), [plateTag, plateTag, wireCutters])
+                .id(`${id_prefix}crafting/wire/${material}`);
+        }
+    }
+
+    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, crushed_ore, ingot, oreTag, crushedOreTag) {
+        if (!hasImmersiveEngineering || !oreTag || !crushedOreTag || ore == air || crushed_ore == air || ingot == air) {
+            return;
+        }
+
+        var primaryOutput = crushed_ore,
+            input = oreTag,
+            materialProperties;
+
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
+        }
+
+        try {
+            secondaryOutput = preferred(`#create:crushed_ores/${materialProperties.secondary}`);
+        } catch (err) {
+            secondaryOutput = crushed_ore;
+        }
+        if (secondaryOutput == air) secondaryOutput = crushed_ore;
+
+        event.recipes.immersiveengineering
+            .crusher(primaryOutput, input, [
+                Item.of(primaryOutput, 2).withChance(0.6),
+                Item.of(primaryOutput).withChance(0.5),
+                Item.of(secondaryOutput, 2).withChance(0.35),
+                Item.of('minecraft:gravel').withChance(0.18)
+            ])
+            .id(`immersiveengineering:crusher/ore_${material}`);
+    }
+
+    function magical_ore_processing(
+        event,
+        material,
+        ore,
+        ingot,
+        nugget,
+        mana_cluster,
+        fulminated_cluster,
+        levigated_material,
+        crystalline_sliver,
+        oreTag
+    ) {
+        if (!e6ePortedRecipeModLoaded('botania') || !e6ePortedRecipeModLoaded('interactio')
+            || !e6ePortedRecipeModLoaded('naturesaura') || !e6ePortedRecipeModLoaded('neovitae')) return;
+        if (!oreTag ||
+            ore == air ||
+            ingot == air ||
+            nugget == air ||
+            mana_cluster == air ||
+            fulminated_cluster == air ||
+            levigated_material == air ||
+            crystalline_sliver == air
+        ) {
+            return;
+        }
+
+        var secondary_fulminated_cluster,
+            infusing_input = oreTag,
+            zapping_input = `#enigmatica:mana_clusters/${material}`,
+            crumbling_input = `#enigmatica:fulminated_clusters/${material}`,
+            freezing_input = `#enigmatica:levigated_materials/${material}`,
+            fusing_input = `#enigmatica:crystalline_slivers/${material}`;
+
+        try {
+            secondary_fulminated_cluster = getPreferredItemInTag(
+                Ingredient.of(`#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`)
+            ).id;
+        } catch (err) {
+            secondary_fulminated_cluster = getPreferredItemInTag(
+                Ingredient.of(`#mekanism:fulminated_clusters/${material}`)
+            ).id;
+        }
+        if (secondary_fulminated_cluster == air) secondary_fulminated_cluster = fulminated_cluster;
+
+        // 第一步：注入魔力。
+        event
+            .custom({
+                type: 'botania:mana_infusion',
+                input: Ingredient.of(infusing_input).toJson(),
+                output: { item: mana_cluster, count: 1 },
+                catalyst: { type: 'block', block: 'naturesaura:generator_limit_remover' },
+                mana: 2000
+            })
+            .id(`enigmatica:expert/magical_ore_processing/mana/${material}`);
+
+        // 第二步：雷电转化。
+        event
+            .custom({
+                type: 'interactio:item_lightning',
+                inputs: [Ingredient.of(zapping_input).toJson()],
+                output: {
+                    entries: [
+                        { result: { item: fulminated_cluster, count: 1 }, weight: 20 },
+                        { result: { item: secondary_fulminated_cluster, count: 1 }, weight: 10 },
+                        { result: { item: 'immersiveengineering:slag', count: 1 }, weight: 5 }
+                    ],
+                    empty_weight: 65,
+                    rolls: 20
+                }
+            })
+            .id(`enigmatica:expert/magical_ore_processing/lightning/${material}`);
+
+        // 第三步：粉碎结晶。
+        event
+            .custom({
+                type: 'naturesaura:altar',
+                input: Ingredient.of(crumbling_input).toJson(),
+                output: Ingredient.of(levigated_material).toJson(),
+                catalyst: Ingredient.of('naturesaura:crushing_catalyst').toJson(),
+                aura_type: 'naturesaura:overworld',
+                aura: 300,
+                time: 1
+            })
+            .id(`enigmatica:expert/magical_ore_processing/aura/${material}`);
+
+        // 第四步：星光冷却。
+        event
+            .custom({
+                type: 'interactio:item_fluid_transform',
+                inputs: [
+                    Ingredient.of(freezing_input).toJson(),
+                    { tag: 'botania:runes/winter', count: 1, return_chance: 1.0 }
+                ],
+                output: {
+                    entries: [
+                        { result: Ingredient.of(crystalline_sliver).toJson(), weight: 75 },
+                        { result: Ingredient.of('neovitae:corrupted_tiny_dust').toJson(), weight: 25 }
+                    ],
+                    empty_weight: 0,
+                    rolls: 20
+                },
+                fluid: { fluid: 'astralsorcery:liquid_starlight' },
+                consume_fluid: 0.05
+            })
+            .id(`enigmatica:expert/magical_ore_processing/starlight/${material}`);
+
+        // 第五步：在 NeoVitae Ara Vitae 中完成血晶融合。
+        event.recipes.neovitae.ara_vitae_recipe(fusing_input, Item.of(nugget), 4, 18, 18, 9)
+            .id(`enigmatica:expert/magical_ore_processing/blood/${material}`);
+    }
+});
+})();

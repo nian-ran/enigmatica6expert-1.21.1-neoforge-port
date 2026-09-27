@@ -1,0 +1,156 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hidden_quests"
+	group: ""
+	id: "0000000000000328"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0000000000000329"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "000000000000032A"
+				type: "dimension"
+			}]
+			x: -10.0d
+			y: -8.0d
+		}
+		{
+			id: "000000000000046C"
+			tasks: [{
+				advancement: "minecraft:story/mine_diamond"
+				criterion: ""
+				id: "000000000000046D"
+				type: "advancement"
+			}]
+			x: -8.5d
+			y: -8.0d
+		}
+		{
+			id: "000000000000046E"
+			tasks: [{
+				advancement: "minecraft:story/smelt_iron"
+				criterion: ""
+				id: "000000000000046F"
+				type: "advancement"
+			}]
+			x: -7.0d
+			y: -8.0d
+		}
+		{
+			id: "00000000000004B3"
+			tasks: [{
+				id: "00000000000004B4"
+				item: { count: 1, id: "aquaculture:neptunes_bounty" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			id: "0000000000000856"
+			tasks: [{
+				advancement: "tetra:spelunking/ancient_ruins"
+				criterion: ""
+				id: "0000000000000857"
+				type: "advancement"
+			}]
+			x: -10.0d
+			y: -6.5d
+		}
+		{
+			id: "0000000000000FEB"
+			tasks: [{
+				id: "0000000000000FEC"
+				stage: "impossible"
+				type: "gamestage"
+			}]
+			x: -7.0d
+			y: -6.5d
+		}
+		{
+			id: "28619E49157C73FE"
+			rewards: [{
+				auto: "invisible"
+				id: "0917A808DE276817"
+				stage: "master_blood_orb"
+				type: "gamestage"
+			}]
+			tasks: [{
+				id: "124102D88E74BB65"
+				item: { components: { "ftbquests:missing_item": "bloodmagic:masterbloodorb" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -5.0d
+		}
+		{
+			id: "7F501A95E6E9C7A6"
+			rewards: [{
+				auto: "invisible"
+				id: "5D12D220379855E1"
+				stage: "red_chalk"
+				type: "gamestage"
+			}]
+			tasks: [{
+				id: "1F386E8BDBE651FF"
+				item: { count: 1, id: "occultism:chalk_red" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			id: "57A0CCE04931D4C4"
+			rewards: [{
+				auto: "invisible"
+				id: "12961819A6E04E7F"
+				stage: "medium_machinery_schematics"
+				type: "gamestage"
+			}]
+			tasks: [{
+				id: "419C023D60CDB890"
+				item: { count: 1, id: "kubejs:medium_machinery_schematics" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.5d
+		}
+		{
+			id: "73317AB5A4FE3FDE"
+			rewards: [{
+				auto: "invisible"
+				id: "11884A83C06080A0"
+				stage: "heavy_machinery_schematics"
+				type: "gamestage"
+			}]
+			tasks: [{
+				id: "6A0EACB8797C11D0"
+				item: { count: 1, id: "kubejs:heavy_machinery_schematics" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.5d
+		}
+		{
+			id: "0D3EFC571F771C0B"
+			rewards: [{
+				auto: "invisible"
+				id: "7CBA6F3356BEE33B"
+				stage: "lesser_tartaric_gem"
+				type: "gamestage"
+			}]
+			tasks: [{
+				id: "2CAEC5249040770D"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -5.0d
+		}
+	]
+}

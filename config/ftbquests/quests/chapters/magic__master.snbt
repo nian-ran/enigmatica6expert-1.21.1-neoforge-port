@@ -1,0 +1,374 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "magic__master"
+	group: "34B7FB260B6AEB81"
+	icon: {
+		id: "astralsorcery:celestial_crystal"
+	}
+	id: "4530AE1D511B7928"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3ECB259F269FF80A"]
+			id: "54D0E568361DC267"
+			tasks: [
+				{
+					id: "06EFC0926D9228EB"
+					item: { components: { "ftbquests:missing_item": "botania:alfheim_portal" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0F894768DC2FA6A1"
+					item: { components: { "ftbquests:missing_item": "botania:natura_pylon" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["690063418D6815D2"]
+			id: "5E1A0B48076CD5F6"
+			tasks: [
+				{
+					id: "4B0D2FA22A7EDF1D"
+					item: { components: { "ftbquests:missing_item": "bloodmagic:demoncrucible" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "5D01EE5258D5D499"
+					item: { components: { "ftbquests:missing_item": "bloodmagic:demoncrystallizer" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0000000000000FCF"]
+			id: "06A6BE8C4A3B0C1D"
+			shape: "rsquare"
+			tasks: [{
+				id: "3200842BF652DCB5"
+				item: { components: { "ftbquests:missing_item": "bloodmagic:soulgempetty" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["06A6BE8C4A3B0C1D"]
+			id: "06E76BE2A422E8AC"
+			tasks: [
+				{
+					id: "512B339FA8AB4383"
+					item: { components: { "ftbquests:missing_item": "bloodmagic:magicianbloodorb" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0AC9515E1EEEE596"
+					item: { components: { "ftbquests:missing_item": "botania:mana_tablet" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0BEFCA7CB5EE447D"
+				"06E76BE2A422E8AC"
+			]
+			id: "152B45DD8C1899C2"
+			tasks: [{
+				id: "665FEB1890A1E866"
+				item: { count: 1, id: "occultism:chalk_purple" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000FCF"]
+			id: "0CFE47372EC49DC8"
+			shape: "diamond"
+			tasks: [{
+				id: "5F5822FEF6F28BB7"
+				item: { components: { "ftbquests:missing_item": "betterendforge:crystal_shards" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0000000000000FCF"]
+			id: "69201BA9E47F94EE"
+			shape: "diamond"
+			tasks: [{
+				id: "124E2656A866D979"
+				item: { components: { "ftbquests:missing_item": "betterendforge:hydralux_petal" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"69201BA9E47F94EE"
+				"0CFE47372EC49DC8"
+			]
+			id: "0BEFCA7CB5EE447D"
+			shape: "diamond"
+			tasks: [{
+				id: "6A2F524DD66901A3"
+				item: { components: { "ftbquests:missing_item": "betterendforge:enchanted_petal" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["152B45DD8C1899C2"]
+			id: "07786879C8859B12"
+			shape: "diamond"
+			tasks: [{
+				id: "0E36F674D2F3A549"
+				item: { count: 1, id: "occultism:infused_pickaxe" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["07786879C8859B12"]
+			id: "690063418D6815D2"
+			shape: "diamond"
+			tasks: [{
+				id: "1AD42494E69B8715"
+				item: { count: 1, id: "occultism:iesnium_ore" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["690063418D6815D2"]
+			id: "051F9C054B9CDE96"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6841E8793EE2C2E0"
+					item: { components: { "ftbquests:missing_item": "bloodmagic:soulpickaxe" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "0B1582FDA55A0D17"
+					item: { components: { "ftbquests:missing_item": "bloodmagic:soulsword" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["152B45DD8C1899C2"]
+			id: "44ADBADBF2774DF4"
+			tasks: [
+				{
+					id: "673AC1CB014F917C"
+					item: { count: 1, id: "occultism:afrit_essence" }
+					type: "item"
+				}
+				{
+					id: "7E7737137E78204B"
+					item: { components: { "ftbquests:missing_item": "bloodmagic:weakbloodshard" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3103AD6157F2D6AC"]
+			id: "15799BB5752AECB9"
+			tasks: [{
+				id: "7F2F8873597EE837"
+				item: { count: 1, id: "occultism:chalk_red" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44ADBADBF2774DF4"]
+			id: "3103AD6157F2D6AC"
+			tasks: [{
+				id: "6C327DA3D328E507"
+				item: { components: { "ftbquests:missing_item": "bloodmagic:masterbloodorb" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0000000000000FC9"]
+			id: "1C5802ADD3834FE9"
+			shape: "rsquare"
+			tasks: [{
+				id: "7660DCCE5DF6B3E1"
+				item: { count: 1, id: "naturesaura:sky_ingot" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C5802ADD3834FE9"]
+			id: "3ECB259F269FF80A"
+			tasks: [
+				{
+					id: "48AA30BC0F5A4969"
+					item: { components: { "ftbquests:missing_item": "botania:terra_plate" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "7147695020152097"
+					item: { components: { "ftbquests:missing_item": "botania:terrasteel_ingot" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54D0E568361DC267"]
+			id: "457523FA165A5A0B"
+			tasks: [{
+				id: "1807A32A1B2AAEE8"
+				item: { components: { "ftbquests:missing_item": "botania:gaia_pylon" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["54D0E568361DC267"]
+			id: "706AC0678CD303BA"
+			tasks: [{
+				id: "0A3D5347A4034BF1"
+				item: { components: { "ftbquests:missing_item": "astralsorcery:altar_constellation" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"42EC202E93A7E5A3"
+				"3103AD6157F2D6AC"
+			]
+			id: "2D6DDD000FC99514"
+			tasks: [{
+				id: "5494E63BE36C5962"
+				item: { count: 1, id: "astralsorcery:altar_radiance" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["706AC0678CD303BA"]
+			id: "42EC202E93A7E5A3"
+			tasks: [
+				{
+					id: "32A341D25D3AD1B9"
+					item: { components: { "ftbquests:missing_item": "mythicbotany:mana_infuser" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "27FE801DA5AB6863"
+					item: { components: { "ftbquests:missing_item": "mythicbotany:alfsteel_ingot" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"457523FA165A5A0B"
+				"5E1A0B48076CD5F6"
+				"15799BB5752AECB9"
+			]
+			id: "0E083E5951149AB5"
+			tasks: [{
+				id: "04E0027B30C34B89"
+				item: { count: 1, id: "astralsorcery:attunement_altar" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["06A6BE8C4A3B0C1D"]
+			id: "2182A1B04F9C2C84"
+			shape: "diamond"
+			tasks: [{
+				id: "6064EF838E958365"
+				item: { components: { "ftbquests:missing_item": "ars_nouveau:glyph_sentientharm" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["06E76BE2A422E8AC"]
+			id: "0225B4F9E4ECAC21"
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 8L
+					id: "5B057F8FE1A8E286"
+					item: { components: { "ftbquests:missing_item": "bloodmagic:simplekey" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "1ECC374EB08B5BDA"
+					item: { components: { "ftbquests:missing_item": "bloodmagic:weak_tau" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2D6DDD000FC99514"]
+			id: "0D5EFF4C653C3DD9"
+			min_width: 400
+			shape: "gear"
+			tasks: [{
+				id: "11A8B09E6B1A0DFB"
+				item: { components: { "ftbquests:missing_item": "masterfulmachinery:auto_iridescent_altar_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5E1A0B48076CD5F6"]
+			id: "226F249D3F4A9258"
+			min_width: 400
+			shape: "gear"
+			tasks: [{
+				id: "59FF57ADF3D44FA2"
+				item: { components: { "ftbquests:missing_item": "masterfulmachinery:gaia_reactor_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+	]
+}

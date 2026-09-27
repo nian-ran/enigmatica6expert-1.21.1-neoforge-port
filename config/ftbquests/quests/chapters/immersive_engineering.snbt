@@ -1,0 +1,1152 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "immersive_engineering"
+	group: "72A9465344128AF9"
+	id: "0000000000000002"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0000000000000004"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "7B54B7BEEA99667F"
+				item: {
+					components: {
+						"ftbquests:missing_item": "emendatusenigmatica:copper_chunk"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 5
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "4C4EC117244A21C7"
+				item: { count: 1, id: "immersiveengineering:hammer" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000004"]
+			id: "0000000000000007"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "14FA4A24C7409F77"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "20930556EBD4C23B"
+					item: { count: 1, id: "immersiveengineering:wirecutter" }
+					type: "item"
+				}
+				{
+					id: "49501ECA376AF301"
+					item: { count: 1, id: "immersiveengineering:screwdriver" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000007"]
+			id: "0000000000000009"
+			rewards: [{
+				count: 8
+				id: "000000000000060A"
+				item: {
+					components: {
+						"ftbquests:missing_item": "emendatusenigmatica:coke_gem"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "000000000000000B"
+					item: { count: 1, id: "immersiveengineering:cokebrick" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "000000000000000C"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["000000000000000F"]
+			id: "000000000000000D"
+			rewards: [{
+				count: 2
+				id: "0000000000000615"
+				item: {
+					count: 1
+					id: "immersiveengineering:wirecoil_copper_ins"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "000000000000000E"
+					item: { count: 1, id: "immersiveengineering:windmill" }
+					type: "item"
+				}
+				{
+					id: "0000000000000016"
+					item: { count: 1, id: "immersiveengineering:dynamo" }
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000004"]
+			id: "000000000000000F"
+			rewards: [{
+				count: 4
+				id: "000000000000060B"
+				item: {
+					count: 1
+					id: "immersiveengineering:connector_lv"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0000000000000010"
+					item: { count: 1, id: "immersiveengineering:wirecoil_copper" }
+					type: "item"
+				}
+				{
+					id: "0000000000000011"
+					item: { count: 1, id: "immersiveengineering:connector_lv" }
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000009"]
+			id: "0000000000000012"
+			rewards: [{
+				count: 8
+				id: "0000000000000613"
+				item: {
+					components: {
+						"ftbquests:missing_item": "emendatusenigmatica:steel_ingot"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 27L
+				id: "0000000000000013"
+				item: { count: 1, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["000000000000000F"]
+			id: "0000000000000014"
+			rewards: [
+				{
+					count: 16
+					id: "000000000000060C"
+					item: {
+						count: 1
+						id: "immersiveengineering:hemp_fiber"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+					id: "000000000000060D"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000015"
+				item: { count: 1, id: "immersiveengineering:wirecoil_copper_ins" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0000000000000009"
+				"000000000000000F"
+			]
+			id: "0000000000000017"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "0000000000000614"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000018"
+				item: { count: 1, id: "immersiveengineering:capacitor_lv" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000009"]
+			id: "0000000000000019"
+			rewards: [{
+				count: 8
+				id: "0911E6C5BB0AF5E5"
+				item: {
+					count: 1
+					id: "immersiveengineering:component_iron"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "000000000000001A"
+					item: { count: 1, id: "immersiveengineering:workbench" }
+					type: "item"
+				}
+				{
+					id: "16E5DF7E27BAB713"
+					item: { count: 1, id: "immersiveengineering:blueprint" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "000000000000001B"
+			rewards: [{
+				count: 2
+				id: "0000000000000617"
+				item: {
+					count: 1
+					id: "immersiveengineering:wirecoil_copper_ins"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "000000000000001C"
+					item: { count: 1, id: "immersiveengineering:watermill" }
+					type: "item"
+				}
+				{
+					id: "000000000000001D"
+					item: { count: 1, id: "immersiveengineering:dynamo" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000004"]
+			id: "000000000000001E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "000000000000060E"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000001F"
+				item: { count: 1, id: "immersiveengineering:conveyor_basic" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "0000000000000020"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				id: "0000000000000621"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 10L
+					id: "0000000000000021"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "000000000000002D"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					id: "000000000000002E"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "000000000000002F"
+					item: { count: 1, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "0000000000000030"
+					item: { count: 1, id: "minecraft:hopper" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "0000000000000022"
+			rewards: [
+				{
+					count: 8
+					id: "000000000000061E"
+					item: {
+						components: {
+							"ftbquests:missing_item": "emendatusenigmatica:iron_plate"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "000000000000061F"
+					item: {
+						components: {
+							"ftbquests:missing_item": "emendatusenigmatica:steel_plate"
+						}
+						count: 1
+						id: "ftbquests:missing_item"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000000000028"
+					item: { count: 1, id: "minecraft:piston" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0000000000000029"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					id: "000000000000002A"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "000000000000002B"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "000000000000002C"
+					item: { count: 1, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "0000000000000024"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				id: "0000000000000620"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "0000000000000025"
+					item: { count: 1, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					id: "0000000000000031"
+					item: { count: 1, id: "minecraft:hopper" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0000000000000007"]
+			id: "0000000000000026"
+			rewards: [{
+				count: 8
+				id: "0000000000000608"
+				item: {
+					components: {
+						"ftbquests:missing_item": "emendatusenigmatica:copper_ingot"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "0000000000000027"
+				item: { count: 1, id: "immersiveengineering:alloybrick" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000020"]
+			id: "0000000000000032"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+					id: "0000000000000622"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+					id: "0000000000000623"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "0000000000000033"
+					item: { count: 1, id: "immersiveengineering:graphite_electrode" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "000000000000006D"
+					item: { count: 1, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "000000000000006E"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "000000000000006F"
+					item: { count: 1, id: "immersiveengineering:slab_sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0000000000000070"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0000000000000071"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "0000000000000072"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					id: "0000000000000073"
+					item: { count: 1, id: "minecraft:cauldron" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "0000000000000074"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "0000000000000075"
+					item: { count: 1, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["000000000000000F"]
+			id: "0000000000000034"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "0000000000000616"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000035"
+				item: { count: 1, id: "immersiveengineering:furnace_heater" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "0000000000000036"
+			rewards: [{
+				count: 4
+				id: "0000000000000618"
+				item: {
+					count: 1
+					id: "minecraft:blue_ice"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000037"
+				item: { count: 1, id: "immersiveengineering:thermoelectric_generator" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "0000000000000038"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				id: "000000000000061D"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000039"
+					item: { count: 1, id: "immersiveengineering:sawblade" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "000000000000005B"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "000000000000005C"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "000000000000005D"
+					item: { count: 1, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "000000000000005E"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "000000000000005F"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000060"
+					item: { count: 1, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "000000000000003A"
+			rewards: [
+				{
+					count: 24
+					id: "0000000000000619"
+					item: {
+						count: 1
+						id: "immersiveengineering:seed"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+					id: "7FF68906D9C40250"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "000000000000003B"
+					item: { count: 1, id: "immersiveengineering:plantoil_bucket" }
+					type: "item"
+				}
+				{
+					id: "000000000000006C"
+					item: { count: 1, id: "immersiveengineering:ethanol_bucket" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "70D08B4C82FB5C6B"
+					item: { count: 1, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4441E2386DEA216C"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "5ED3D91D2AD0971A"
+					item: { count: 1, id: "minecraft:piston" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "464B4E72E3BC8AED"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7666B18B85178129"
+					item: { count: 1, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "052258FF50F1F0B4"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "01D48BF4891BC4B4"
+					item: { count: 1, id: "immersiveengineering:wooden_barrel" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1DFE9615C079A317"
+					item: { count: 1, id: "minecraft:cauldron" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0070E8EF982C0C6B"
+					item: { count: 1, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7A3633A43D7AB0F2"
+				"09AEE48CED288DD1"
+			]
+			dependency_requirement: "one_completed"
+			id: "000000000000003C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				id: "0000000000000624"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "37AAA90BDAB5CD72"
+					item: { count: 1, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "284769224493A777"
+					item: { count: 1, id: "immersiveengineering:generator" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "459D17A377D44D7F"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "63E9727F7E04EBDA"
+					item: { count: 1, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					id: "06375C08B6AE1B06"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3D8DA60F68FB5A23"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0000000000000061"]
+			id: "0000000000000040"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				id: "000000000000061C"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "5B9AAE9A66CF1A1F"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "14152385FF2C7F94"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "715D9FF0DF871042"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "0DC27129321B844B"
+					item: { count: 1, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "486083D949A6EB82"
+					item: { count: 1, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "14349203FE43E315"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "1CA9D0AFE77C2611"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0000000000000012"]
+			id: "0000000000000061"
+			rewards: [
+				{
+					id: "63F8CD5DAAB0252B"
+					item: {
+						count: 1
+						id: "immersiveengineering:survey_tools"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+					id: "35731B5937BBF8EB"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "0000000000000062"
+				item: { count: 1, id: "immersiveengineering:sample_drill" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0000000000000019"]
+			id: "0000000000000241"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "0000000000000611"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000242"
+				item: { count: 1, id: "immersiveengineering:cloche" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0000000000000019"]
+			id: "0000000000000243"
+			rewards: [{
+				count: 4
+				id: "0000000000000610"
+				item: {
+					count: 1
+					id: "minecraft:glowstone"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0000000000000244"
+					item: { count: 1, id: "immersiveengineering:electric_lantern" }
+					type: "item"
+				}
+				{
+					id: "0000000000000245"
+					item: { count: 1, id: "immersiveengineering:floodlight" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000019"]
+			id: "0000000000000246"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "0000000000000612"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "0000000000000247"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0000000000000248"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "0000000000000249"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "000000000000024A"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "000000000000024B"
+					item: { count: 1, id: "immersiveengineering:slab_treated_wood_horizontal" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "000000000000024C"
+					item: { count: 1, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0000000000000012"
+				"0000000000000061"
+			]
+			id: "16D342C092566FC6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				id: "476B1A4F7D366E7E"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "5A23A05F50722946"
+					item: { count: 1, id: "pneumaticcraft:oil_bucket" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "00C3EC1299DC28D3"
+					item: { count: 1, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0979E7EEF3363277"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4E9E3DB8FE1E9406"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "121E4FCB71513163"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "324063E74778D1C4"
+					item: { count: 1, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					count: 11L
+					id: "36B2E60B1BBB4CD2"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6391CC96CDA5D45C"
+					item: { count: 1, id: "immersiveengineering:storage_steel" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7CB80FBAE32E36B9"
+					item: { count: 1, id: "immersiveengineering:treated_fence" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["16D342C092566FC6"]
+			id: "7A3633A43D7AB0F2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				id: "055894AE837032DE"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "4B40C2072585A5BE"
+					item: { count: 1, id: "immersivepetroleum:diesel_sulfur_bucket" }
+					type: "item"
+				}
+				{
+					count: 17L
+					id: "23D0F4ECEEEB2BF9"
+					item: { count: 1, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1EC253B069B31B15"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					id: "21E025217CA464E6"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 60L
+					id: "26987C7F97249516"
+					item: { count: 1, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "36C971AF0DBF15ED"
+					item: { count: 1, id: "immersiveengineering:slab_steel_scaffolding_grate_top" }
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "2AADE46005D7EF64"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["000000000000003A"]
+			id: "09AEE48CED288DD1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				id: "7B4485A51E367C74"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "54C23E962353498A"
+					item: { count: 1, id: "immersiveengineering:biodiesel_bucket" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1A67249D2C25F193"
+					item: { count: 1, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5F4622889A0ABCD6"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "574214EAB054A87C"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					id: "24F2731428E8E04E"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "470D34BD4B7D2F05"
+					item: { count: 1, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1B5140A06836C865"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0000000000000007"]
+			id: "2A0DC00944171C4C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				id: "1CEC542F2D9E02C3"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2EE6CC769EA7C9E7"
+				item: { count: 1, id: "immersivepetroleum:projector" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7A3633A43D7AB0F2"]
+			id: "083FA0F4798DB004"
+			optional: true
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
+				id: "21679391A74BB3C7"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "77ECA1413ED192BB"
+					item: { count: 1, id: "immersivepetroleum:diesel_bucket" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7F0822582FEA876F"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5714B2F9CF70C81D"
+					item: { count: 1, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "5D301DE5DBD9394E"
+					item: { count: 1, id: "immersiveengineering:sheetmetal_iron" }
+					type: "item"
+				}
+				{
+					id: "60815F073AA151B2"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5DAE6B0A4A353636"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 1.0d
+		}
+	]
+}

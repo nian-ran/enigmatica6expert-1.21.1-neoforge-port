@@ -1,0 +1,5 @@
+[general]
+	#Radius in blocks to check containers around the player.
+	# Default: 6
+	# Range: > 0
+	"Scan radius" = 6

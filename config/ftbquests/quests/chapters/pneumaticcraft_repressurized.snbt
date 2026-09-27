@@ -1,0 +1,1321 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pneumaticcraft_repressurized"
+	group: "72A9465344128AF9"
+	id: "00000000000000AE"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "00000000000000AF"
+			optional: true
+			rewards: [{
+				id: "00000000000000B1"
+				item: {
+					count: 1
+					id: "pneumaticcraft:pneumatic_wrench"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "7B56DD5D9F4BBB68"
+				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["00000000000000AF"]
+			id: "00000000000000B3"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+					id: "00000000000000C6"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000A78"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					count: 23L
+					id: "00000000000000B4"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_wall" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00000000000000BA"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_interface" }
+					type: "item"
+				}
+				{
+					id: "00000000000000BB"
+					item: { count: 1, id: "pneumaticcraft:pressure_chamber_valve" }
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["00000000000000B3"]
+			id: "00000000000000BD"
+			rewards: [
+				{
+					count: 9
+					id: "00000000000000C1"
+					item: {
+						count: 1
+						id: "minecraft:redstone"
+					}
+					type: "item"
+				}
+				{
+					id: "00000000000000C2"
+					item: {
+						count: 1
+						id: "minecraft:repeater"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "00000000000000BE"
+					item: { count: 1, id: "pneumaticcraft:pressure_gauge_module" }
+					type: "item"
+				}
+				{
+					id: "00000000000000BF"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "00000000000000C0"
+					item: { count: 1, id: "pneumaticcraft:pressure_tube" }
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["00000000000000B3"]
+			id: "00000000000000C3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				id: "00000000000000C5"
+				type: "command"
+			}]
+			tasks: [{
+				count: 2L
+				id: "00000000000000C4"
+				item: { count: 1, id: "pneumaticcraft:security_upgrade" }
+				type: "item"
+			}]
+			x: -17.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["00000000000000B3"]
+			id: "00000000000000C7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "00000000000000C9"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000000C8"
+				item: { count: 1, id: "pneumaticcraft:liquid_compressor" }
+				type: "item"
+			}]
+			x: -15.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["00000000000000EA"]
+			id: "00000000000000CA"
+			rewards: [{
+				id: "000000000000022D"
+				item: {
+					count: 1
+					id: "pneumaticcraft:medium_tank"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000000CB"
+				item: { count: 1, id: "pneumaticcraft:kerosene_lamp" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["00000000000000AF"]
+			id: "00000000000000CC"
+			rewards: [
+				{
+					id: "00000000000000CE"
+					item: {
+						count: 1
+						id: "pneumaticcraft:camo_applicator"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000A79"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "00000000000000CD"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["00000000000000CC"]
+			id: "00000000000000CF"
+			rewards: [{
+				id: "00000000000000D1"
+				item: {
+					count: 1
+					id: "pneumaticcraft:heat_sink"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000000D0"
+				item: { count: 1, id: "pneumaticcraft:vortex_tube" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["00000000000000CF"]
+			id: "00000000000000D2"
+			rewards: [{
+				count: 12
+				id: "00000000000000D4"
+				item: {
+					count: 1
+					id: "pneumaticcraft:thermal_lagging"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "00000000000000D3"
+				item: { count: 1, id: "pneumaticcraft:heat_pipe" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["00000000000000CF"]
+			id: "00000000000000D5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				id: "00000000000000D8"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000000D6"
+				item: { count: 1, id: "pneumaticcraft:regulator_tube_module" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["00000000000000D2"]
+			id: "00000000000000D9"
+			rewards: [{
+				id: "00000000000000DB"
+				item: {
+					count: 1
+					id: "pneumaticcraft:reinforced_chest"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000000DA"
+				item: { count: 1, id: "pneumaticcraft:heat_frame" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["00000000000000D2"]
+			id: "00000000000000DC"
+			rewards: [
+				{
+					id: "00000000000000DE"
+					item: {
+						count: 1
+						id: "pneumaticcraft:block_tracker_upgrade"
+					}
+					type: "item"
+				}
+				{
+					id: "00000000000000DF"
+					item: {
+						count: 1
+						id: "pneumaticcraft:gps_tool"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000000DD"
+				item: { count: 1, id: "pneumaticcraft:universal_sensor" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["00000000000000AF"]
+			id: "00000000000000E0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+					id: "00000000000000E6"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					id: "0000000000000A7B"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "00000000000000E1"
+				item: { count: 1, id: "pneumaticcraft:oil_bucket" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["00000000000000E0"]
+			id: "00000000000000E2"
+			rewards: [{
+				id: "00000000000000E5"
+				item: {
+					count: 1
+					id: "pneumaticcraft:seismic_sensor"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "00000000000000E3"
+					item: { count: 1, id: "pneumaticcraft:gas_lift" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "00000000000000E4"
+					item: { count: 1, id: "pneumaticcraft:drill_pipe" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"00000000000000E0"
+				"00000000000000CD"
+			]
+			id: "00000000000000E7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				id: "000000000000022C"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "00000000000000E8"
+					item: { count: 1, id: "pneumaticcraft:refinery" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "00000000000000E9"
+					item: { count: 1, id: "pneumaticcraft:refinery_output" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["00000000000000E7"]
+			id: "00000000000000EA"
+			rewards: [
+				{
+					count: 16
+					id: "00000000000000EC"
+					item: {
+						count: 1
+						id: "pneumaticcraft:cod_n_chips"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00000000000000ED"
+					item: {
+						count: 1
+						id: "pneumaticcraft:dispenser_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "00000000000000EB"
+				item: { count: 1, id: "pneumaticcraft:thermopneumatic_processing_plant" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["00000000000000F8"]
+			id: "00000000000000EE"
+			rewards: [{
+				count: 2
+				id: "00000000000000F0"
+				item: {
+					count: 1
+					id: "pneumaticcraft:speed_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00000000000000EF"
+				item: { count: 1, id: "pneumaticcraft:lubricant_bucket" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["00000000000000EA"]
+			id: "00000000000000F1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				id: "00000000000000F3"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000000F2"
+				item: { count: 1, id: "pneumaticcraft:lpg_bucket" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["00000000000000F1"]
+			id: "00000000000000F4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "00000000000000F7"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000000F5"
+				item: { count: 1, id: "pneumaticcraft:plastic_bucket" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["00000000000000EA"]
+			id: "00000000000000F8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				id: "00000000000000FA"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000000F9"
+				item: { count: 1, id: "pneumaticcraft:diesel_bucket" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"00000000000000F4"
+				"00000000000000EE"
+			]
+			id: "00000000000000FB"
+			rewards: [
+				{
+					count: 16
+					id: "0000000000000105"
+					item: {
+						count: 1
+						id: "minecraft:red_mushroom"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0000000000000106"
+					item: {
+						count: 1
+						id: "minecraft:podzol"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "00000000000000FC"
+				item: { count: 1, id: "pneumaticcraft:fluid_mixer" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["00000000000000FB"]
+			id: "00000000000000FD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "00000000000000FF"
+				type: "command"
+			}]
+			tasks: [{
+				id: "00000000000000FE"
+				item: { count: 1, id: "pneumaticcraft:yeast_culture_bucket" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["00000000000000FD"]
+			id: "0000000000000100"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000102"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000101"
+				item: { count: 1, id: "pneumaticcraft:ethanol_bucket" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["00000000000000FD"]
+			id: "0000000000000103"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "000000000000022A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000104"
+				item: { count: 1, id: "pneumaticcraft:vegetable_oil_bucket" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"0000000000000103"
+				"0000000000000100"
+			]
+			id: "0000000000000107"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				id: "0000000000000379"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000108"
+				item: { count: 1, id: "pneumaticcraft:biodiesel_bucket" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0000000000000107"]
+			id: "0000000000000109"
+			shape: "octagon"
+			tasks: [{
+				icon: {
+					id: "pneumaticcraft:logistics_drone"
+				}
+				id: "000000000000010A"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["000000000000011D"]
+			id: "000000000000010B"
+			rewards: [
+				{
+					count: 8
+					id: "000000000000010D"
+					item: {
+						count: 1
+						id: "pneumaticcraft:logistics_frame_requester"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "000000000000010E"
+					item: {
+						count: 1
+						id: "pneumaticcraft:logistics_frame_passive_provider"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "000000000000010F"
+					item: {
+						count: 1
+						id: "pneumaticcraft:logistics_frame_storage"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "00000000000006FF"
+					item: {
+						count: 1
+						id: "pneumaticcraft:logistics_frame_active_provider"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "000000000000010C"
+				item: { count: 1, id: "pneumaticcraft:logistics_module" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["000000000000010B"]
+			id: "0000000000000110"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				id: "0000000000000113"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000111"
+				item: { count: 1, id: "pneumaticcraft:reinforced_chest" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0000000000000110"]
+			id: "0000000000000114"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+					id: "0000000000000117"
+					type: "command"
+				}
+				{
+					id: "0000000000000118"
+					item: {
+						count: 1
+						id: "pneumaticcraft:magnet_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000115"
+				item: { count: 1, id: "pneumaticcraft:smart_chest" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["0000000000000110"]
+			id: "0000000000000119"
+			rewards: [{
+				count: 2
+				id: "000000000000011C"
+				item: {
+					count: 1
+					id: "pneumaticcraft:speed_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "000000000000011A"
+					item: { count: 1, id: "pneumaticcraft:omnidirectional_hopper" }
+					type: "item"
+				}
+				{
+					id: "000000000000011B"
+					item: { count: 1, id: "pneumaticcraft:liquid_hopper" }
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["00000000000000AF"]
+			id: "000000000000011D"
+			rewards: [
+				{
+					id: "000000000000011F"
+					item: {
+						count: 1
+						id: "pneumaticcraft:logistics_configurator"
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					id: "0000000000000A7A"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "000000000000011E"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["000000000000010B"]
+			id: "0000000000000120"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				id: "0000000000000122"
+				type: "command"
+			}]
+			tasks: [{
+				count: 2L
+				id: "0000000000000121"
+				item: { count: 1, id: "pneumaticcraft:redstone_module" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0000000000000120"]
+			id: "0000000000000123"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				id: "0000000000000125"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000124"
+				item: { components: { "ftbquests:missing_item": "pneumaticcraft:advanced_pcb" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["000000000000010B"]
+			id: "0000000000000126"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000128"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000127"
+				item: { count: 1, id: "pneumaticcraft:logistics_drone" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0000000000000126"]
+			id: "0000000000000129"
+			rewards: [
+				{
+					id: "000000000000012B"
+					item: {
+						count: 1
+						id: "pneumaticcraft:collector_drone"
+					}
+					type: "item"
+				}
+				{
+					id: "0000000000000701"
+					item: {
+						count: 1
+						id: "mekanismtools:refined_obsidian_hoe"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "000000000000012A"
+				item: { count: 1, id: "pneumaticcraft:harvesting_drone" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0000000000000129"]
+			id: "000000000000012C"
+			rewards: [
+				{
+					id: "000000000000012E"
+					item: {
+						count: 1
+						id: "pneumaticcraft:dispenser_upgrade"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0000000000000700"
+					item: {
+						count: 1
+						id: "pneumaticcraft:volume_upgrade"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "000000000000012D"
+				item: { count: 1, id: "pneumaticcraft:charging_station" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["000000000000012C"]
+			id: "000000000000012F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000131"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000130"
+				item: { count: 1, id: "pneumaticcraft:item_life_upgrade" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["000000000000012C"]
+			id: "0000000000000132"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare"
+				id: "0000000000000134"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000133"
+				item: { count: 1, id: "pneumaticcraft:standby_upgrade" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["000000000000012C"]
+			id: "0000000000000135"
+			rewards: [{
+				count: 8
+				id: "0000000000000137"
+				item: {
+					count: 1
+					id: "pneumaticcraft:inventory_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "0000000000000136"
+				item: { count: 1, id: "pneumaticcraft:inventory_upgrade" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["000000000000012C"]
+			id: "0000000000000138"
+			rewards: [{
+				count: 2
+				id: "000000000000013A"
+				item: {
+					count: 1
+					id: "pneumaticcraft:range_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000139"
+				item: { count: 1, id: "pneumaticcraft:range_upgrade" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["000000000000012C"]
+			id: "000000000000013B"
+			rewards: [{
+				count: 2
+				id: "000000000000013D"
+				item: {
+					count: 1
+					id: "pneumaticcraft:speed_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "000000000000013C"
+				item: { count: 1, id: "pneumaticcraft:speed_upgrade" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0000000000000129"]
+			id: "000000000000013E"
+			rewards: [{
+				count: 64
+				id: "0000000000000140"
+				item: {
+					count: 1
+					id: "pneumaticcraft:programming_puzzle"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "000000000000013F"
+					item: { count: 1, id: "pneumaticcraft:drone" }
+					type: "item"
+				}
+				{
+					id: "0000000000000141"
+					item: { count: 1, id: "pneumaticcraft:programmer" }
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["000000000000013E"]
+			id: "0000000000000142"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				id: "0000000000000144"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000143"
+				item: { count: 1, id: "pneumaticcraft:remote" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"00000000000000BF"
+				"00000000000000AF"
+			]
+			id: "0000000000000145"
+			rewards: [{
+				count: 8
+				id: "0000000000000147"
+				item: {
+					count: 1
+					id: "pneumaticcraft:plastic"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					count: 4L
+					id: "0000000000000146"
+					item: { count: 1, id: "pneumaticcraft:plastic" }
+					type: "item"
+				}
+				{
+					id: "4D6DAF3CDF2813FE"
+					item: { count: 1, id: "pneumaticcraft:plastic_bucket" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["0000000000000145"]
+			id: "0000000000000148"
+			rewards: [{
+				id: "705F9A21C798611B"
+				item: {
+					count: 1
+					id: "kubejs:amadron_survey_tools"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000149"
+				item: { count: 1, id: "pneumaticcraft:amadron_tablet" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0000000000000148"]
+			id: "000000000000014B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "000000000000014D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000014C"
+				item: { count: 1, id: "pneumaticcraft:pcb_blueprint" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["000000000000014B"]
+			id: "000000000000014E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000150"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000014F"
+				item: { count: 1, id: "pneumaticcraft:uv_light_box" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["000000000000014E"]
+			id: "0000000000000151"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000154"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000152"
+					item: { count: 1, id: "pneumaticcraft:etching_tank" }
+					type: "item"
+				}
+				{
+					id: "0000000000000153"
+					item: { count: 1, id: "pneumaticcraft:etching_acid_bucket" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0000000000000165"]
+			id: "0000000000000155"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				id: "000000000000015D"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0000000000000157"
+					item: { count: 1, id: "pneumaticcraft:assembly_io_unit_import" }
+					type: "item"
+				}
+				{
+					id: "0000000000000158"
+					item: { count: 1, id: "pneumaticcraft:assembly_controller" }
+					type: "item"
+				}
+				{
+					id: "0000000000000159"
+					item: { count: 1, id: "pneumaticcraft:assembly_io_unit_export" }
+					type: "item"
+				}
+				{
+					id: "000000000000015A"
+					item: { count: 1, id: "pneumaticcraft:assembly_drill" }
+					type: "item"
+				}
+				{
+					id: "000000000000015B"
+					item: { count: 1, id: "pneumaticcraft:assembly_platform" }
+					type: "item"
+				}
+				{
+					id: "000000000000015C"
+					item: { count: 1, id: "pneumaticcraft:assembly_laser" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0000000000000151"]
+			id: "000000000000015E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000164"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000015F"
+				item: { count: 1, id: "pneumaticcraft:empty_pcb" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["000000000000015E"]
+			id: "0000000000000160"
+			rewards: [
+				{
+					count: 2
+					id: "0000000000000162"
+					item: {
+						count: 1
+						id: "pneumaticcraft:transistor"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0000000000000163"
+					item: {
+						count: 1
+						id: "pneumaticcraft:capacitor"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000000000161"
+				item: { count: 1, id: "pneumaticcraft:unassembled_pcb" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0000000000000160"]
+			id: "0000000000000165"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000167"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000166"
+				item: { count: 1, id: "pneumaticcraft:printed_circuit_board" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0000000000000155"]
+			id: "0000000000000168"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				id: "000000000000016A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000169"
+				item: { count: 1, id: "pneumaticcraft:assembly_program_drill_laser" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0000000000000110"]
+			id: "000000000000016B"
+			rewards: [{
+				id: "000000000000016D"
+				item: {
+					count: 1
+					id: "pneumaticcraft:medium_tank"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "000000000000016C"
+				item: { count: 1, id: "pneumaticcraft:small_tank" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0000000000000168"]
+			id: "0000000000000415"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				id: "000000000000063D"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000416"
+				item: { count: 1, id: "pneumaticcraft:advanced_liquid_compressor" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"00000000000000BD"
+				"00000000000000C7"
+				"00000000000000C3"
+			]
+			dependency_requirement: "one_completed"
+			id: "0000000000000417"
+			rewards: [{
+				id: "0000000000000423"
+				item: {
+					count: 1
+					id: "pneumaticcraft:memory_stick"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0000000000000418"
+				item: { count: 1, id: "pneumaticcraft:vacuum_pump" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["0000000000000417"]
+			id: "0000000000000419"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000433"
+				type: "command"
+			}]
+			tasks: [{
+				id: "000000000000041A"
+				item: { count: 1, id: "pneumaticcraft:spawner_extractor" }
+				type: "item"
+			}]
+			x: -17.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["000000000000041F"]
+			id: "000000000000041B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary"
+				id: "0000000000000434"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "000000000000041C"
+					item: { count: 1, id: "pneumaticcraft:vacuum_trap" }
+					type: "item"
+				}
+				{
+					id: "0000000000000422"
+					item: { count: 1, id: "pneumaticcraft:spawner_core" }
+					type: "item"
+				}
+			]
+			x: -15.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0000000000000419"]
+			id: "000000000000041F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic"
+				id: "0000000000000432"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0000000000000420"
+				item: { count: 1, id: "pneumaticcraft:pressurized_spawner" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: -9.5d
+		}
+	]
+}

@@ -1,0 +1,533 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "expert__tier_1_wip"
+	group: "34B7FB260B6AEB81"
+	id: "0000000000000B66"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1D574D041D9164AD"]
+			id: "6AADF6A0814C29D4"
+			tasks: [
+				{
+					id: "17152C3290B7D560"
+					item: { count: 1, id: "create:andesite_alloy" }
+					type: "item"
+				}
+				{
+					id: "7D6B5C1ED8564A15"
+					item: { components: { "ftbquests:missing_item": "emendatusenigmatica:invar_dust" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D574D041D9164AD"]
+			id: "2357CCF3A0758B0C"
+			tasks: [
+				{
+					id: "10768509F8F36CE9"
+					item: { components: { "ftbquests:missing_item": "thermal:dynamo_stirling" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "1A9617FC53ED59BE"
+					item: { components: { "ftbquests:missing_item": "emendatusenigmatica:enigmatic_hammer" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10890B170755A6D5"]
+			dependency_requirement: "one_started"
+			id: "4399B01214307E59"
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6F436217C7C8E2C0"
+					item: { count: 1, id: "create:mechanical_mixer" }
+					type: "item"
+				}
+				{
+					id: "0D72E1875F30E74C"
+					item: { count: 1, id: "create:blaze_burner" }
+					type: "item"
+				}
+				{
+					id: "7B79FCC58E931447"
+					item: { count: 1, id: "create:basin" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["10890B170755A6D5"]
+			id: "5647CE9AC8F56F4D"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "2A2571F7DFC9C4F4"
+				item: { count: 1, id: "create:mechanical_press" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6AADF6A0814C29D4"]
+			id: "10890B170755A6D5"
+			tasks: [{
+				id: "6F7E34D112D43E07"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4399B01214307E59"]
+			id: "6F3E31687E06AA19"
+			shape: "diamond"
+			tasks: [{
+				id: "2B77C401C033F97D"
+				item: { components: { "ftbquests:missing_item": "emendatusenigmatica:brass_ingot" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6F3E31687E06AA19"]
+			id: "1FF1E4E11F6A5745"
+			tasks: [
+				{
+					count: 21L
+					id: "188613747DBDF702"
+					item: { count: 1, id: "create:mechanical_crafter" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "65DFBB37E7D75590"
+					item: { count: 1, id: "create:crushing_wheel" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1FF1E4E11F6A5745"]
+			id: "1AA1AAE2DA37A44F"
+			tasks: [
+				{
+					id: "5470B75D9A088C52"
+					item: { count: 1, id: "create:cinder_flour" }
+					type: "item"
+				}
+				{
+					id: "491EEC5AE95DDAE0"
+					item: { count: 1, id: "kubejs:basalt_powder" }
+					type: "item"
+				}
+				{
+					id: "2FA897D7047480DE"
+					item: { count: 1, id: "minecraft:clay_ball" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1AA1AAE2DA37A44F"]
+			id: "737FEF84207E1AD5"
+			shape: "octagon"
+			tasks: [{
+				count: 17L
+				id: "45F596F7AFA8BFFF"
+				item: { count: 1, id: "immersiveengineering:cokebrick" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4A45210857A2FE10"]
+			id: "155D0B93052756E8"
+			tasks: [{
+				id: "11D4AFF923BA438E"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"62895312DA739FBF"
+				"1A3727BA37EA4F6D"
+				"354FE8210390E793"
+			]
+			id: "3DD1F984ED880148"
+			shape: "diamond"
+			tasks: [{
+				id: "0CDA65B3EB419AE4"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3DD1F984ED880148"]
+			id: "00EF0CAB3FB28938"
+			tasks: [{
+				id: "1B2F44B4F78173E4"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["00EF0CAB3FB28938"]
+			id: "60DF22034242502E"
+			shape: "octagon"
+			tasks: [{
+				count: 16L
+				id: "58F6F9B04F87F83E"
+				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"2357CCF3A0758B0C"
+				"6AADF6A0814C29D4"
+			]
+			id: "508E396542F84E94"
+			tasks: [{
+				id: "48D3578471D55A69"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_smelter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["508E396542F84E94"]
+			id: "15C239A8575142B1"
+			tasks: [{
+				id: "1FF36C55EC7E0648"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_crucible" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["508E396542F84E94"]
+			id: "4082766981B24A44"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "671E424988B48284"
+					item: { components: { "ftbquests:missing_item": "thermal:device_tree_extractor" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "06ECC057A46741D7"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4082766981B24A44"
+				"4A5B10B9E4F2440D"
+			]
+			dependency_requirement: "one_completed"
+			id: "63B1F7BACD7CCD5D"
+			shape: "diamond"
+			tasks: [{
+				id: "035C29A43AEA51CB"
+				item: { components: { "ftbquests:missing_item": "thermal:machine_bottler" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["63B1F7BACD7CCD5D"]
+			id: "0616453B4BBEFB11"
+			shape: "diamond"
+			tasks: [{
+				id: "75BAF49D78BF95C0"
+				item: { count: 1, id: "industrialforegoing:dryrubber" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2803A0750EE32FBC"]
+			id: "6BAC6A8BB59E458E"
+			optional: true
+			tasks: [
+				{
+					id: "4635A9AA2AFB35C4"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "629C5937D3BF4203"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6BAC6A8BB59E458E"]
+			id: "5FD0550A79C3F850"
+			optional: true
+			tasks: [{
+				id: "7F89F46E4234C872"
+				item: { components: { "ftbquests:missing_item": "xnet:controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6AADF6A0814C29D4"]
+			id: "514A0FC52ADBE1DD"
+			optional: true
+			tasks: [
+				{
+					count: 8L
+					id: "63BE4DE5D52BA7FD"
+					item: { components: { "ftbquests:missing_item": "prettypipes:pipe" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "7F749FB1AD173412"
+					item: { components: { "ftbquests:missing_item": "prettypipes:low_extraction_module" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "42285973A3B8F1B0"
+					item: { components: { "ftbquests:missing_item": "prettypipes:low_retrieval_module" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["514A0FC52ADBE1DD"]
+			id: "4607CD4FC64387B3"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "52DED6EEEEB4E244"
+				item: { components: { "ftbquests:missing_item": "prettypipes:crafting_terminal" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3DD1F984ED880148"]
+			id: "720C5EDF3E3B37A6"
+			shape: "hexagon"
+			tasks: [{
+				id: "11608309A9D6E501"
+				item: { components: { "ftbquests:missing_item": "tconstruct:foundry_controller" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["15C239A8575142B1"]
+			id: "1F777AA9D474D17C"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1DD4546D37449EB3"
+					item: { components: { "ftbquests:missing_item": "tconstruct:seared_heater" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "3D1FA15C2CFF46C3"
+					item: { components: { "ftbquests:missing_item": "tconstruct:seared_basin" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "1831E181039C1FBA"
+					item: { components: { "ftbquests:missing_item": "tconstruct:smeltery_controller" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0000000000000FEB"]
+			hide_until_deps_visible: true
+			id: "1D574D041D9164AD"
+			shape: "rsquare"
+			tasks: [{
+				id: "1AFB699186CA1AAC"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["508E396542F84E94"]
+			id: "2803A0750EE32FBC"
+			tasks: [{
+				id: "64759DEEB6AF63CA"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1D574D041D9164AD"]
+			id: "1348985516A60B72"
+			tasks: [{
+				id: "31BE7B445BC9FC71"
+				item: { components: { "ftbquests:missing_item": "itemfilters:id_regex" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["155D0B93052756E8"]
+			id: "1A3727BA37EA4F6D"
+			shape: "diamond"
+			tasks: [{
+				id: "56E32EE158B78F90"
+				item: { components: { "ftbquests:missing_item": "thermal:tar" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["737FEF84207E1AD5"]
+			id: "62895312DA739FBF"
+			shape: "diamond"
+			tasks: [{
+				id: "01569489009ABEDD"
+				item: { components: { "ftbquests:missing_item": "emendatusenigmatica:steel_ingot" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1A3727BA37EA4F6D"]
+			id: "354FE8210390E793"
+			shape: "diamond"
+			tasks: [{
+				id: "7913A39A566A6943"
+				item: { count: 1, id: "minecraft:obsidian" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0616453B4BBEFB11"]
+			id: "4A45210857A2FE10"
+			tasks: [{
+				id: "5D74174DF5F08D7E"
+				item: { components: { "ftbquests:missing_item": "thermal:fluid_cell" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4A45210857A2FE10"]
+			id: "555BF630B1097FE2"
+			tasks: [{
+				id: "1219720F5782198E"
+				item: { count: 1, id: "immersiveengineering:circuit_table" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["508E396542F84E94"]
+			id: "4A5B10B9E4F2440D"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "60C1CC77F18EE9EF"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "30453B6039FD25BE"
+					item: { count: 1, id: "create:basin" }
+					type: "item"
+				}
+				{
+					id: "5D78B207DC1EBB03"
+					item: { count: 1, id: "create:mechanical_press" }
+					type: "item"
+				}
+				{
+					id: "4689407918AFE07B"
+					item: { count: 1, id: "create:blaze_burner" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2357CCF3A0758B0C"]
+			id: "31A1002C96D4DC64"
+			tasks: [
+				{
+					id: "3CA6E011378BC3A3"
+					item: { components: { "ftbquests:missing_item": "littlelogistics:tug" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "4027EC3C87869F9C"
+					item: { components: { "ftbquests:missing_item": "littlelogistics:fishing_barge" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+	]
+}

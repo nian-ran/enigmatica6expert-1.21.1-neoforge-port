@@ -1,0 +1,15 @@
+[Client]
+	#Render centrifuge comb inventory on the block.
+	renderCombsInCentrifuge = true
+	#Render bees inside bee jars.
+	renderBeesInJars = true
+	#Stop bee nest helmets from making sounds.
+	mutedBeeNestHelmet = false
+	#Bees wear santa hats.
+	alwaysChristmas = false
+	#Bees never wear santa hats.
+	neverChristmas = false
+	#Enable april fools jokes
+	enableJokes = true
+	#Render entities inside amber blocks.
+	renderEntitiesInAmber = true

@@ -1,0 +1,322 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventure"
+	group: ""
+	icon: {
+		id: "minecraft:filled_map"
+	}
+	id: "0000000000000097"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0000000000000C7F"
+			rewards: [{
+				id: "0000000000000C9D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000C80"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "0000000000000C81"
+			rewards: [{
+				id: "0000000000000CA2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000C82"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			id: "0000000000000C83"
+			rewards: [{
+				id: "0000000000000CA0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000C84"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			id: "0000000000000C85"
+			rewards: [{
+				id: "0000000000000C9C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000C86"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "0000000000000C89"
+			rewards: [{
+				id: "0000000000000C9F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000C8A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "0000000000000C95"
+			rewards: [{
+				id: "0000000000000C9B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "21AEFA982B148B13"
+					item: { components: { "ftbquests:missing_item": "meetyourfight:fossil_bait" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "453C91C39D9B851B"
+					item: { components: { "ftbquests:missing_item": "meetyourfight:devils_ante" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "57A8C245E83C8992"
+					item: { components: { "ftbquests:missing_item": "meetyourfight:haunted_bell" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "0000000000000C97"
+			rewards: [{
+				id: "0000000000000C9E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0000000000000C98"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			id: "386EC8C30DD8EF00"
+			rewards: [{
+				id: "50D671240789A59B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7ACC9974FA0E7D85"
+				item: { count: 1, id: "undergarden:catalyst" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "3B63337D83616524"
+			rewards: [{
+				id: "5FF113B2959E2911"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6C7F0A0389326A73"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			id: "7FCB0C026902B90C"
+			rewards: [{
+				id: "4117CA9FCFFD42FA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4828663C763E74C1"
+				item: { components: { "ftbquests:missing_item": "atum:scarab" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7FCB0C026902B90C"]
+			hide_dependency_lines: true
+			id: "3A6AE256747CFC1D"
+			rewards: [{
+				id: "34BDC736FE34B9ED"
+				item: {
+					components: {
+						"ftbquests:missing_item": "atum:coin_gold"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 7
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "3BC303A931EA3D28"
+				item: { components: { "ftbquests:missing_item": "atum:nebu_torch" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68A4A5043858181B"]
+			id: "02CCE8639F56F007"
+			rewards: [{
+				id: "48AA5AE834D2E95C"
+				item: {
+					components: {
+						"ftbquests:missing_item": "atum:coin_gold"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 7
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5BCC3A511531AE2C"
+					item: { components: { "ftbquests:missing_item": "atum:godforge" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "792618FCBFF7E262"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["02CCE8639F56F007"]
+			id: "5695DE9BCDF64302"
+			rewards: [{
+				id: "53A2DDBBE322E06E"
+				item: {
+					components: {
+						"ftbquests:missing_item": "atum:coin_gold"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 7
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "117913EE85B58990"
+					item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "61E0AF842C54D624"
+					item: { components: { "ftbquests:missing_item": "atum:nebu_hammer" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5695DE9BCDF64302"]
+			id: "7FE27B11109B41D7"
+			rewards: [{
+				id: "23BFB971FA19252E"
+				item: {
+					components: {
+						"ftbquests:missing_item": "atum:coin_gold"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 7
+				type: "item"
+			}]
+			tasks: [{
+				id: "396862609A53439A"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3A6AE256747CFC1D"]
+			id: "68A4A5043858181B"
+			rewards: [{
+				id: "563CCA75A137FE84"
+				item: {
+					components: {
+						"ftbquests:missing_item": "atum:coin_gold"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				random_bonus: 7
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CECEAAAA80EBB9F"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			id: "60FAAD35C8C375BD"
+			rewards: [{
+				id: "218393C856E322C3"
+				item: {
+					components: {
+						"ftbquests:missing_item": "syp:pet_bandage"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0CE70793928F6DE0"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+}
